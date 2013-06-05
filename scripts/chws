@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo $1 > ~/scripts/curws
+xdotool key Super+F$1
+
