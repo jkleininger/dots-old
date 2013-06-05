@@ -15,4 +15,4 @@
 # If you want to use XFCE config tools...
 #
 #xfce-mcs-manager &
-tint2 -c ~/dots/tint2rc
+tint2 -c ~/dots/tint2rc &
