@@ -1,0 +1,59 @@
+!*******************************************************************************
+!** bbpager.rc: bbpager configuration file                                    **
+!** $HOME/.bbtools/bbpager.rc                                                 **
+!*******************************************************************************
+
+!bbpager.withdrawn:                    true
+
+!** Relevant only when bbpager.withdrawn is False.
+bbpager.position:                      +0+0
+
+bbpager.desktop.width:                 18
+bbpager.desktop.height:                12
+
+bbpager.desktop.orientation:	horizontal
+
+!bbpager.desktop.columns:              1
+!bbpager.desktop.rows:                 1
+
+!** Possible values: none, border, texture
+bbpager.window.focusStyle:             border
+bbpager.desktop.focusStyle:	       border
+
+bbpager.desktopChangeButton:	       1
+bbpager.windowMoveButton:              1
+bbpager.windowFocusButton:	       1
+bbpager.windowRaiseButton:	       1
+
+!** style **********************************************************************
+
+bbpager.margin:                        0
+
+bbpager.desktop.margin:	               0
+
+bbpager.frame.appearance:              Flat solid
+bbpager.frame.color:                   #333333
+
+bbpager.desktop.appearance:            Flat solid
+bbpager.desktop.color:                 #151515
+
+bbpager.desktop.focus.appearance:      Flat solid
+bbpager.desktop.focus.color:           #151525
+
+bbpager.active.desktop.borderColor:    #666666
+bbpager.active.desktop.borderWidth:    0
+
+bbpager.inactive.desktop.borderColor:  #1f1f1f
+bbpager.inactive.desktop.borderWidth:  0
+
+bbpager.window.appearance:             Flat solid
+bbpager.window.color:                  black
+
+bbpager.window.focus.appearance:       Flat solid
+bbpager.window.focus.color:            #313233
+
+bbpager.active.window.borderColor:     #ff4500
+bbpager.active.window.borderWidth:     0
+
+bbpager.inactive.window.borderColor:   #1f1f1f
+bbpager.inactive.window.borderWidth:   0

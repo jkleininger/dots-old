@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
-
   <resistance>
     <strength>10</strength>
     <screen_edge_strength>20</screen_edge_strength>
   </resistance>
-
   <focus>
     <focusNew>yes</focusNew>
-    <followMouse>no</followMouse>
+    <followMouse>yes</followMouse>
     <focusLast>yes</focusLast>
     <underMouse>no</underMouse>
     <focusDelay>200</focusDelay>
     <raiseOnFocus>no</raiseOnFocus>
   </focus>
-
   <placement>
     <policy>Smart</policy>
     <center>yes</center>
     <monitor>Primary</monitor>
     <primaryMonitor>1</primaryMonitor>
   </placement>
-
   <theme>
     <name>Natura</name>
     <titleLayout>LMC</titleLayout>
@@ -64,7 +60,6 @@
       <slant>Normal</slant>
     </font>
   </theme>
-
   <desktops>
     <number>5</number>
     <firstdesk>1</firstdesk>
@@ -75,9 +70,8 @@
       <name>four</name>
       <name>five</name>
     </names>
-    <popupTime>875</popupTime>
+    <popupTime>0</popupTime>
   </desktops>
-
   <resize>
     <drawContents>yes</drawContents>
     <popupShow>Nonpixel</popupShow>
@@ -87,17 +81,15 @@
       <y>10</y>
     </popupFixedPosition>
   </resize>
-
   <margins>
-    <top>0</top>
+    <top>16</top>
     <bottom>0</bottom>
     <left>0</left>
     <right>0</right>
   </margins>
-
   <dock>
-    <position>Top</position>
-    <floatingX>0</floatingX>
+    <position>Floating</position>
+    <floatingX>117</floatingX>
     <floatingY>0</floatingY>
     <noStrut>no</noStrut>
     <stacking>Above</stacking>
@@ -107,10 +99,8 @@
     <showDelay>300</showDelay>
     <moveButton>Middle</moveButton>
   </dock>
-
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
-
     <!-- Keybindings for desktop switching -->
     <keybind key="S-W-1">
       <action name="SendToDesktop">
@@ -137,7 +127,6 @@
         <to>5</to>
       </action>
     </keybind>
-
     <keybind key="W-1">
       <action name="GoToDesktop">
         <to>1</to>
@@ -163,7 +152,6 @@
         <to>5</to>
       </action>
     </keybind>
-
     <!-- Keybindings for windows -->
     <keybind key="A-F4">
       <action name="Close"/>
@@ -176,7 +164,6 @@
     <keybind key="W-x">
       <action name="ToggleMaximize"/>
     </keybind>
-
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
       <action name="NextWindow">
@@ -187,7 +174,6 @@
         </finalactions>
       </action>
     </keybind>
-
     <!-- Keybindings for window switching with the arrow keys -->
     <keybind key="W-Right">
       <action name="DirectionalCycleWindows">
@@ -209,7 +195,6 @@
         <direction>down</direction>
       </action>
     </keybind>
-
     <!-- Keybindings for running applications -->
     <keybind key="W-b">
       <action name="Execute">
@@ -256,7 +241,6 @@
         <command>tp-toggle</command>
       </action>
     </keybind>
-
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
         <command>vup</command>
@@ -272,7 +256,6 @@
         <command>vmute</command>
       </action>
     </keybind>
-
     <keybind key="W-S-r">
       <action name="Execute">
         <command>openbox --reconfigure</command>
@@ -283,15 +266,12 @@
         <command>openbox --exit</command>
       </action>
     </keybind>
-
   </keyboard>
-
   <mouse>
     <dragThreshold>1</dragThreshold>
     <doubleClickTime>200</doubleClickTime>
     <screenEdgeWarpTime>400</screenEdgeWarpTime>
     <screenEdgeWarpMouse>false</screenEdgeWarpMouse>
-
     <context name="Frame">
       <mousebind button="A-Left" action="Press">
         <action name="Focus"/>
@@ -307,7 +287,6 @@
         <action name="Resize"/>
       </mousebind>
     </context>
-
     <context name="Titlebar">
       <mousebind button="Left" action="Drag">
         <action name="Move"/>
@@ -316,7 +295,6 @@
         <action name="ToggleMaximize"/>
       </mousebind>
     </context>
-
     <context name="Titlebar Top Right Bottom Left TLCorner TRCorner BRCorner BLCorner">
       <mousebind button="Left" action="Press">
         <action name="Focus"/>
@@ -331,7 +309,6 @@
         </action>
       </mousebind>
     </context>
-
     <context name="Top">
       <mousebind button="Left" action="Drag">
         <action name="Resize">
@@ -516,7 +493,6 @@
         <action name="Raise"/>
       </mousebind>
     </context>
-
     <context name="Root">
       <!-- Menus -->
       <mousebind button="Middle" action="Press">
@@ -530,7 +506,6 @@
         </action>
       </mousebind>
     </context>
-
     <context name="MoveResize">
       <mousebind button="Up" action="Click">
         <action name="GoToDesktop">
@@ -564,8 +539,7 @@
     <manageDesktops>yes</manageDesktops>
   </menu>
   <applications>
-
-    <application class="Firefox">
+    <application class="*">
       <decor>no</decor>
     </application>
     <!--

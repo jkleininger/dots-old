@@ -1,5 +1,5 @@
-xsetroot -cursor_name left_ptr
-nitrogen --restore
+#xsetroot -cursor_name left_ptr
+#nitrogen --restore
 
 xset +fp /usr/share/fonts/TTF
 xset +fp /usr/share/fonts/artwiz-fonts
@@ -10,4 +10,6 @@ xset +fp /usr/share/fonts/local
 #exec wmii
 #exec awesome -c ~/.config/awesome/rc.lua
 #exec spectrwm
-exec openbox
+exec openbox-session
+#exec blackbox
+#exec enlightenment_start
