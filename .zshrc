@@ -87,6 +87,10 @@ zstyle ':completion:*:killall:*'   force-list always
 #- complete pacman-color the same as pacman
 compdef _pacman pacman-color=pacman
 
+unsetopt correct
+
+
+
 #------------------------------
 # Window title
 #------------------------------

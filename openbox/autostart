@@ -15,6 +15,7 @@
 # If you want to use XFCE config tools...
 #
 #xfce-mcs-manager &
+xcompmgr &
 nitrogen --restore &
 ipager &
 tint2 &

@@ -5,23 +5,18 @@ Xft.hinting:                true
 Xft.hintstyle:              hintslight
 
 URxvt.depth:                32
-URxvt.geometry:             90x30
-URxvt.transparent:          true
+URxvt.geometry:             90x60
 URxvt.fading:               0
 URxvt.shading:              10
-! URxvt.urgentOnBell:         true
-! URxvt.visualBell:           true
+URxvt.visualBell:           true
 URxvt.loginShell:           true
-URxvt.saveLines:            50
+URxvt.saveLines:            1024
 URxvt.internalBorder:       3
 URxvt.lineSpace:            0
 
 ! Fonts
 URxvt.allow_bold:           false
 URxvt*font:                 xft:Terminus-8
-
-! Fix font space
-!URxvt*letterSpace: -1
 
 ! Scrollbar
 URxvt.scrollStyle:          rxvt
@@ -40,8 +35,6 @@ URxvt.cursorUnderline:      false
 ! Pointer
 URxvt.pointerBlank:         true
 
-*background: #001122
-*foreground: #657b83
 !!*fading: 40
 *fadeColor: #002b36
 *cursorColor: #93a1a1
@@ -50,7 +43,7 @@ URxvt.pointerBlank:         true
 
 !######### urxvt colors ################################################
 *foreground: #6F6767
-*background: #221818
+*background: [90]#221818
 *color0: #363636
 *color8: #424242
 *color1: #C37561

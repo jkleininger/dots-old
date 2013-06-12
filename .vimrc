@@ -7,3 +7,6 @@ set mouse=a
 set ruler
 set termencoding=utf-8
 
+nnoremap <C-m> :bn!<CR>
+nnoremap <C-n> :bp!<CR>
+
