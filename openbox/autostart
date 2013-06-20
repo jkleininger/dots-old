@@ -17,5 +17,5 @@
 #xfce-mcs-manager &
 xcompmgr &
 nitrogen --restore &
-ipager &
+#ipager &
 tint2 &
