@@ -1,1 +1,1 @@
-amixer -q sset Master 5- unmute
+amixer -q sset Master 10- unmute
