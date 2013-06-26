@@ -7,9 +7,9 @@
 # Background definitions
 # ID 1
 rounded = 0
-border_width = 0
-background_color = #000000 100
-border_color = #FFFFFF 100
+border_width = 1
+background_color = #000000 50
+border_color = #000000 100
 
 # Panel
 panel_monitor = all
