@@ -15,7 +15,8 @@
 # If you want to use XFCE config tools...
 #
 #xfce-mcs-manager &
-xcompmgr &
+#xcompmgr &
+compton &
 nitrogen --restore &
 #ipager &
 tint2 &
