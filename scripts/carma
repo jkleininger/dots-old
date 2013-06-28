@@ -1,0 +1,2 @@
+cd ~/.wine/drive_c/games/carma2
+wine carma2.exe
