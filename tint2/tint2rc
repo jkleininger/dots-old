@@ -13,7 +13,7 @@ border_color = #000000 100
 
 # Panel
 panel_monitor = all
-panel_position = top right horizontal
+panel_position = top center horizontal
 panel_size = 1280 14
 panel_margin = 0 0
 panel_padding = 0 0 0
@@ -39,14 +39,12 @@ taskbar_name_font = Silkscreen 6
 taskbar_name_font_color = #002233 100
 taskbar_name_active_font_color = #6699FF 100
 
-
-
 # Tasks
 urgent_nb_of_blink = 7
 task_icon = 1
 task_text = 0
 task_centered = 0
-task_maximum_size = 16 16
+task_maximum_size = 14 14
 task_padding = 1 0
 task_background_id = 0
 task_active_background_id = 0
@@ -69,7 +67,7 @@ font_shadow = 0
 
 # System Tray
 systray = 1
-systray_padding = 0 0 0
+systray_padding = 10 0 0
 systray_sort = ascending
 systray_background_id = 0
 systray_icon_size = 0

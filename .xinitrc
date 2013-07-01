@@ -13,3 +13,4 @@ xset +fp /usr/share/fonts/local
 exec openbox-session
 #exec blackbox
 #exec enlightenment_start
+#exec subtle
