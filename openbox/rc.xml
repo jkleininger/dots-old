@@ -82,7 +82,7 @@
     </popupFixedPosition>
   </resize>
   <margins>
-    <top>16</top>
+    <top>0</top>
     <bottom>0</bottom>
     <left>0</left>
     <right>0</right>
@@ -204,7 +204,7 @@
     </keybind>
     <keybind key="W-r">
       <action name="Execute">
-        <command>dmenu_run</command>
+        <command>dmenu_run -p '>>'</command>
       </action>
     </keybind>
     <keybind key="W-t">

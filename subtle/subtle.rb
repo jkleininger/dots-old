@@ -133,8 +133,9 @@ style :all do
   icon        "#757575"
   border      "#303030", 0
   padding     0, 3
-  font        "-*-*-*-*-*-*-14-*-*-*-*-*-*-*"
+  #font        "-*-*-*-*-*-*-14-*-*-*-*-*-*-*"
   #font        "xft:sans-8"
+  font        "xft:Silkscreen-6"
 end
 
 # Style for the all views
@@ -364,9 +365,9 @@ grab "W-5", :ViewSwitch5
 #grab "W-A-4", :ScreenJump4
 
 # Force reload of config and sublets
-grab "W-C-r", :SubtleReload
-grab "W-C-S-r", :SubtleRestart
-grab "W-C-q", :SubtleQuit
+grab "W-S-r", :SubtleReload
+#grab "W-A-r", :SubtleRestart
+grab "W-S-q", :SubtleQuit
 
 grab "W-B1", :WindowMove
 grab "W-B3", :WindowResize
@@ -413,6 +414,8 @@ grab "W-c", [ :bottom_right, :bottom_right66, :bottom_right33 ]
 grab "W-Return", "urxvt"
 grab "W-b",      "firefox"
 grab "W-r",      "dmenu_run"
+grab "W-l",      "lockit"
+grab "W-t",      "tp-toggle"
 
 # Run Ruby lambdas
 grab "S-F2" do |c|
