@@ -1,0 +1,14 @@
+map <C-Left>   :back<CR>
+map <C-Right>  :forward<CR>
+
+js <<EOF
+  toggle_element = function (name) {
+    document.getElementById(name).collapsed ^= 1;
+  }
+EOF
+
+map <silent> <F8> :js toggle_element('nav-bar')<CR>
+
+set titlestring="Firefox"
+
+
