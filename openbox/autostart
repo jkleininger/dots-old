@@ -19,5 +19,6 @@
 compton &
 nitrogen --restore &
 #ipager &
-tint2 &
-volumeicon &
+#tint2 &
+xfce4-panel &
+#volumeicon &
