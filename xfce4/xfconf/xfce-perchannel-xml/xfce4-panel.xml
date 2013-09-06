@@ -61,6 +61,7 @@
       <property name="names-visible" type="array">
         <value type="string" value="google-musicmanager"/>
         <value type="string" value="volumeicon"/>
+        <value type="string" value="thunar"/>
       </property>
     </property>
     <property name="plugin-1" type="string" value="mixer">
