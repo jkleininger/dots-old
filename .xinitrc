@@ -14,3 +14,4 @@ exec openbox-session
 #exec blackbox
 #exec enlightenment_start
 #exec subtle
+#exec twm

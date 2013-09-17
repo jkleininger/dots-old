@@ -62,6 +62,7 @@
         <value type="string" value="google-musicmanager"/>
         <value type="string" value="volumeicon"/>
         <value type="string" value="thunar"/>
+        <value type="string" value="pidgin"/>
       </property>
     </property>
     <property name="plugin-1" type="string" value="mixer">
