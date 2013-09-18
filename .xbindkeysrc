@@ -1,3 +1,4 @@
+
 ###########################
 # xbindkeys configuration #
 ###########################
@@ -7,33 +8,44 @@
 #   Mod3 (CapsLock), Mod4, Mod5 (Scroll).
 #
 
+
+
 "urxvt"
   mod4 + Return
 
-"firefox"
+"/usr/bin/firefox"
   mod4 + b
 
-"lockit"
+"pcmanfm"
+  mod4 + e
+
+"lxtask"
+  Control+Shift+Escape
+
+
+
+"$HOME/scripts/lockit"
   mod4 + l
 
-"lock-and-suspend"
+"$HOME/scripts/lock-and-suspend"
   mod4 + shift + l
 
-"tp-toggle"
+"$HOME/scripts/tp-toggle"
   mod4 + t
 
-"dmenu_run"
+"dmenu_run -p '>>'"
   mod4 + r
 
-"vmute"
+
+
+"$HOME/scripts/vmute"
   XF86AudioMute
 
-"vup"
+"$HOME/scripts/vup"
   XF86AudioRaiseVolume
 
-"vdn"
+"$HOME/scripts/vdn"
   XF86AudioLowerVolume
-
 
 
 
@@ -68,7 +80,17 @@
   Shift + mod4 + 5
 
 
-"lxtask"
-  Control+Shift+Escape
+
+"wmctrl -r :ACTIVE: -b toggle,maximized_vert,maximized_horz"
+  mod4 + Up
+
+#"alt tab"
+#  mod1 + Tab
+
+"$HOME/scripts/tile_left"
+  mod4 + Shift + Left
+
+"$HOME/scripts/tile_right"
+  mod4 + Shift + Right
 
 

@@ -1,0 +1,2 @@
+xdotool getactivewindow windowsize 60% -1 windowmove 0 0
+wmctrl -r :ACTIVE: -b add,maximized_vert
