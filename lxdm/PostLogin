@@ -1,8 +1,7 @@
 #!/bin/sh
-#
-# Note: this is a sample and will not be run as is.
 PATH=$PATH:/home/user/scripts
 compton &
 xbindkeys &
 nitrogen --restore &
+pytyle3 &
 

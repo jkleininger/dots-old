@@ -10,7 +10,7 @@
 
 
 
-"urxvt"
+"lxterminal"
   mod4 + Return
 
 "/usr/bin/firefox"
