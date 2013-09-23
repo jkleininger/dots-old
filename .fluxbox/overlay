@@ -1,8 +1,13 @@
 ! The following line will prevent styles from setting the background.
 ! background: none
 
-menu.title.font: Terminus-8
-toolbar.clock.font: Terminus-8
-toolbar.workspace.font: Terminus-8
-*font: Terminus-8
+! menu.title.font: Terminus-8
+! toolbar.clock.font: Terminus-8
+! toolbar.workspace.font: Terminus-8
+! *font: Terminus-8
+
+menu.title.font: Silkscreen-6
+toolbar.clock.font: Silkscreen-6
+toolbar.workspace.font: Silkscreen-6
+*font: Silkscreen-6
 
