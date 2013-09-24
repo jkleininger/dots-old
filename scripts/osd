@@ -1,1 +1,1 @@
-echo $1 | osd_cat -p middle -A center -O 1 -u white -c black -d 1
+echo $1 | osd_cat -p middle -A center -O 1 -u white -c black -d 1 -f -*-ubuntu-bold-r-*-*-*-120-*-*-*-*-*-*

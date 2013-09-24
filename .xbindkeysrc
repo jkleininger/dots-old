@@ -81,16 +81,16 @@
 
 
 
-"wmctrl -r :ACTIVE: -b toggle,maximized_vert,maximized_horz"
-  mod4 + Up
+#"wmctrl -r :ACTIVE: -b toggle,maximized_vert,maximized_horz"
+#  mod4 + Up
 
 #"alt tab"
 #  mod1 + Tab
 
-"$HOME/scripts/tile_left"
-  mod4 + Shift + Left
+#"$HOME/scripts/tile_left"
+#  mod4 + Shift + Left
 
-"$HOME/scripts/tile_right"
-  mod4 + Shift + Right
+#"$HOME/scripts/tile_right"
+#  mod4 + Shift + Right
 
 
