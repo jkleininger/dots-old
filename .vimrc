@@ -6,7 +6,7 @@ set history=50
 set mouse=a
 set ruler
 set termencoding=utf-8
+set t_Co=256
 
-nnoremap <C-m> :bn!<CR>
-nnoremap <C-n> :bp!<CR>
-
+noremap <f1> :bprev<CR>
+noremap <f2> :bnext<CR>

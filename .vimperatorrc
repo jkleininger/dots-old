@@ -10,5 +10,6 @@ EOF
 map <silent> <F8> :js toggle_element('nav-bar')<CR>
 
 set titlestring="Firefox"
+set toolbars=noaddons,nobookmarks,nomenu,nonavigation,notabs
 
-
+colorscheme darkness2
