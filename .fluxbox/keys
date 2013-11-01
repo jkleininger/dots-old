@@ -3,6 +3,7 @@ Mod4 B 			:Exec firefox
 Mod4 E 			:Exec pcmanfm
 Mod4 Return 		:Exec xterm
 Control Shift Escape	:Exec lxtask
+Mod4 F			:Exec dmenfm
 
 Mod4 L			:Exec lockit
 Mod4 T			:Exec tp-toggle
@@ -28,6 +29,7 @@ OnToolbar Mouse5 :NextWindow {static groups} (iconhidden=no)
 # alt + left/right click to move/resize a window
 OnWindow Mod1 Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
 OnWindowBorder Move1 :StartMoving
+
 
 OnWindow Mod1 Mouse3 :MacroCmd {Raise} {Focus} {StartResizing NearestCorner}
 OnLeftGrip Move1 :StartResizing bottomleft
