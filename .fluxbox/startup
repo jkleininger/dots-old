@@ -1,9 +1,11 @@
 #!/bin/sh
 
+compton &
 unclutter -idle 2 &
 batti &
 volumeicon &
 nm-applet &
+nitrogen --restore &
 
 exec fluxbox
 # exec fluxbox -log "/home/user/.fluxbox/log

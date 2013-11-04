@@ -1,0 +1,16 @@
+show_hidden=0
+show_backup=0
+always_open_dirs=1
+always_open_files=1
+open_last=1
+dmenu_caseinsens=1
+dmenu_onbottom=1
+dmenu_bg='#101010'
+dmenu_fg='#666666'
+dmenu_sbg='#333333'
+dmenu_sfg='#FFFFFF'
+editor="geany"
+executor='exo'
+filemanager="pcmanfm"
+last_dir="/home/user"
+
