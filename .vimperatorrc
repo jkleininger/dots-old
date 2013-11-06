@@ -1,15 +1,24 @@
 map <C-Left>   :back<CR>
 map <C-Right>  :forward<CR>
 
+map <,> :tabprevious<CR>
+map <.> :tabnext<CR>
+
+javascript var guiIsToggled=true
+
+javascript function guitog() { if(guiIsToggled) { liberator.execute(':set toolbars=navigation,tabs'); guiIsToggled=false; } else { liberator.execute(':set toolbars=nonavigation,notabs'); guiIsToggled=true; } }
+
 js <<EOF
   toggle_element = function (name) {
     document.getElementById(name).collapsed ^= 1;
   }
 EOF
 
-map <silent> <F8> :js toggle_element('nav-bar')<CR>
+map <silent> <F8> :js guitog()<CR>
 
 set titlestring="Firefox"
 set toolbars=noaddons,nobookmarks,nomenu,nonavigation,notabs
+
+command! rc :source .vimperatorrc
 
 colorscheme darkness2
