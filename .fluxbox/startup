@@ -5,6 +5,7 @@ unclutter -idle 2 &
 batti &
 volumeicon &
 nm-applet &
+x-tile &
 nitrogen --restore &
 
 exec fluxbox

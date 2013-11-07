@@ -30,7 +30,7 @@ session.screen0.iconbar.iconTextPadding:	10
 session.screen0.iconbar.usePixmap:	false
 session.screen0.iconbar.iconWidth:	128
 session.screen0.iconbar.alignment:	Relative
-session.screen0.iconbar.mode:	{static groups} (minimized=no) (workspace)
+session.screen0.iconbar.mode:	{static groups} (workspace)
 session.screen0.tooltipDelay:	500
 session.screen0.noFocusWhileTypingDelay:	0
 session.screen0.fullMaximization:	false
