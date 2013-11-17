@@ -1,0 +1,3 @@
+[submodule ".vim/vim-whitespace"]
+	path = .vim/vim-whitespace
+	url = git://github.com/mmozuras/vim-whitespace.git
