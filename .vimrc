@@ -1,4 +1,4 @@
-colorscheme nucolors
+colorscheme ir_black
 syntax on
 set guifont=Terminus\ 8
 set guioptions=aegimLt
@@ -37,6 +37,8 @@ vnoremap <C-c>      "*y
 noremap  <C-A-Up>   <PageUp>
 noremap  <C-A-Down> <PageDown>
 
+nnoremap <CR>       :noh<CR><CR>
+
 set ignorecase
 set hlsearch
 
@@ -49,9 +51,9 @@ set listchars=tab:>-,trail:~,extends:>,precedes:<
 set list
 
 "unused, inactive, active
-hi TabLineFill ctermfg=White   ctermbg=DarkGrey
-hi TabLine     ctermfg=Grey    ctermbg=DarkGrey
-hi TabLineSel  ctermfg=Yellow  ctermbg=DarkGrey
+hi TabLineFill ctermfg=White   ctermbg=Black
+hi TabLine     ctermfg=Grey    ctermbg=Black
+hi TabLineSel  ctermfg=Yellow  ctermbg=Black
 
 set statusline =
 "set statusline +=%5*%{&ff}%*
