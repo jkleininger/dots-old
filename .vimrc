@@ -22,6 +22,8 @@ set softtabstop=2
 set expandtab
 set autoindent
 
+noremap  <C-A-t>     :TlistToggle<CR>
+
 noremap  <f1>        :tabp<CR>
 noremap  <f2>        :tabn<CR>
 noremap  <C-A-Left>  :tabp<CR>
