@@ -1,9 +1,3 @@
-#------------------------------------------------------------------#
-# File:     .zshrc   ZSH resource file                             #
-# Version:  0.1.16                                                 #
-# Author:   Øyvind "Mr.Elendig" Heggstad <mrelendig@har-ikkje.net> #
-#------------------------------------------------------------------#
-
 #------------------------------
 # History stuff
 #------------------------------
@@ -18,6 +12,9 @@ export BROWSER="firefox"
 export EDITOR="vim"
 export PAGER="less"
 export PATH="${PATH}:${HOME}/bin:${HOME}/scripts"
+
+# might want to make this conditional in case of a non-xterm
+export TERM=xterm-256color
 
 #-----------------------------
 # Dircolors

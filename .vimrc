@@ -1,10 +1,12 @@
-colorscheme ir_black
+colorscheme xoria256-pluk
 syntax on
 set guifont=Terminus\ 8
 set guioptions=aegimLt
 set guioptions-=T
 set guioptions-=m
 set guioptions-=r
+
+set noswapfile
 
 set history=50
 set mouse=a
@@ -27,16 +29,15 @@ set foldnestmax=10
 set nofoldenable
 set foldlevel=1
 
-noremap  <C-A-t>     :TlistToggle<CR>
+set rnu
 
-noremap  <S-W>       :w<CR>
+noremap  <C-A-t>     :TlistToggle<CR>
 
 noremap  <f1>        :tabp<CR>
 noremap  <f2>        :tabn<CR>
-noremap  <C-A-Left>  :tabp<CR>
-noremap  <C-A-Right> :tabn<CR>
 
-noremap  <C-d>       :!zsh<CR>
+noremap  <f10>      :set guioptions+=m<cr>
+noremap  <A-f10>    :set guioptions-=m<cr>
 
 inoremap <C-v>      <esc>"*p<return>i
 noremap  <C-v>      "*p<return>
@@ -48,6 +49,15 @@ noremap  <C-A-Down> <PageDown>
 
 nnoremap <CR>       :noh<CR><CR>
 
+nnoremap <Up>       <C-Y>
+nnoremap <Down>     <C-E>
+nnoremap <Left>     <<
+nnoremap <Right>    >>
+
+noremap  <silent>   <C-l>       :set relativenumber!<cr>
+
+noremap  <f12>      :!zsh<cr>
+
 set ignorecase
 set hlsearch
 
@@ -56,7 +66,7 @@ set mat=3
 
 map 0 ^
 
-set listchars=tab:>-,trail:~,extends:>,precedes:<
+set listchars=tab:>-,trail:~,extends:>,precedes:>
 set list
 
 "unused, inactive, active
