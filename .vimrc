@@ -22,7 +22,14 @@ set softtabstop=2
 set expandtab
 set autoindent
 
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=1
+
 noremap  <C-A-t>     :TlistToggle<CR>
+
+noremap  <S-W>       :w<CR>
 
 noremap  <f1>        :tabp<CR>
 noremap  <f2>        :tabn<CR>
