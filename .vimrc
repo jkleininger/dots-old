@@ -1,4 +1,4 @@
-colorscheme xoria256-pluk
+colorscheme xoria256
 syntax on
 set guifont=Terminus\ 8
 set guioptions=aegimLt
@@ -58,6 +58,16 @@ noremap  <silent>   <C-l>       :set relativenumber!<cr>
 
 noremap  <f12>      :!zsh<cr>
 
+nnoremap <Leader>c  :let &scrolloff=999-&scrolloff<cr>
+nnoremap <Leader>i  =%
+
+nnoremap <C-S-Up>   :m-2<cr>==
+nnoremap <C-S-Down> :m+1<cr>==
+vnoremap <C-S-Up>   :m '<-2<CR>gv=gv
+vnoremap <C-S-Down> :m '>+1<CR>gv=gv
+
+nnoremap <Leader>w  :wall<cr>
+
 set ignorecase
 set hlsearch
 
@@ -75,8 +85,8 @@ hi TabLine     ctermfg=Grey    ctermbg=Black
 hi TabLineSel  ctermfg=Yellow  ctermbg=Black
 
 set statusline =
-"set statusline +=%5*%{&ff}%*
 set statusline +=%3*%y%*
+"set statusline +=%5*%{&ff}%*
 set statusline +=%4*\ %<%F%*
 set statusline +=%2*%m%*
 set statusline +=%1*%=%5l%*

@@ -11,7 +11,7 @@ SAVEHIST=5000
 export BROWSER="firefox"
 export EDITOR="vim"
 export PAGER="less"
-export PATH="${PATH}:${HOME}/bin:${HOME}/scripts"
+export PATH="${PATH}:${HOME}/.gem/ruby/2.0.0/bin:${HOME}/scripts"
 
 # might want to make this conditional in case of a non-xterm
 export TERM=xterm-256color
@@ -48,15 +48,6 @@ bindkey "\e[7~" beginning-of-line
 bindkey "\eOH" beginning-of-line
 bindkey "\eOF" end-of-line
 
-#------------------------------
-# Alias stuff
-#------------------------------
-alias ls="ls --color -F"
-alias ll="ls --color -lh"
-#alias spm="sudo pacman"
-#alias spmc="sudo pacman-color"
-#alias gr="gvim --remote-silent"
-#alias vr="vim --remote-silent"
 #------------------------------
 # Comp stuff
 #------------------------------
@@ -107,6 +98,8 @@ case $TERM in
 		}
 	;; 
 esac
+
+. ~/dots/aliases
 
 #------------------------------
 # Prompt

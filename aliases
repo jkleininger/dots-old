@@ -1,0 +1,19 @@
+# prettier results for common commands
+alias ls='ls --color -F'
+alias ll='ls --color -lh'
+alias grep='grep --color=auto'
+alias ping='ping -c 1'
+
+# execute programs the way i actually meant
+alias gvim='gvim -p'
+alias vim='vim -p'
+
+# java stuff
+alias jc='javac *.java'
+alias jj='java ${PWD##*/}'
+
+# useragent curl (http://justinlilly.com/dotfiles/zsh.html)
+alias iecurl="curl -H \"User-Agent: Mozilla/5.0 (Windows; U; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)\""
+alias ffcurl="curl -H \"User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.8) Gecko/2009032609 Firefox/3.0.0 (.NET CLR 3.5.30729)\""
+
+
