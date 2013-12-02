@@ -1,3 +1,6 @@
 [submodule ".vim/vim-whitespace"]
 	path = .vim/vim-whitespace
 	url = git://github.com/mmozuras/vim-whitespace.git
+[submodule ".vim/bundle/Gundo"]
+	path = .vim/bundle/Gundo
+	url = http://github.com/vim-scripts/Gundo.git

@@ -33,6 +33,13 @@ XTerm*selectToClipboard:    true
 *xterm*color14: #4eb4fa
 *xterm*color15: #d0d0d0
 
-*xterm*faceName: Terminus
-*xterm*faceSize: 8
+!# *xterm*faceName: Terminus
+!# *xterm*faceSize: 8
 
+*xterm*faceName: Ubuntu\ Mono
+*xterm*faceSize: 9
+
+!#  <Key>F1: ignore() \n\
+xterm*VT100.translations: #override \
+  Shift<Key>Up:   scroll-back(1,page) \n\
+  Shift<Key>Down: scroll-forw(1,page)

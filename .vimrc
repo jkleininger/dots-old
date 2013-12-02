@@ -1,6 +1,13 @@
+call pathogen#infect()
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 colorscheme xoria256
 syntax on
-set guifont=Terminus\ 8
+"set guifont=Terminus\ 8
+"set guifont=Ubuntu\ Mono\ 10
+set guifont=Inconsolata\ Medium\ 10
+"set guifont=Hermit\ Medium\ 9
 set guioptions=aegimLt
 set guioptions-=T
 set guioptions-=m
@@ -31,10 +38,12 @@ set foldlevel=1
 
 set rnu
 
+set scrolloff=999
+
 noremap  <C-A-t>     :TlistToggle<CR>
 
-noremap  <f1>        :tabp<CR>
-noremap  <f2>        :tabn<CR>
+noremap  ;           :tabp<CR>
+noremap  '           :tabn<CR>
 
 noremap  <f10>      :set guioptions+=m<cr>
 noremap  <A-f10>    :set guioptions-=m<cr>
