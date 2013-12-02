@@ -4,3 +4,21 @@
 [submodule ".vim/bundle/Gundo"]
 	path = .vim/bundle/Gundo
 	url = http://github.com/vim-scripts/Gundo.git
+[submodule ".vim/bundle/vundle"]
+	path = .vim/bundle/vundle
+	url = http://github.com/gmarik/vundle.git
+[submodule ".vim/bundle/tagbar"]
+	path = .vim/bundle/tagbar
+	url = http://github.com/majutsushi/tagbar.git
+[submodule ".vim/bundle/minibufexpl"]
+	path = .vim/bundle/minibufexpl
+	url = http://github.com/fholgado/minibufexpl.vim.git
+[submodule ".vim/bundle/vim-irblack"]
+	path = .vim/bundle/vim-irblack
+	url = http://github.com/wesgibbs/vim-irblack.git
+[submodule ".vim/bundle/xoria256.vim"]
+	path = .vim/bundle/xoria256.vim
+	url = http://github.com/vim-scripts/xoria256.vim.git
+[submodule ".vim/bundle/wombat256"]
+	path = .vim/bundle/wombat256
+	url = http://github.com/vim-scripts/wombat256.vim.git

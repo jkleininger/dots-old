@@ -1,4 +1,3 @@
-call pathogen#infect()
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
@@ -42,8 +41,8 @@ set scrolloff=999
 
 noremap  <C-A-t>     :TlistToggle<CR>
 
-noremap  ;           :tabp<CR>
-noremap  '           :tabn<CR>
+noremap  ;           :bp<cr>
+noremap  '           :bn<cr>
 
 noremap  <f10>      :set guioptions+=m<cr>
 noremap  <A-f10>    :set guioptions-=m<cr>
@@ -77,6 +76,10 @@ vnoremap <C-S-Down> :m '>+1<CR>gv=gv
 
 nnoremap <Leader>w  :wall<cr>
 
+nnoremap <C-A-z>    :GundoToggle<cr>
+
+nnoremap <Leader>t  :TagbarToggle<cr>
+
 set ignorecase
 set hlsearch
 
@@ -109,5 +112,13 @@ hi User3 guifg=#ff66ff guibg=#333333
 hi User4 guifg=#a0ee40 guibg=#333333
 hi User5 guifg=#eeee40 guibg=#333333
 
-filetype plugin on
+"filetype plugin on
 set omnifunc=syntaxcomplete#Complete
+
+" MiniBufExpl Colors
+hi MBEVisibleActive guifg=#A6DB29 guibg=fg
+hi MBEVisibleChangedActive guifg=#F1266F guibg=fg
+hi MBEVisibleChanged guifg=#F1266F guibg=fg
+hi MBEVisibleNormal guifg=#5DC2D6 guibg=fg
+hi MBEChanged guifg=#CD5907 guibg=fg
+hi MBENormal guifg=#808080 guibg=fg

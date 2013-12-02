@@ -5,8 +5,8 @@ alias grep='grep --color=auto'
 alias ping='ping -c 1'
 
 # execute programs the way i actually meant
-alias gvim='gvim -p'
-alias vim='vim -p'
+#alias gvim='gvim -p'
+#alias vim='vim -p'
 
 # java stuff
 alias jc='javac *.java'
