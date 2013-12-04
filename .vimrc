@@ -1,5 +1,7 @@
-call pathogen#runtime_append_all_bundles()
+execute pathogen#infect()
 call pathogen#helptags()
+
+let g:bufferline_echo = 0
 
 colorscheme xoria256
 syntax on
@@ -62,7 +64,7 @@ nnoremap <Down>     <C-E>
 nnoremap <Left>     <<
 nnoremap <Right>    >>
 
-noremap  <silent>   <C-l>       :set relativenumber!<cr>
+noremap  <C-l>      :set relativenumber!<cr>
 
 noremap  <f12>      :!zsh<cr>
 
@@ -79,6 +81,7 @@ nnoremap <Leader>w  :wall<cr>
 nnoremap <C-A-z>    :GundoToggle<cr>
 
 nnoremap <Leader>t  :TagbarToggle<cr>
+nnoremap <Leader>l  :ls<cr>
 
 set ignorecase
 set hlsearch
@@ -115,10 +118,3 @@ hi User5 guifg=#eeee40 guibg=#333333
 "filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 
-" MiniBufExpl Colors
-hi MBEVisibleActive guifg=#A6DB29 guibg=fg
-hi MBEVisibleChangedActive guifg=#F1266F guibg=fg
-hi MBEVisibleChanged guifg=#F1266F guibg=fg
-hi MBEVisibleNormal guifg=#5DC2D6 guibg=fg
-hi MBEChanged guifg=#CD5907 guibg=fg
-hi MBENormal guifg=#808080 guibg=fg

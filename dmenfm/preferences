@@ -12,5 +12,5 @@ dmenu_sfg='#FFFFFF'
 editor="geany"
 executor='exo'
 filemanager="pcmanfm"
-last_dir="/home/user"
+last_dir="/"
 

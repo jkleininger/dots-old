@@ -22,3 +22,24 @@
 [submodule ".vim/bundle/wombat256"]
 	path = .vim/bundle/wombat256
 	url = http://github.com/vim-scripts/wombat256.vim.git
+[submodule ".vim/bundle/twilight"]
+	path = .vim/bundle/twilight
+	url = http://github.com/matthewtodd/vim-twilight.git
+[submodule ".vim/bundle/relaxed-green"]
+	path = .vim/bundle/relaxed-green
+	url = http://github.com/vim-scripts/Relaxed-Green.git
+[submodule ".vim/bundle/nucolors"]
+	path = .vim/bundle/nucolors
+	url = http://github.com/ryu-blacknd/vim-nucolors.git
+[submodule ".vim/bundle/bufexplorer"]
+	path = .vim/bundle/bufexplorer
+	url = http://github.com/jlanzarotta/bufexplorer.git
+[submodule ".vim/bundle/neatstatus"]
+	path = .vim/bundle/neatstatus
+	url = http://github.com/maciakl/vim-neatstatus.git
+[submodule ".vim/bundle/airline"]
+	path = .vim/bundle/airline
+	url = http://github.com/bling/vim-airline.git
+[submodule ".vim/bundle/bufferline"]
+	path = .vim/bundle/bufferline
+	url = http://github.com/bling/vim-bufferline.git
