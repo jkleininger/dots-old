@@ -43,3 +43,6 @@
 [submodule ".vim/bundle/bufferline"]
 	path = .vim/bundle/bufferline
 	url = http://github.com/bling/vim-bufferline.git
+[submodule ".vim/bundle/pathogen"]
+	path = .vim/bundle/pathogen
+	url = http://github.com/tpope/vim-pathogen.git

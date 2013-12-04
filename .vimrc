@@ -1,4 +1,6 @@
+runtime bundle/pathogen/autoload/pathogen.vim
 execute pathogen#infect()
+"call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 let g:bufferline_echo = 0
