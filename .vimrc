@@ -1,6 +1,5 @@
 runtime bundle/pathogen/autoload/pathogen.vim
 execute pathogen#infect()
-"call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 let g:bufferline_echo = 0
@@ -34,7 +33,7 @@ set softtabstop=2
 set expandtab
 set autoindent
 
-set foldmethod=indent
+set foldmethod=marker
 set foldnestmax=10
 set nofoldenable
 set foldlevel=1
@@ -42,6 +41,8 @@ set foldlevel=1
 set rnu
 
 set scrolloff=999
+
+set encoding=utf-8
 
 noremap  <C-A-t>     :TlistToggle<CR>
 
@@ -51,15 +52,15 @@ noremap  '           :bn<cr>
 noremap  <f10>      :set guioptions+=m<cr>
 noremap  <A-f10>    :set guioptions-=m<cr>
 
-inoremap <C-v>      <esc>"*p<return>i
-noremap  <C-v>      "*p<return>
-vnoremap <C-x>      "*d
-vnoremap <C-c>      "*y
+"inoremap <C-v>      <esc>"*p<return>i
+"noremap  <C-v>      "*p<return>
+"vnoremap <C-x>      "*d
+"vnoremap <C-c>      "*y
 
 noremap  <C-A-Up>   <PageUp>
 noremap  <C-A-Down> <PageDown>
 
-nnoremap <CR>       :noh<CR><CR>
+nnoremap <silent>   <cr>       :noh<cr>
 
 nnoremap <Up>       <C-Y>
 nnoremap <Down>     <C-E>
@@ -85,6 +86,10 @@ nnoremap <C-A-z>    :GundoToggle<cr>
 nnoremap <Leader>t  :TagbarToggle<cr>
 nnoremap <Leader>l  :ls<cr>
 
+noremap L           $
+noremap H           ^
+
+
 set ignorecase
 set hlsearch
 
@@ -93,7 +98,8 @@ set mat=3
 
 map 0 ^
 
-set listchars=tab:>-,trail:~,extends:>,precedes:>
+set listchars=trail:·,precedes:«,extends:»,tab:▸\ 
+"set listchars=trail:·,precedes:«,extends:»,eol:·,tab:▸\ 
 set list
 
 "unused, inactive, active
