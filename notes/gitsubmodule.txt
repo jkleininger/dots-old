@@ -1,0 +1,13 @@
+in your project parent directory run:
+
+git submodule update --init 
+
+or if you have recursive submodules run:
+
+git submodule update --init --recursive
+
+sometimes this still doesn't work it is because somehow you have local changes in the local submodule directory while the submodule is being updated.
+
+Most of the time the local change might not be the one you want to commit. It can happen due to a file deletion in your submodule etc. If so, do a reset in your local submodule directory and in your project parent directory run again:
+
+git submodule update --init --recursive 

@@ -6,10 +6,7 @@ let g:bufferline_echo = 0
 
 colorscheme xoria256
 syntax on
-"set guifont=Terminus\ 8
-"set guifont=Ubuntu\ Mono\ 10
-set guifont=Inconsolata\ Medium\ 10
-"set guifont=Hermit\ Medium\ 9
+set guifont=Terminus\ 8
 set guioptions=aegimLt
 set guioptions-=T
 set guioptions-=m
@@ -46,8 +43,8 @@ set encoding=utf-8
 
 noremap  <C-A-t>     :TlistToggle<CR>
 
-noremap  ;           :bp<cr>
-noremap  '           :bn<cr>
+noremap  ;           :wall<cr>:bp<cr>
+noremap  '           :wall<cr>:bn<cr>
 
 noremap  <f10>      :set guioptions+=m<cr>
 noremap  <A-f10>    :set guioptions-=m<cr>
