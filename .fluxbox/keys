@@ -1,7 +1,7 @@
 Mod4 R 			:Exec dmenu_run -p '>>'
 Mod4 B 			:Exec firefox
 Mod4 E 			:Exec pcmanfm
-Mod4 Return 		:Exec terminator
+Mod4 Return 		:Exec lxterminal
 Control Shift Escape	:Exec lxtask
 Mod4 F			:Exec dmenfm
 Mod4 N                  :Exec leafpad
