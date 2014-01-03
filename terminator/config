@@ -42,9 +42,9 @@
       type = Window
       order = 0
       parent = ""
-      size = 1280, 780
+      size = 1280, 774
     [[[child1]]]
-      position = 1024
+      position = 1013
       type = HPaned
       order = 0
       parent = child0
