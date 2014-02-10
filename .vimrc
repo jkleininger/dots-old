@@ -120,6 +120,9 @@ hi User3 guifg=#ff66ff guibg=#333333
 hi User4 guifg=#a0ee40 guibg=#333333
 hi User5 guifg=#eeee40 guibg=#333333
 
-"filetype plugin on
+filetype plugin indent on
 set omnifunc=syntaxcomplete#Complete
+
+"syntastic
+let g:syntastic_java_checkers=['javac', 'checkstyle']
 
