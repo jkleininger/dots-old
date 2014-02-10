@@ -1,0 +1,4 @@
+-startup
+plugins/org.eclipse.equinox.launcher_1.3.0.v20130327-1440.jar
+-configuration
+../../../home/user/.eclipse/org.eclipse.platform_4.3.0_1543616141_linux_gtk_x86_64/configuration
