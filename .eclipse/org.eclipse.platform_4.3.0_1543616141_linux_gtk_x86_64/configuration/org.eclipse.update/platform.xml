@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<config date="1392060425975" shared_ur="file:configuration/org.eclipse.update/platform.xml" transient="false" version="3.0">
-<site enabled="true" policy="USER-EXCLUDE" updateable="true" url="file:../../../home/user/.eclipse/org.eclipse.platform_4.3.0_1543616141_linux_gtk_x86_64/">
-<feature id="net.jeeeyul.eclipse.themes.feature" url="features/net.jeeeyul.eclipse.themes.feature_1.7.4.201307160945/" version="1.7.4.201307160945">
-</feature>
-</site>
+<config transient="false" shared_ur="file:configuration/org.eclipse.update/platform.xml" date="1392388333536" version="3.0">
+	<site enabled="true" updateable="true" policy="USER-EXCLUDE" url="file:/home/user/.eclipse/org.eclipse.platform_4.3.0_1543616141_linux_gtk_x86_64/">
+		<feature id="net.jeeeyul.eclipse.themes.feature" url="features/net.jeeeyul.eclipse.themes.feature_1.7.4.201307160945/" version="1.7.4.201307160945">
+		</feature>
+		<feature id="net.sf.jautodoc.feature" plugin-identifier="net.sf.jautodoc" url="features/net.sf.jautodoc.feature_1.11.0/" version="1.11.0">
+		</feature>
+	</site>
 </config>

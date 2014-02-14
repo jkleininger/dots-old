@@ -35,7 +35,8 @@ set foldnestmax=10
 set nofoldenable
 set foldlevel=1
 
-set rnu
+"relative numbering
+"set rnu
 
 set scrolloff=999
 
@@ -46,16 +47,13 @@ noremap  <C-A-t>     :TlistToggle<CR>
 noremap  ;           :wall<cr>:bp<cr>
 noremap  '           :wall<cr>:bn<cr>
 
-noremap  <f10>      :set guioptions+=m<cr>
-noremap  <A-f10>    :set guioptions-=m<cr>
+inoremap <C-A-v>      <esc>"*p<return>i
+noremap  <C-A-v>      "*p<return>
+vnoremap <C-A-x>      "*d
+vnoremap <C-A-c>      "*y
 
-"inoremap <C-v>      <esc>"*p<return>i
-"noremap  <C-v>      "*p<return>
-"vnoremap <C-x>      "*d
-"vnoremap <C-c>      "*y
-
-noremap  <C-A-Up>   <PageUp>
-noremap  <C-A-Down> <PageDown>
+"noremap  <C-A-Up>   <PageUp>
+"noremap  <C-A-Down> <PageDown>
 
 nnoremap <silent>   <cr>       :noh<cr>
 
@@ -68,9 +66,6 @@ noremap  <C-l>      :set relativenumber!<cr>
 
 noremap  <f12>      :!zsh<cr>
 
-nnoremap <Leader>c  :let &scrolloff=999-&scrolloff<cr>
-nnoremap <Leader>i  =%
-
 nnoremap <C-S-Up>   :m-2<cr>==
 nnoremap <C-S-Down> :m+1<cr>==
 vnoremap <C-S-Up>   :m '<-2<CR>gv=gv
@@ -78,13 +73,24 @@ vnoremap <C-S-Down> :m '>+1<CR>gv=gv
 
 nnoremap <Leader>w  :wall<cr>
 
-nnoremap <C-A-z>    :GundoToggle<cr>
-
-nnoremap <Leader>t  :TagbarToggle<cr>
 nnoremap <Leader>l  :ls<cr>
 
 noremap L           $
 noremap H           ^
+
+"moving between windows
+nnoremap <C-A-Up>    <C-w><Up>
+nnoremap <C-A-Down>  <C-w><Down>
+nnoremap <C-A-Left>  <C-w><Left>
+nnoremap <C-A-Right> <C-w><Right>
+
+
+"eclim java
+nnoremap <silent> <leader>i :JavaImport<cr>
+nnoremap <silent> <leader>o :JavaImportOrganize<cr>
+nnoremap <silent> <leader>t :ProjectTree<cr>
+nnoremap <silent> <F6> :ProjectBuild<cr>
+nnoremap <silent> <F7> :Java<cr>
 
 
 set ignorecase

@@ -1,4 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/user/Dev/roomulon/src/net/qrab'
-let g:netrw_dirhist_2='/home/user/Dev/roomulon/src/net/qrab/roomulon'
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/user/Dev/roomulon/src/net/qrab/roomulon'
+let g:netrw_dirhist_2='/home/user'
+let g:netrw_dirhist_3='/home/user/Dev'
+let g:netrw_dirhist_4='/home/user/Dev/roomulon'
+let g:netrw_dirhist_5='/home/user/Dev/roomulon/src'
+let g:netrw_dirhist_6='/home/user/Dev/roomulon/src/net'
+let g:netrw_dirhist_7='/home/user/Dev/roomulon/src/net/qrab'
+let g:netrw_dirhist_8='/home/user/Dev/roomulon/src/net/qrab/roomulon'

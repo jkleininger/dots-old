@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='update site: http://jautodoc.sourceforge.net/update/' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
+  <properties size='3'>
+    <property name='p2.timestamp' value='1392388310477'/>
+    <property name='eclipse.p2.force.threading' value='true'/>
+    <property name='site.checksum' value='550370772'/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='21'>
+    <artifact classifier='org.eclipse.update.feature' id='net.sf.jautodoc.feature' version='1.10.0'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://jautodoc.sourceforge.net/update/features/net.sf.jautodoc.feature_1.10.0.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sf.jautodoc.velocity' version='1.8.0'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://sourceforge.net/projects/jautodoc/files/updatesite/1.8.0/net.sf.jautodoc.velocity_1.8.0.jar/download'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sf.jautodoc.velocity' version='1.5.0'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://sourceforge.net/projects/jautodoc/files/updatesite/1.3.0/net.sf.jautodoc.velocity_1.5.0.jar/download'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sf.jautodoc' version='1.8.0'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://sourceforge.net/projects/jautodoc/files/updatesite/1.8.0/net.sf.jautodoc_1.8.0.jar/download'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='net.sf.jautodoc.feature' version='1.8.0'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://jautodoc.sourceforge.net/update/features/net.sf.jautodoc.feature_1.8.0.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='net.sf.jautodoc.feature' version='1.5.0'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://jautodoc.sourceforge.net/update/features/net.sf.jautodoc.feature_1.5.0.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='net.sf.jautodoc.feature' version='1.9.0'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://jautodoc.sourceforge.net/update/features/net.sf.jautodoc.feature_1.9.0.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sf.jautodoc.velocity' version='1.9.0'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://sourceforge.net/projects/jautodoc/files/updatesite/1.9.0/net.sf.jautodoc.velocity_1.9.0.jar/download'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sf.jautodoc' version='1.7.0'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://sourceforge.net/projects/jautodoc/files/updatesite/1.7.0/net.sf.jautodoc_1.7.0.jar/download'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sf.jautodoc.velocity' version='1.7.0'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://sourceforge.net/projects/jautodoc/files/updatesite/1.7.0/net.sf.jautodoc.velocity_1.7.0.jar/download'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sf.jautodoc' version='1.11.0'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://sourceforge.net/projects/jautodoc/files/updatesite/1.11.0/net.sf.jautodoc_1.11.0.jar/download'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sf.jautodoc' version='1.10.0'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://sourceforge.net/projects/jautodoc/files/updatesite/1.10.0/net.sf.jautodoc_1.10.0.jar/download'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sf.jautodoc.velocity' version='1.10.0'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://sourceforge.net/projects/jautodoc/files/updatesite/1.10.0/net.sf.jautodoc.velocity_1.10.0.jar/download'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sf.jautodoc.velocity' version='1.6.0'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://sourceforge.net/projects/jautodoc/files/updatesite/1.6.0/net.sf.jautodoc.velocity_1.6.0.jar/download'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sf.jautodoc.velocity' version='1.11.0'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://sourceforge.net/projects/jautodoc/files/updatesite/1.11.0/net.sf.jautodoc.velocity_1.11.0.jar/download'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sf.jautodoc' version='1.5.0'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://sourceforge.net/projects/jautodoc/files/updatesite/1.5.0/net.sf.jautodoc_1.5.0.jar/download'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sf.jautodoc' version='1.6.0'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://sourceforge.net/projects/jautodoc/files/updatesite/1.6.0/net.sf.jautodoc_1.6.0.jar/download'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='net.sf.jautodoc.feature' version='1.7.0'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://jautodoc.sourceforge.net/update/features/net.sf.jautodoc.feature_1.7.0.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sf.jautodoc' version='1.9.0'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://sourceforge.net/projects/jautodoc/files/updatesite/1.9.0/net.sf.jautodoc_1.9.0.jar/download'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='net.sf.jautodoc.feature' version='1.6.0'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://jautodoc.sourceforge.net/update/features/net.sf.jautodoc.feature_1.6.0.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='net.sf.jautodoc.feature' version='1.11.0'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://jautodoc.sourceforge.net/update/features/net.sf.jautodoc.feature_1.11.0.jar'/>
+      </repositoryProperties>
+    </artifact>
+  </artifacts>
+</repository>
