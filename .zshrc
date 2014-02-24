@@ -11,7 +11,7 @@ SAVEHIST=5000
 export BROWSER="firefox"
 export EDITOR="vim"
 export PAGER="less"
-export PATH="${PATH}:${HOME}/.gem/ruby/2.0.0/bin:${HOME}/scripts"
+export PATH="${PATH}:${HOME}/.gem/ruby/2.0.0/bin:${HOME}/scripts:/opt/android-sdk/tools"
 
 # might want to make this conditional in case of a non-xterm
 export TERM=xterm-256color

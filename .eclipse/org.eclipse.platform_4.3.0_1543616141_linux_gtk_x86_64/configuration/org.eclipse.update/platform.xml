@@ -1,9 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<config transient="false" shared_ur="file:configuration/org.eclipse.update/platform.xml" date="1392388333536" version="3.0">
+<config transient="false" shared_ur="file:configuration/org.eclipse.update/platform.xml" date="1392565661834" version="3.0">
 	<site enabled="true" updateable="true" policy="USER-EXCLUDE" url="file:/home/user/.eclipse/org.eclipse.platform_4.3.0_1543616141_linux_gtk_x86_64/">
-		<feature id="net.jeeeyul.eclipse.themes.feature" url="features/net.jeeeyul.eclipse.themes.feature_1.7.4.201307160945/" version="1.7.4.201307160945">
+		<feature id="org.eclipse.wst.common_core.feature" url="features/org.eclipse.wst.common_core.feature_3.5.1.v201308310200-7B7EFSiF7RZHOoIuSrQ7NJ/" version="3.5.1.v201308310200-7B7EFSiF7RZHOoIuSrQ7NJ">
 		</feature>
-		<feature id="net.sf.jautodoc.feature" plugin-identifier="net.sf.jautodoc" url="features/net.sf.jautodoc.feature_1.11.0/" version="1.11.0">
+		<feature id="net.jeeeyul.eclipse.themes.feature" url="features/net.jeeeyul.eclipse.themes.feature_1.7.5.201402122251/" version="1.7.5.201402122251">
+		</feature>
+		<feature id="org.eclipse.jst.server_userdoc.feature" url="features/org.eclipse.jst.server_userdoc.feature_3.3.100.v20110303-2-Eo7w3121162A3329/" version="3.3.100.v20110303-2-Eo7w3121162A3329">
+		</feature>
+		<feature id="org.eclipse.jst.enterprise_userdoc.feature" url="features/org.eclipse.jst.enterprise_userdoc.feature_3.3.100.v201105122000-62FUGBgJ9EA9aEeHRHc/" version="3.3.100.v201105122000-62FUGBgJ9EA9aEeHRHc">
+		</feature>
+		<feature id="org.eclipse.jst.server_core.feature" url="features/org.eclipse.jst.server_core.feature_3.4.1.v20130412_1040-31FGD8s73583C49A53B5/" version="3.4.1.v20130412_1040-31FGD8s73583C49A53B5">
+		</feature>
+		<feature id="org.eclipse.jst.server_adapters.ext.feature" url="features/org.eclipse.jst.server_adapters.ext.feature_3.3.104.v20130826_1426-57CFGFAkF7BI7RFJLBHKT/" version="3.3.104.v20130826_1426-57CFGFAkF7BI7RFJLBHKT">
+		</feature>
+		<feature id="org.eclipse.jst.web_ui.feature" url="features/org.eclipse.jst.web_ui.feature_3.5.1.v201307171500-7F7GFVsC27SvmcOpwjkc0_jpG-mtRz-U3suvul0j/" version="3.5.1.v201307171500-7F7GFVsC27SvmcOpwjkc0_jpG-mtRz-U3suvul0j">
+		</feature>
+		<feature id="org.eclipse.wst.xml_userdoc.feature" url="features/org.eclipse.wst.xml_userdoc.feature_3.3.0.v201102071641-50FYwAkF7B77UBZFDBL/" version="3.3.0.v201102071641-50FYwAkF7B77UBZFDBL">
+		</feature>
+		<feature id="org.eclipse.wst.web_userdoc.feature" url="features/org.eclipse.wst.web_userdoc.feature_3.3.0.v201102200555-31Eo8s734B3E4H7799/" version="3.3.0.v201102200555-31Eo8s734B3E4H7799">
+		</feature>
+		<feature id="org.eclipse.wst.web_ui.feature" plugin-identifier="org.eclipse.wst.web.ui" url="features/org.eclipse.wst.web_ui.feature_3.5.1.v201307171524-7O7QG2NEMkBS3C2az0gQwwALctEj3DZPgTEZceV4/" version="3.5.1.v201307171524-7O7QG2NEMkBS3C2az0gQwwALctEj3DZPgTEZceV4">
+		</feature>
+		<feature id="org.eclipse.jst.enterprise_ui.feature" plugin-identifier="org.eclipse.jst.jee.ui" url="features/org.eclipse.jst.enterprise_ui.feature_3.5.1.v201308281800-7b7KIahFSK2WQtQeBOuHz-QXyUmRm/" version="3.5.1.v201308281800-7b7KIahFSK2WQtQeBOuHz-QXyUmRm">
+		</feature>
+		<feature id="org.eclipse.jst.web_core.feature" url="features/org.eclipse.jst.web_core.feature_3.5.1.v201307171500-7Q7GGbAFE9LeBTMX2gc1Mh2kwz-0sN863877/" version="3.5.1.v201307171500-7Q7GGbAFE9LeBTMX2gc1Mh2kwz-0sN863877">
+		</feature>
+		<feature id="org.eclipse.wst.server_core.feature" url="features/org.eclipse.wst.server_core.feature_3.3.201.v20130412_1040-34Et8s73573C4Da2815/" version="3.3.201.v20130412_1040-34Et8s73573C4Da2815">
+		</feature>
+		<feature id="org.eclipse.wst.server_ui.feature" url="features/org.eclipse.wst.server_ui.feature_3.3.206.v20130830_1134-7B7AFOCAtNdu_xhLc1JiMgC8EAB/" version="3.3.206.v20130830_1134-7B7AFOCAtNdu_xhLc1JiMgC8EAB">
+		</feature>
+		<feature id="org.eclipse.wst.xml_core.feature" url="features/org.eclipse.wst.xml_core.feature_3.5.1.v201307171524-7C7OFvUF7RZHQWIrO2NxPl/" version="3.5.1.v201307171524-7C7OFvUF7RZHQWIrO2NxPl">
+		</feature>
+		<feature id="org.eclipse.wst.ws_wsdl15.feature" url="features/org.eclipse.wst.ws_wsdl15.feature_1.5.301.v201102200555-2407w312123151655/" version="1.5.301.v201102200555-2407w312123151655">
+		</feature>
+		<feature id="org.eclipse.wst.common_ui.feature" url="features/org.eclipse.wst.common_ui.feature_3.5.1.v201308310200-7C7BFeEEdhOawkZhCnQfypJvTsR8OK/" version="3.5.1.v201308310200-7C7BFeEEdhOawkZhCnQfypJvTsR8OK">
+		</feature>
+		<feature id="org.eclipse.jst.server_ui.feature" url="features/org.eclipse.jst.server_ui.feature_3.4.1.v20130412_1040-7A77FHs9xFcDcCFLZBFIOHFGAFC6/" version="3.4.1.v20130412_1040-7A77FHs9xFcDcCFLZBFIOHFGAFC6">
+		</feature>
+		<feature id="org.eclipse.wst.jsdt.feature" plugin-identifier="org.eclipse.wst.jsdt.ui" url="features/org.eclipse.wst.jsdt.feature_1.5.1.v201307171524-7H7FFhVFC7sResSz-gpggbs/" version="1.5.1.v201307171524-7H7FFhVFC7sResSz-gpggbs">
+		</feature>
+		<feature id="org.eclipse.wst.server_userdoc.feature" url="features/org.eclipse.wst.server_userdoc.feature_3.3.200.v20120830_2320-20Eo7w31231941a3363/" version="3.3.200.v20120830_2320-20Eo7w31231941a3363">
+		</feature>
+		<feature id="org.eclipse.libra.warproducts.feature" url="features/org.eclipse.libra.warproducts.feature_0.3.0.201305311343/" version="0.3.0.201305311343">
+		</feature>
+		<feature id="org.eclipse.wst.ws_ui.feature" url="features/org.eclipse.wst.ws_ui.feature_3.5.1.v201308141733-7I7EFkZEtEo_L0D8-I7p2FOHuutqrcZ--DCfQcLx/" version="3.5.1.v201308141733-7I7EFkZEtEo_L0D8-I7p2FOHuutqrcZ--DCfQcLx">
+		</feature>
+		<feature id="org.eclipse.jst.web_userdoc.feature" url="features/org.eclipse.jst.web_userdoc.feature_3.5.0.v201303142300-23-7w312415412669/" version="3.5.0.v201303142300-23-7w312415412669">
+		</feature>
+		<feature id="org.eclipse.jst.server_adapters.feature" url="features/org.eclipse.jst.server_adapters.feature_3.2.201.v20130123_1813-20A87w31241234a2924/" version="3.2.201.v20130123_1813-20A87w31241234a2924">
+		</feature>
+		<feature id="org.eclipse.jst.enterprise_core.feature" url="features/org.eclipse.jst.enterprise_core.feature_3.5.0.v201303132100-52FXNAkF7BG7QBHAJ77/" version="3.5.0.v201303132100-52FXNAkF7BG7QBHAJ77">
+		</feature>
+		<feature id="org.eclipse.wst.xml_ui.feature" plugin-identifier="org.eclipse.wst.xml.ui" url="features/org.eclipse.wst.xml_ui.feature_3.5.1.v201307171524-7H7IFiwDxumVt0J7gijShVTqs4BePbKwUtS9PL/" version="3.5.1.v201307171524-7H7IFiwDxumVt0J7gijShVTqs4BePbKwUtS9PL">
+		</feature>
+		<feature id="org.eclipse.wst.ws_core.feature" url="features/org.eclipse.wst.ws_core.feature_3.5.0.v201303141425-7L7SFpmFGtGd01jvy-rM752766/" version="3.5.0.v201303141425-7L7SFpmFGtGd01jvy-rM752766">
+		</feature>
+		<feature id="org.eclipse.wst.web_core.feature" url="features/org.eclipse.wst.web_core.feature_3.5.1.v201307171524-7E7KFZ1AJz0myD5G5lLSQsTiq2gmoWit/" version="3.5.1.v201307171524-7E7KFZ1AJz0myD5G5lLSQsTiq2gmoWit">
+		</feature>
+		<feature id="org.eclipse.wst.ws_userdoc.feature" url="features/org.eclipse.wst.ws_userdoc.feature_3.1.300.v201102200555-44FR79oB5855Q8IBD7G/" version="3.1.300.v201102200555-44FR79oB5855Q8IBD7G">
 		</feature>
 	</site>
 </config>

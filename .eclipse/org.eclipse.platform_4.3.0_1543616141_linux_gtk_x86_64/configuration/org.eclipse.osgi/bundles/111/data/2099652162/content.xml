@@ -2,7 +2,7 @@
 <?metadataRepository version='1.1.0'?>
 <repository name='/usr/share/eclipse/.eclipseextension' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1.0.0'>
   <properties size='3'>
-    <property name='p2.timestamp' value='1392222622468'/>
+    <property name='p2.timestamp' value='1392178862582'/>
     <property name='org.eclipse.update.site.policy' value='USER-EXCLUDE'/>
     <property name='org.eclipse.update.site.list' value=''/>
   </properties>
@@ -10,14 +10,14 @@
     <repository uri='http://www.eclipse.org/modeling/updates/' url='http://www.eclipse.org/modeling/updates/' type='1' options='0'/>
     <repository uri='http://www.eclipse.org/modeling/updates/' url='http://www.eclipse.org/modeling/updates/' type='0' options='0'/>
   </references>
-  <units size='8'>
+  <units size='5'>
     <unit id='org.eclim.jdt' version='2.3.2'>
       <update id='org.eclim.jdt' range='[0.0.0,2.3.2)' severity='0'/>
       <properties size='4'>
         <property name='org.eclipse.equinox.p2.provider' value='eclim.org'/>
         <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
         <property name='file.name' value='/usr/share/eclipse/plugins/org.eclim.jdt_2.3.2'/>
-        <property name='file.lastModified' value='1392050500000'/>
+        <property name='file.lastModified' value='1392080219000'/>
       </properties>
       <provides size='9'>
         <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclim.jdt' version='2.3.2'/>
@@ -84,67 +84,13 @@
       </requires>
       <touchpoint id='null' version='0.0.0'/>
     </unit>
-    <unit id='org.eclipse.ecf.provider.filetransfer.httpclient4.ssl.translated_host_properties' version='1.0.0.v20130604-1622'>
-      <hostRequirements size='1'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ecf.provider.filetransfer.httpclient4' range='1.0.0' greedy='false'/>
-      </hostRequirements>
-      <properties size='3'>
-        <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
-        <property name='df_LT.plugin.provider' value='Eclipse.org - ECF'/>
-        <property name='df_LT.plugin.name' value='ECF Filetransfer HttpComponents SSL Fragment'/>
-      </properties>
-      <provides size='2'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ecf.provider.filetransfer.httpclient4.ssl.translated_host_properties' version='1.0.0.v20130604-1622'/>
-        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
-      </provides>
-      <requires size='1'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ecf.provider.filetransfer.httpclient4' range='1.0.0' greedy='false'/>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
-    </unit>
-    <unit id='org.eclipse.equinox.launcher.gtk.linux.x86_64.translated_host_properties' version='1.1.200.v20130807-1835'>
-      <hostRequirements size='1'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.launcher' range='[1.0.0,1.4.0)' greedy='false'/>
-      </hostRequirements>
-      <properties size='3'>
-        <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
-        <property name='df_LT.providerName' value='Eclipse.org - Equinox'/>
-        <property name='df_LT.pluginName' value='Equinox Launcher Linux X86_64 Fragment'/>
-      </properties>
-      <provides size='2'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.launcher.gtk.linux.x86_64.translated_host_properties' version='1.1.200.v20130807-1835'/>
-        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
-      </provides>
-      <requires size='1'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.launcher' range='[1.0.0,1.4.0)' greedy='false'/>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
-    </unit>
-    <unit id='org.eclipse.ecf.ssl.translated_host_properties' version='1.1.0.v20130604-1622'>
-      <hostRequirements size='1'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ecf' range='0.0.0' greedy='false'/>
-      </hostRequirements>
-      <properties size='3'>
-        <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
-        <property name='df_LT.plugin.provider' value='Eclipse.org - ECF'/>
-        <property name='df_LT.plugin.name' value='ECF SSL Fragment'/>
-      </properties>
-      <provides size='2'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ecf.ssl.translated_host_properties' version='1.1.0.v20130604-1622'/>
-        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
-      </provides>
-      <requires size='1'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ecf' range='0.0.0' greedy='false'/>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
-    </unit>
     <unit id='org.eclim' version='2.3.2'>
       <update id='org.eclim' range='[0.0.0,2.3.2)' severity='0'/>
       <properties size='4'>
         <property name='org.eclipse.equinox.p2.provider' value='eclim.org'/>
         <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
         <property name='file.name' value='/usr/share/eclipse/plugins/org.eclim_2.3.2'/>
-        <property name='file.lastModified' value='1392050501000'/>
+        <property name='file.lastModified' value='1392080219000'/>
       </properties>
       <provides size='33'>
         <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclim' version='2.3.2'/>
@@ -226,7 +172,7 @@
         <property name='org.eclipse.equinox.p2.provider' value='eclim.org'/>
         <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
         <property name='file.name' value='/usr/share/eclipse/plugins/org.eclim.core_2.3.2'/>
-        <property name='file.lastModified' value='1392050500000'/>
+        <property name='file.lastModified' value='1392080219000'/>
       </properties>
       <provides size='13'>
         <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclim.core' version='2.3.2'/>
@@ -280,7 +226,7 @@
         <property name='org.eclipse.equinox.p2.provider' value='eclim.org'/>
         <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
         <property name='file.name' value='/usr/share/eclipse/plugins/org.eclim.vimplugin_2.3.2'/>
-        <property name='file.lastModified' value='1392050501000'/>
+        <property name='file.lastModified' value='1392080219000'/>
       </properties>
       <provides size='10'>
         <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclim.vimplugin' version='2.3.2'/>

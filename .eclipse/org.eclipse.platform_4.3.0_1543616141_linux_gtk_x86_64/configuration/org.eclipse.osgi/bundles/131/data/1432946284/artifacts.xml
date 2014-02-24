@@ -2,7 +2,7 @@
 <?artifactRepository version='1.1.0'?>
 <repository name='update site: file:/home/user/dots/.eclipse/org.eclipse.platform_4.3.0_1543616141_linux_gtk_x86_64/configuration/org.eclipse.osgi/bundles/120/data/listener_1925729951/' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1392222618536'/>
+    <property name='p2.timestamp' value='1392178856089'/>
     <property name='site.checksum' value='0'/>
   </properties>
   <mappings size='3'>
