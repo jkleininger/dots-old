@@ -5,8 +5,16 @@
   [Layer]	{8}
   [Close]	{yes}
 [end]
-[app] (name=Eclipse) (class=Eclipse)
+[app] (name=Eclipse)
   [Workspace]	{1}
   [Maximized]	{yes}
   [Layer]	{8}
+[end]
+[app] (name=pcmanfm) (class=Pcmanfm)
+  [Workspace]	{4}
+  [Maximized]	{yes}
+  [Jump]	{yes}
+[end]
+[app] (name=gvim)
+  [Maximized] {yes}
 [end]
