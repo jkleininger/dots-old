@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.4
+Created-By: 1.7.0_09-b05 (Oracle Corporation)
+
+Name: feature.xml
+SHA-256-Digest: iX0KFxQB+eVWXlvS/MCwy5x8vNYn6RbPq7M7F942pJo=
+

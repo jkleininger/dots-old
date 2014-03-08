@@ -16,5 +16,5 @@
   [Jump]	{yes}
 [end]
 [app] (name=gvim)
-  [Maximized] {yes}
+  [Maximized]	{yes}
 [end]
