@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<config transient="false" shared_ur="file:configuration/org.eclipse.update/platform.xml" date="1392261773470" version="3.0">
-	<site enabled="true" updateable="true" policy="USER-EXCLUDE" url="file:/home/user/.eclipse/org.eclipse.platform_4.3.0_1543616141_linux_gtk_x86_64/">
-		<feature id="net.jeeeyul.eclipse.themes.feature" url="features/net.jeeeyul.eclipse.themes.feature_1.7.5.201402122251/" version="1.7.5.201402122251">
-		</feature>
-	</site>
-</config>
