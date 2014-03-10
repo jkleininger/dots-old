@@ -1,6 +1,7 @@
 set $mod Mod4
 
 exec xrandr --output LVDS-1 --primary
+exec lxpanel
 exec compton
 exec unclutter -idle 2
 exec volumeicon
@@ -126,7 +127,7 @@ bindsym $mod+z mode "resize"
 # finds out, if available)
 bar {
   position top
-  status_command i3status --config ~/.i3/i3status.conf
+#  status_command i3status --config ~/.i3/i3status.conf
   tray_output primary
   font pango:Ubuntu 8
   workspace_buttons yes

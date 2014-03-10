@@ -1,0 +1,2722 @@
+5
+Source_of_Evil________kills:__0/__1____
+129151.000000
+100.000000
+0.000000
+100.000000
+200.000000
+100.000000
+14.000000
+8192.000000
+0.000000
+8.000000
+5.000000
+32.000000
+100.000000
+5.000000
+0.000000
+0.000000
+2
+r2m8
+2.825100
+m
+mmnmmommommnonmmonqnmmo
+abcdefghijklmnopqrstuvwxyzyxwvutsrqponmlkjihgfedcba
+mmmmmaaaaammmmmaaaaaabcdefgabcdefg
+mamamamamama
+jklmnopqrstuvwxyzyxwvutsrqponmlkj
+nmonqnmomnmomomno
+mmmaaaabcdefgmmmmaaaammmaamm
+mmmaaammmaaammmabcdefaaaammmmabcdefmmmaaaa
+aaaaaaaazzzzzzzz
+mmamammmmammamamaaamammma
+abcdefghijklmnopqrrqponmlkjihgfedcba
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+a
+{
+"self" "1"
+"other" "0"
+"world" "0"
+"time" "2.81121135"
+"frametime" "0.0138888899"
+"force_retouch" "0"
+"mapname" "r2m8"
+"deathmatch" "0"
+"coop" "0"
+"teamplay" "0"
+"serverflags" "0"
+"total_secrets" "0"
+"total_monsters" "1"
+"found_secrets" "0"
+"killed_monsters" "0"
+"parm1" "129151"
+"parm2" "100"
+"parm3" "0"
+"parm4" "100"
+"parm5" "200"
+"parm6" "100"
+"parm7" "14"
+"parm8" "8192"
+"parm9" "0"
+"parm10" "8"
+"parm11" "5"
+"parm12" "32"
+"parm13" "100"
+"parm14" "5"
+"parm15" "0"
+"parm16" "0"
+"v_forward_x" "0.946244538"
+"v_forward_y" "-0.0969540328"
+"v_forward_z" "-0.308579296"
+"v_up_x" "0.306972146"
+"v_up_y" "-0.0314529538"
+"v_up_z" "0.951198637"
+"v_right_x" "-0.101928271"
+"v_right_y" "-0.994791746"
+"v_right_z" "0"
+"trace_allsolid" "1"
+"trace_startsolid" "1"
+"trace_fraction" "1"
+"trace_endpos_x" "1624"
+"trace_endpos_y" "2134"
+"trace_endpos_z" "104"
+"trace_plane_normal_x" "0"
+"trace_plane_normal_y" "0"
+"trace_plane_normal_z" "0"
+"trace_plane_dist" "0"
+"trace_ent" "0"
+"trace_inopen" "0"
+"trace_inwater" "0"
+"msg_entity" "0"
+"VEC_ORIGIN_x" "0"
+"VEC_ORIGIN_y" "0"
+"VEC_ORIGIN_z" "0"
+"VEC_HULL_MIN_x" "-16"
+"VEC_HULL_MIN_y" "-16"
+"VEC_HULL_MIN_z" "-24"
+"VEC_HULL_MAX_x" "16"
+"VEC_HULL_MAX_y" "16"
+"VEC_HULL_MAX_z" "32"
+"VEC_HULL2_MIN_x" "-32"
+"VEC_HULL2_MIN_y" "-32"
+"VEC_HULL2_MIN_z" "-24"
+"VEC_HULL2_MAX_x" "32"
+"VEC_HULL2_MAX_y" "32"
+"VEC_HULL2_MAX_z" "64"
+"movedist" "0"
+"gameover" "0"
+"string_null" ""
+"empty_float" "0"
+"newmis" "0"
+"activator" "0"
+"damage_attacker" "0"
+"framecount" "119"
+"skill" "2"
+"earthquake_active" "0"
+"earthquake_intensity" "75"
+"cutscene_running" "0"
+"tag_token_owner" "0"
+"team1_lastspawn" "0"
+"team2_lastspawn" "0"
+"nextteamupdtime" "0"
+"runespawn" "0"
+"rune_spawn_spot" "0"
+"enemy_vis" "0"
+"enemy_infront" "0"
+"enemy_range" "0"
+"enemy_yaw" "0"
+"current_yaw" "0"
+"sight_entity" "0"
+"sight_entity_time" "0"
+"IsExplosionDamage" "0"
+"lavaGunFired" "0"
+"multi_ent" "0"
+"multi_damage" "0"
+"lastspawn" "0"
+"bodyque_head" "2"
+"modelindex_eyes" "26"
+"modelindex_player" "25"
+"intermission_running" "0"
+"intermission_exittime" "0"
+"nextmap" ""
+"stemp" "0"
+"otemp" "0"
+"s" "0"
+"old" "0"
+"le1" "0"
+"le2" "0"
+"lightning_end" "0"
+"hknight_type" "0"
+"shub" "0"
+"impactVelocity" "0"
+"theActor" "0"
+"theMachine" "107"
+"actorStage" "0"
+}
+// edict 0
+{
+"modelindex" "1"
+"absmin" "-1920 -640 -368"
+"absmax" "1376 1792 588.43396"
+"movetype" "7"
+"solid" "4"
+"classname" "worldspawn"
+"model" "maps/r2m8.bsp"
+"mins" "-1920 -640 -368"
+"maxs" "1376 1792 588.43396"
+"message" "Source of Evil"
+"sounds" "2"
+"wad" "gfx/wads/rogue.wad"
+}
+// edict 1
+{
+"modelindex" "25"
+"absmin" "-1831 19 71.03125"
+"absmax" "-1797 53 129.03125"
+"movetype" "3"
+"solid" "3"
+"origin" "-1814 36 96.03125"
+"oldorigin" "-1814 36 96.03125"
+"angles" "-5.99121094 -5.85021973 0"
+"classname" "player"
+"model" "progs/player.mdl"
+"frame" "14"
+"mins" "-16 -16 -24"
+"maxs" "16 16 32"
+"size" "32 32 56"
+"touch" "player_touch"
+"think" "player_stand1"
+"nextthink" "2.91398811"
+"health" "100"
+"weapon" "8192"
+"weaponmodel" "progs/v_lava2.mdl"
+"currentammo" "5"
+"ammo_shells" "100"
+"ammo_nails" "5"
+"ammo_rockets" "32"
+"ammo_cells" "100"
+"items" "129151"
+"takedamage" "2"
+"view_ofs" "0 0 22"
+"v_angle" "17.9736328 -5.85021973 0"
+"netname" "poo"
+"flags" "4616"
+"colormap" "1"
+"team" "5"
+"max_health" "100"
+"watertype" "-1"
+"items2" "8"
+"ammo_shells1" "100"
+"ammo_nails1" "200"
+"ammo_rockets1" "100"
+"ammo_cells1" "14"
+"ammo_lava_nails" "5"
+"ammo_multi_rockets" "32"
+"ammo_plasma" "100"
+"th_pain" "player_pain"
+"th_die" "PlayerDie"
+"walkframe" "3"
+"attack_finished" "1.2139889"
+"jump_flag" "-33.3333359"
+"air_finished" "14.8112116"
+"dmg" "2"
+"steam" "5"
+"ctf_flagsince" "-10"
+"ctf_lasthurtcarrier" "-10"
+"ctf_lastreturnedflag" "-10"
+"ctf_lastfraggedcarrier" "-10"
+"motd_time" "4.21398878"
+"clientcolors" "68"
+"ping" "7.54714012"
+"netaddress" "local"
+"playermodel" ""
+"playerskin" ""
+"cursor_trace_endpos" "-1479.76465 1.74317169 9.03125"
+"cursor_trace_start" "-1814 36 118.03125"
+}
+// edict 2
+{
+"classname" "bodyque"
+"owner" "3"
+}
+// edict 3
+{
+"classname" "bodyque"
+"owner" "4"
+}
+// edict 4
+{
+"classname" "bodyque"
+"owner" "5"
+}
+// edict 5
+{
+"classname" "bodyque"
+"owner" "2"
+}
+// edict 6
+{
+"absmin" "-1097 -97 183"
+"absmax" "-1063 -63 217"
+"solid" "1"
+"origin" "-1080 -80 200"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "a1"
+"targetname" "t40"
+}
+// edict 7
+{
+"absmin" "-961 -129 183"
+"absmax" "-927 -95 217"
+"solid" "1"
+"origin" "-944 -112 200"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t40"
+"targetname" "t39"
+}
+// edict 8
+{
+"absmin" "-929 -113 183"
+"absmax" "-895 -79 217"
+"solid" "1"
+"origin" "-912 -96 200"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t27"
+"targetname" "t26"
+}
+// edict 9
+{
+"absmin" "-673 135 183"
+"absmax" "-639 169 217"
+"solid" "1"
+"origin" "-656 152 200"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t38"
+"targetname" "t37"
+}
+// edict 10
+{
+"absmin" "-393 311 183"
+"absmax" "-359 345 217"
+"solid" "1"
+"origin" "-376 328 200"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t36"
+"targetname" "t35"
+}
+// edict 11
+{
+"absmin" "-257 279 183"
+"absmax" "-223 313 217"
+"solid" "1"
+"origin" "-240 296 200"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t35"
+"targetname" "t34"
+}
+// edict 12
+{
+"absmin" "39 127 183"
+"absmax" "73 161 217"
+"solid" "1"
+"origin" "56 144 200"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t34"
+"targetname" "t33"
+}
+// edict 13
+{
+"absmin" "71 -1 183"
+"absmax" "105 33 217"
+"solid" "1"
+"origin" "88 16 200"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t33"
+"targetname" "t32"
+}
+// edict 14
+{
+"absmin" "-81 -49 183"
+"absmax" "-47 -15 217"
+"solid" "1"
+"origin" "-64 -32 200"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t32"
+"targetname" "t31"
+}
+// edict 15
+{
+"absmin" "-257 39 183"
+"absmax" "-223 73 217"
+"solid" "1"
+"origin" "-240 56 200"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t31"
+"targetname" "t30"
+}
+// edict 16
+{
+"absmin" "-393 159 183"
+"absmax" "-359 193 217"
+"solid" "1"
+"origin" "-376 176 200"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t30"
+"targetname" "t29"
+}
+// edict 17
+{
+"absmin" "-529 231 183"
+"absmax" "-495 265 217"
+"solid" "1"
+"origin" "-512 248 200"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t37"
+"targetname" "t36"
+}
+// edict 18
+{
+"absmin" "-593 135 183"
+"absmax" "-559 169 217"
+"solid" "1"
+"origin" "-576 152 200"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t29"
+"targetname" "t28"
+}
+// edict 19
+{
+"absmin" "-737 -17 183"
+"absmax" "-703 17 217"
+"solid" "1"
+"origin" "-720 0 200"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t28"
+"targetname" "t27"
+}
+// edict 20
+{
+"absmin" "-809 -73 183"
+"absmax" "-775 -39 217"
+"solid" "1"
+"origin" "-792 -56 200"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t39"
+"targetname" "t38"
+}
+// edict 21
+{
+"absmin" "-321 375 191"
+"absmax" "-287 409 225"
+"solid" "1"
+"origin" "-304 392 208"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t16"
+"targetname" "t15"
+}
+// edict 22
+{
+"absmin" "-633 231 183"
+"absmax" "-599 265 217"
+"solid" "1"
+"origin" "-616 248 200"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t23"
+"targetname" "t22"
+}
+// edict 23
+{
+"absmin" "-801 295 167"
+"absmax" "-767 329 201"
+"solid" "1"
+"origin" "-784 312 184"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t24"
+"targetname" "t23"
+}
+// edict 24
+{
+"absmin" "-1025 -17 183"
+"absmax" "-991 17 217"
+"solid" "1"
+"origin" "-1008 0 200"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t26"
+"targetname" "t25"
+}
+// edict 25
+{
+"absmin" "-945 183 183"
+"absmax" "-911 217 217"
+"solid" "1"
+"origin" "-928 200 200"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t25"
+"targetname" "t24"
+}
+// edict 26
+{
+"absmin" "-489 351 183"
+"absmax" "-455 385 217"
+"solid" "1"
+"origin" "-472 368 200"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t22"
+"targetname" "t16"
+}
+// edict 27
+{
+"absmin" "-145 231 271"
+"absmax" "-111 265 305"
+"solid" "1"
+"origin" "-128 248 288"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t12"
+"targetname" "t11"
+}
+// edict 28
+{
+"absmin" "119 63 271"
+"absmax" "153 97 305"
+"solid" "1"
+"origin" "136 80 288"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t13"
+"targetname" "t12"
+}
+// edict 29
+{
+"absmin" "31 -65 271"
+"absmax" "65 -31 305"
+"solid" "1"
+"origin" "48 -48 288"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t14"
+"targetname" "t13"
+}
+// edict 30
+{
+"absmin" "-201 31 271"
+"absmax" "-167 65 305"
+"solid" "1"
+"origin" "-184 48 288"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t15"
+"targetname" "t14"
+}
+// edict 31
+{
+"absmin" "-401 183 215"
+"absmax" "-367 217 249"
+"solid" "1"
+"origin" "-384 200 232"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t11"
+"targetname" "t10"
+}
+// edict 32
+{
+"absmin" "-633 63 199"
+"absmax" "-599 97 233"
+"solid" "1"
+"origin" "-616 80 216"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t10"
+"targetname" "t9"
+}
+// edict 33
+{
+"absmin" "-921 -145 135"
+"absmax" "-887 -111 169"
+"solid" "1"
+"origin" "-904 -128 152"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t9"
+"targetname" "t8"
+}
+// edict 34
+{
+"absmin" "-1065 103 159"
+"absmax" "-1031 137 193"
+"solid" "1"
+"origin" "-1048 120 176"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t8"
+"targetname" "t7"
+}
+// edict 35
+{
+"absmin" "-905 255 127"
+"absmax" "-871 289 161"
+"solid" "1"
+"origin" "-888 272 144"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t7"
+"targetname" "t6"
+}
+// edict 36
+{
+"absmin" "-257 359 167"
+"absmax" "-223 393 201"
+"solid" "1"
+"origin" "-240 376 184"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t4"
+"targetname" "t3"
+}
+// edict 37
+{
+"absmin" "-505 471 167"
+"absmax" "-471 505 201"
+"solid" "1"
+"origin" "-488 488 184"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t5"
+"targetname" "t4"
+}
+// edict 38
+{
+"absmin" "-697 271 151"
+"absmax" "-663 305 185"
+"solid" "1"
+"origin" "-680 288 168"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t6"
+"targetname" "t5"
+}
+// edict 39
+{
+"absmin" "-361 87 183"
+"absmax" "-327 121 217"
+"solid" "1"
+"origin" "-344 104 200"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t3"
+"targetname" "t2"
+}
+// edict 40
+{
+"absmin" "-705 71 191"
+"absmax" "-671 105 225"
+"solid" "1"
+"origin" "-688 88 208"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t2"
+"targetname" "t1"
+}
+// edict 41
+{
+"modelindex" "65"
+"absmin" "-161 551 5.03125"
+"absmax" "-99 613 63.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "-146 566 6.03125"
+"classname" "item_lava_spikes"
+"model" "maps/b_lnail1.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "ammo_touch"
+"think" "PlaceItem"
+"weapon" "5"
+"netname" "lava nails"
+"flags" "768"
+"spawnflags" "1"
+"mdl" "maps/b_lnail1.bsp"
+"aflag" "50"
+}
+// edict 42
+{
+"modelindex" "66"
+"absmin" "-157 512 5.03125"
+"absmax" "-95 574 63.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "-142 527 6.03125"
+"classname" "item_spikes"
+"model" "maps/b_nail1.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "ammo_touch"
+"think" "PlaceItem"
+"weapon" "2"
+"netname" "nails"
+"flags" "768"
+"spawnflags" "1"
+"mdl" "maps/b_nail1.bsp"
+"aflag" "50"
+}
+// edict 43
+{
+"modelindex" "67"
+"absmin" "-1591 -77 8.03125"
+"absmax" "-1529 -15 66.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "-1576 -62 9.03125"
+"classname" "item_multi_rockets"
+"model" "maps/b_mrock0.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "ammo_touch"
+"think" "PlaceItem"
+"weapon" "6"
+"netname" "multi rockets"
+"flags" "768"
+"mdl" "maps/b_mrock0.bsp"
+"aflag" "5"
+}
+// edict 44
+{
+"origin" "-502 -67 170"
+"classname" "info_player_deathmatch"
+}
+// edict 45
+{
+"origin" "-1621 29 35"
+"classname" "info_player_deathmatch"
+}
+// edict 46
+{
+"origin" "-1051 -272 28"
+"angles" "0 45 0"
+"classname" "info_player_deathmatch"
+}
+// edict 47
+{
+"origin" "-1168 249 33"
+"angles" "0 45 0"
+"classname" "info_player_deathmatch"
+}
+// edict 48
+{
+"origin" "-430 247 55"
+"angles" "0 90 0"
+"classname" "info_player_deathmatch"
+}
+// edict 49
+{
+"modelindex" "67"
+"absmin" "56 220 14.1392088"
+"absmax" "118 282 72.1392059"
+"movetype" "6"
+"solid" "1"
+"origin" "71 235 15.1392088"
+"classname" "item_multi_rockets"
+"model" "maps/b_mrock0.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "ammo_touch"
+"think" "PlaceItem"
+"weapon" "6"
+"netname" "multi rockets"
+"flags" "768"
+"mdl" "maps/b_mrock0.bsp"
+"aflag" "5"
+}
+// edict 50
+{
+"modelindex" "69"
+"absmin" "-103 200 -0.96875"
+"absmax" "-41 262 57.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "-88 215 0.03125"
+"classname" "item_health"
+"model" "maps/b_bh25.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "health_touch"
+"think" "PlaceItem"
+"flags" "768"
+"noise" "items/health1.wav"
+"mdl" "maps/b_bh25.bsp"
+"healamount" "25"
+"healtype" "1"
+}
+// edict 51
+{
+"modelindex" "69"
+"absmin" "-66 197 -0.96875"
+"absmax" "-4 259 57.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "-51 212 0.03125"
+"classname" "item_health"
+"model" "maps/b_bh25.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "health_touch"
+"think" "PlaceItem"
+"flags" "768"
+"noise" "items/health1.wav"
+"mdl" "maps/b_bh25.bsp"
+"healamount" "25"
+"healtype" "1"
+}
+// edict 52
+{
+"modelindex" "66"
+"absmin" "-493 383 29.5001354"
+"absmax" "-431 445 87.5001373"
+"movetype" "6"
+"solid" "1"
+"origin" "-478 398 30.5001354"
+"classname" "item_spikes"
+"model" "maps/b_nail1.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "ammo_touch"
+"think" "PlaceItem"
+"weapon" "2"
+"netname" "nails"
+"flags" "768"
+"spawnflags" "1"
+"mdl" "maps/b_nail1.bsp"
+"aflag" "50"
+}
+// edict 53
+{
+"modelindex" "67"
+"absmin" "-493 426 29.2761879"
+"absmax" "-431 488 87.2761841"
+"movetype" "6"
+"solid" "1"
+"origin" "-478 441 30.2761879"
+"classname" "item_multi_rockets"
+"model" "maps/b_mrock0.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "ammo_touch"
+"think" "PlaceItem"
+"weapon" "6"
+"netname" "multi rockets"
+"flags" "768"
+"mdl" "maps/b_mrock0.bsp"
+"aflag" "5"
+}
+// edict 54
+{
+"modelindex" "70"
+"absmin" "-448 122 30.8594418"
+"absmax" "-386 184 88.8594437"
+"movetype" "6"
+"solid" "1"
+"origin" "-433 137 31.8594418"
+"classname" "item_cells"
+"model" "maps/b_batt0.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "ammo_touch"
+"think" "PlaceItem"
+"weapon" "4"
+"netname" "cells"
+"flags" "768"
+"mdl" "maps/b_batt0.bsp"
+"aflag" "6"
+}
+// edict 55
+{
+"modelindex" "65"
+"absmin" "-444 72 31.03125"
+"absmax" "-382 134 89.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "-429 87 32.03125"
+"classname" "item_lava_spikes"
+"model" "maps/b_lnail1.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "ammo_touch"
+"think" "PlaceItem"
+"weapon" "5"
+"netname" "lava nails"
+"flags" "768"
+"spawnflags" "1"
+"mdl" "maps/b_lnail1.bsp"
+"aflag" "50"
+}
+// edict 56
+{
+"modelindex" "69"
+"absmin" "-1219 -212 -0.96875"
+"absmax" "-1157 -150 57.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "-1204 -197 0.03125"
+"classname" "item_health"
+"model" "maps/b_bh25.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "health_touch"
+"think" "PlaceItem"
+"flags" "768"
+"noise" "items/health1.wav"
+"mdl" "maps/b_bh25.bsp"
+"healamount" "25"
+"healtype" "1"
+}
+// edict 57
+{
+"modelindex" "69"
+"absmin" "-1182 -244 -0.96875"
+"absmax" "-1120 -182 57.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "-1167 -229 0.03125"
+"classname" "item_health"
+"model" "maps/b_bh25.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "health_touch"
+"think" "PlaceItem"
+"flags" "768"
+"noise" "items/health1.wav"
+"mdl" "maps/b_bh25.bsp"
+"healamount" "25"
+"healtype" "1"
+}
+// edict 58
+{
+"modelindex" "71"
+"absmin" "-1153 48 -0.96875"
+"absmax" "-1091 110 57.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "-1122 79 24.03125"
+"classname" "item_powerup_belt"
+"model" "progs/beltup.mdl"
+"mins" "-16 -16 -24"
+"maxs" "16 16 32"
+"size" "32 32 56"
+"touch" "newitems_touch"
+"think" "PlaceItem"
+"netname" "Anti-Grav Belt"
+"flags" "768"
+"noise" "belt/pickup.wav"
+"items2" "128"
+"mdl" "progs/beltup.mdl"
+}
+// edict 59
+{
+"modelindex" "56"
+"absmin" "140 -145 5.03125"
+"absmax" "202 -83 63.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "171 -114 30.03125"
+"classname" "item_powerup_shield"
+"model" "progs/shield.mdl"
+"mins" "-16 -16 -24"
+"maxs" "16 16 32"
+"size" "32 32 56"
+"touch" "newitems_touch"
+"think" "PlaceItem"
+"netname" "Power Shield"
+"flags" "768"
+"noise" "shield/pickup.wav"
+"items2" "64"
+"mdl" "progs/shield.mdl"
+}
+// edict 60
+{
+"modelindex" "72"
+"absmin" "-356 -76 3.2563839"
+"absmax" "-294 -14 61.2563858"
+"movetype" "6"
+"solid" "1"
+"origin" "-341 -61 4.2563839"
+"classname" "item_spikes"
+"model" "maps/b_nail0.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "ammo_touch"
+"think" "PlaceItem"
+"weapon" "2"
+"netname" "nails"
+"flags" "768"
+"mdl" "maps/b_nail0.bsp"
+"aflag" "25"
+}
+// edict 61
+{
+"modelindex" "73"
+"absmin" "-302 -116 5.03125"
+"absmax" "-240 -54 63.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "-287 -101 6.03125"
+"classname" "item_shells"
+"model" "maps/b_shell1.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "ammo_touch"
+"think" "PlaceItem"
+"weapon" "1"
+"netname" "shells"
+"flags" "768"
+"spawnflags" "1"
+"mdl" "maps/b_shell1.bsp"
+"aflag" "40"
+}
+// edict 62
+{
+"modelindex" "74"
+"absmin" "-162 599 119.03125"
+"absmax" "-100 661 177.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "-147 614 120.03125"
+"classname" "item_plasma"
+"model" "maps/b_plas1.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "ammo_touch"
+"think" "PlaceItem"
+"weapon" "7"
+"netname" "plasma"
+"flags" "768"
+"spawnflags" "1"
+"mdl" "maps/b_plas1.bsp"
+"aflag" "12"
+}
+// edict 63
+{
+"modelindex" "75"
+"absmin" "-535 -139 143.03125"
+"absmax" "-473 -77 201.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "-520 -124 144.03125"
+"classname" "item_plasma"
+"model" "maps/b_plas0.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "ammo_touch"
+"think" "PlaceItem"
+"weapon" "7"
+"netname" "plasma"
+"flags" "768"
+"mdl" "maps/b_plas0.bsp"
+"aflag" "6"
+}
+// edict 64
+{
+"modelindex" "69"
+"absmin" "-459 -139 143.03125"
+"absmax" "-397 -77 201.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "-444 -124 144.03125"
+"classname" "item_health"
+"model" "maps/b_bh25.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "health_touch"
+"think" "PlaceItem"
+"flags" "768"
+"noise" "items/health1.wav"
+"mdl" "maps/b_bh25.bsp"
+"healamount" "25"
+"healtype" "1"
+}
+// edict 65
+{
+"modelindex" "69"
+"absmin" "-495 -139 143.03125"
+"absmax" "-433 -77 201.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "-480 -124 144.03125"
+"classname" "item_health"
+"model" "maps/b_bh25.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "health_touch"
+"think" "PlaceItem"
+"flags" "768"
+"noise" "items/health1.wav"
+"mdl" "maps/b_bh25.bsp"
+"healamount" "25"
+"healtype" "1"
+}
+// edict 66
+{
+"modelindex" "76"
+"absmin" "-399 -127 143.03125"
+"absmax" "-337 -65 201.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "-368 -96 144.03125"
+"classname" "weapon_nailgun"
+"model" "progs/g_nail.mdl"
+"mins" "-16 -16 0"
+"maxs" "16 16 56"
+"size" "32 32 56"
+"touch" "weapon_touch"
+"think" "PlaceItem"
+"weapon" "4"
+"netname" "nailgun"
+"flags" "768"
+"mdl" "progs/g_nail.mdl"
+}
+// edict 67
+{
+"modelindex" "77"
+"absmin" "-963 457 -0.96875"
+"absmax" "-901 519 57.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "-932 488 0.03125"
+"classname" "weapon_grenadelauncher"
+"model" "progs/g_rock.mdl"
+"mins" "-16 -16 0"
+"maxs" "16 16 56"
+"size" "32 32 56"
+"touch" "weapon_touch"
+"think" "PlaceItem"
+"weapon" "3"
+"netname" "Grenade Launcher"
+"flags" "768"
+"mdl" "progs/g_rock.mdl"
+}
+// edict 68
+{
+"modelindex" "78"
+"absmin" "-455 265 30.114687"
+"absmax" "-393 327 88.1146851"
+"movetype" "6"
+"solid" "1"
+"origin" "-424 296 31.114687"
+"classname" "weapon_rocketlauncher"
+"model" "progs/g_rock2.mdl"
+"mins" "-16 -16 0"
+"maxs" "16 16 56"
+"size" "32 32 56"
+"touch" "weapon_touch"
+"think" "PlaceItem"
+"weapon" "3"
+"netname" "Rocket Launcher"
+"flags" "768"
+"mdl" "progs/g_rock2.mdl"
+}
+// edict 69
+{
+"modelindex" "79"
+"absmin" "-155 549 119.03125"
+"absmax" "-93 611 177.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "-140 564 120.03125"
+"classname" "item_health"
+"model" "maps/b_bh100.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "health_touch"
+"think" "PlaceItem"
+"flags" "768"
+"spawnflags" "2"
+"noise" "items/r_item2.wav"
+"mdl" "maps/b_bh100.bsp"
+"healamount" "100"
+"healtype" "2"
+}
+// edict 70
+{
+"modelindex" "69"
+"absmin" "-695 529 -0.96875"
+"absmax" "-633 591 57.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "-680 544 0.03125"
+"classname" "item_health"
+"model" "maps/b_bh25.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "health_touch"
+"think" "PlaceItem"
+"flags" "768"
+"noise" "items/health1.wav"
+"mdl" "maps/b_bh25.bsp"
+"healamount" "25"
+"healtype" "1"
+}
+// edict 71
+{
+"modelindex" "69"
+"absmin" "-891 385 -0.96875"
+"absmax" "-829 447 57.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "-876 400 0.03125"
+"classname" "item_health"
+"model" "maps/b_bh25.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "health_touch"
+"think" "PlaceItem"
+"flags" "768"
+"noise" "items/health1.wav"
+"mdl" "maps/b_bh25.bsp"
+"healamount" "25"
+"healtype" "1"
+}
+// edict 72
+{
+"modelindex" "67"
+"absmin" "-1647 -139 8.03125"
+"absmax" "-1585 -77 66.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "-1632 -124 9.03125"
+"classname" "item_multi_rockets"
+"model" "maps/b_mrock0.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "ammo_touch"
+"think" "PlaceItem"
+"weapon" "6"
+"netname" "multi rockets"
+"flags" "768"
+"mdl" "maps/b_mrock0.bsp"
+"aflag" "5"
+}
+// edict 73
+{
+"modelindex" "65"
+"absmin" "-1685 -139 8.03125"
+"absmax" "-1623 -77 66.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "-1670 -124 9.03125"
+"classname" "item_lava_spikes"
+"model" "maps/b_lnail1.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "ammo_touch"
+"think" "PlaceItem"
+"weapon" "5"
+"netname" "lava nails"
+"flags" "768"
+"spawnflags" "1"
+"mdl" "maps/b_lnail1.bsp"
+"aflag" "50"
+}
+// edict 74
+{
+"modelindex" "69"
+"absmin" "-1733 167 8.03125"
+"absmax" "-1671 229 66.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "-1718 182 9.03125"
+"classname" "item_health"
+"model" "maps/b_bh25.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "health_touch"
+"think" "PlaceItem"
+"flags" "768"
+"noise" "items/health1.wav"
+"mdl" "maps/b_bh25.bsp"
+"healamount" "25"
+"healtype" "1"
+}
+// edict 75
+{
+"modelindex" "69"
+"absmin" "-1697 167 8.03125"
+"absmax" "-1635 229 66.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "-1682 182 9.03125"
+"classname" "item_health"
+"model" "maps/b_bh25.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "health_touch"
+"think" "PlaceItem"
+"flags" "768"
+"noise" "items/health1.wav"
+"mdl" "maps/b_bh25.bsp"
+"healamount" "25"
+"healtype" "1"
+}
+// edict 76
+{
+"modelindex" "80"
+"absmin" "-1591 99 8.03125"
+"absmax" "-1529 161 66.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "-1560 130 9.03125"
+"classname" "weapon_lightning"
+"model" "progs/g_light.mdl"
+"mins" "-16 -16 0"
+"maxs" "16 16 56"
+"size" "32 32 56"
+"touch" "weapon_touch"
+"think" "PlaceItem"
+"weapon" "3"
+"netname" "Thunderbolt"
+"flags" "768"
+"mdl" "progs/g_light.mdl"
+}
+// edict 77
+{
+"modelindex" "81"
+"absmin" "-1571 -3 8.03125"
+"absmax" "-1509 59 66.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "-1540 28 9.03125"
+"classname" "item_armor2"
+"model" "progs/armor.mdl"
+"skin" "1"
+"mins" "-16 -16 0"
+"maxs" "16 16 56"
+"size" "32 32 56"
+"touch" "armor_touch"
+"think" "PlaceItem"
+"flags" "768"
+"mdl" "progs/armor.mdl"
+}
+// edict 78
+{
+"absmin" "-1313 -47 9"
+"absmax" "-1295 141 113"
+"solid" "1"
+"classname" "trigger_once"
+"model" ""
+"mins" "-1312 -46 10"
+"maxs" "-1296 140 112"
+"size" "16 186 102"
+"touch" "multi_touch"
+"use" "multi_use"
+"target" "t18"
+"wait" "-1"
+}
+// edict 79
+{
+"origin" "-1814 36 96"
+"classname" "info_player_start"
+}
+// edict 80
+{
+"modelindex" "82"
+"absmin" "-1441 7 231"
+"absmax" "-1375 73 321"
+"movetype" "4"
+"solid" "3"
+"origin" "-1408 40 256"
+"velocity" "0 0 -80"
+"classname" "monster_dragon"
+"model" "progs/dragon.mdl"
+"mins" "-32 -32 -24"
+"maxs" "32 32 64"
+"size" "64 64 88"
+"use" "dragon_use"
+"think" "dragon_activate"
+"health" "5000"
+"takedamage" "2"
+"view_ofs" "0 0 25"
+"flags" "33"
+"waterlevel" "1"
+"watertype" "-1"
+"yaw_speed" "10"
+"goalentity" "81"
+"spawnflags" "1"
+"target" "a1"
+"targetname" "t18"
+"th_run" "dragon_walk1"
+"th_pain" "dragon_pain"
+"th_die" "dragon_death1"
+"movetarget" "81"
+"playerInRoom" "1"
+"dragonInRoom" "1"
+"dragonPainSequence" "1"
+}
+// edict 81
+{
+"absmin" "-1153 15 207"
+"absmax" "-1119 49 241"
+"solid" "1"
+"origin" "-1136 32 224"
+"classname" "dragon_corner"
+"model" ""
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"touch" "dragon_corner_touch"
+"target" "t1"
+"targetname" "a1"
+}
+// edict 82
+{
+"absmin" "-957 159 243"
+"absmax" "-955 161 245"
+"origin" "-956 160 244"
+"classname" "earthquake"
+"think" "start_earthquake"
+"nextthink" "16.8014317"
+"weapon" "150"
+"spawnflags" "1"
+"targetname" "t17"
+"wait" "60"
+"delay" "20"
+}
+// edict 83
+{
+"origin" "214 -165 31"
+"angles" "0 135 0"
+"classname" "info_player_deathmatch"
+}
+// edict 84
+{
+"origin" "-74 -165 31"
+"angles" "0 180 0"
+"classname" "info_player_deathmatch"
+}
+// edict 85
+{
+"absmin" "675 767 7"
+"absmax" "1093 1057 33"
+"solid" "1"
+"classname" "trigger_earthquake"
+"model" ""
+"mins" "676 768 8"
+"maxs" "1092 1056 32"
+"size" "416 288 24"
+"touch" "earthquake_touch"
+"use" "earthquake_use"
+"weapon" "75"
+"targetname" "t673"
+}
+// edict 86
+{
+"absmin" "851 207 55"
+"absmax" "869 225 73"
+"solid" "1"
+"origin" "860 216 64"
+"classname" "path_corner"
+"mins" "-8 -8 -8"
+"maxs" "8 8 8"
+"size" "16 16 16"
+"touch" "t_movetarget"
+"targetname" "endpoint2"
+}
+// edict 87
+{
+"absmin" "851 351 55"
+"absmax" "869 369 73"
+"solid" "1"
+"origin" "860 360 64"
+"classname" "path_corner"
+"mins" "-8 -8 -8"
+"maxs" "8 8 8"
+"size" "16 16 16"
+"touch" "t_movetarget"
+"target" "endpoint2"
+"targetname" "point2"
+}
+// edict 88
+{
+"absmin" "875 1063 23"
+"absmax" "893 1081 41"
+"solid" "1"
+"origin" "884 1072 32"
+"classname" "path_corner"
+"mins" "-8 -8 -8"
+"maxs" "8 8 8"
+"size" "16 16 16"
+"touch" "t_movetarget"
+"targetname" "endpoint1"
+}
+// edict 89
+{
+"absmin" "875 975 23"
+"absmax" "893 993 41"
+"solid" "1"
+"origin" "884 984 32"
+"classname" "path_corner"
+"mins" "-8 -8 -8"
+"maxs" "8 8 8"
+"size" "16 16 16"
+"touch" "t_movetarget"
+"target" "endpoint1"
+"targetname" "point1"
+}
+// edict 90
+{
+"modelindex" "4"
+"absmin" "779 719 -1"
+"absmax" "880 761 113"
+"ltime" "0.100000001"
+"movetype" "7"
+"solid" "4"
+"classname" "door"
+"model" "*3"
+"mins" "780 720 0"
+"maxs" "879 760 112"
+"size" "99 40 112"
+"touch" "door_touch"
+"use" "door_use"
+"think" "LinkDoors"
+"blocked" "door_blocked"
+"enemy" "91"
+"spawnflags" "2048"
+"targetname" "t674"
+"owner" "90"
+"movedir" "-1 1.22464685e-16 -0"
+"noise1" "misc/null.wav"
+"noise2" "misc/null.wav"
+"noise3" "doors/medtry.wav"
+"speed" "100"
+"wait" "-1"
+"noise4" "doors/meduse.wav"
+"dmg" "2"
+"lip" "8"
+"state" "1"
+"pos2" "-91 1.11442863e-14 0"
+}
+// edict 91
+{
+"modelindex" "5"
+"absmin" "843 719 -1"
+"absmax" "925 761 145"
+"ltime" "0.100000001"
+"movetype" "7"
+"solid" "4"
+"classname" "door"
+"model" "*4"
+"mins" "844 720 0"
+"maxs" "924 760 144"
+"size" "80 40 144"
+"touch" "door_touch"
+"use" "door_use"
+"think" "LinkDoors"
+"blocked" "door_blocked"
+"enemy" "92"
+"spawnflags" "2048"
+"targetname" "t674"
+"owner" "90"
+"movedir" "0 0 1"
+"noise1" "misc/null.wav"
+"noise2" "misc/null.wav"
+"noise3" "doors/medtry.wav"
+"speed" "100"
+"wait" "-1"
+"noise4" "doors/meduse.wav"
+"dmg" "2"
+"lip" "8"
+"state" "1"
+"pos2" "0 0 136"
+}
+// edict 92
+{
+"modelindex" "6"
+"absmin" "888 719 -1"
+"absmax" "989 761 113"
+"ltime" "0.100000001"
+"movetype" "7"
+"solid" "4"
+"classname" "door"
+"model" "*5"
+"mins" "889 720 0"
+"maxs" "988 760 112"
+"size" "99 40 112"
+"touch" "door_touch"
+"use" "door_use"
+"think" "LinkDoors"
+"blocked" "door_blocked"
+"enemy" "90"
+"spawnflags" "2048"
+"targetname" "t674"
+"owner" "90"
+"movedir" "1 0 -0"
+"noise1" "misc/null.wav"
+"noise2" "misc/null.wav"
+"noise3" "doors/medtry.wav"
+"speed" "100"
+"wait" "-1"
+"noise4" "doors/meduse.wav"
+"dmg" "2"
+"lip" "8"
+"state" "1"
+"pos2" "91 0 0"
+}
+// edict 93
+{
+"modelindex" "7"
+"absmin" "1067 667 43"
+"absmax" "1145 685 169"
+"movetype" "7"
+"solid" "4"
+"classname" "func_wall"
+"model" "*6"
+"mins" "1068 668 44"
+"maxs" "1144 684 168"
+"size" "76 16 124"
+"use" "func_wall_use"
+"spawnflags" "2048"
+"targetname" "rome"
+}
+// edict 94
+{
+"modelindex" "8"
+"absmin" "615 667 43"
+"absmax" "693 685 169"
+"movetype" "7"
+"solid" "4"
+"classname" "func_wall"
+"model" "*7"
+"mins" "616 668 44"
+"maxs" "692 684 168"
+"size" "76 16 124"
+"use" "func_wall_use"
+"spawnflags" "2048"
+"targetname" "egypt"
+}
+// edict 95
+{
+"origin" "956 700 44"
+"classname" "info_notnull"
+"targetname" "cameraview"
+}
+// edict 96
+{
+"modelindex" "9"
+"absmin" "1183 279 31"
+"absmax" "1201 313 65"
+"movetype" "7"
+"solid" "4"
+"classname" "func_button"
+"model" "*8"
+"mins" "1184 280 32"
+"maxs" "1200 312 64"
+"size" "16 32 32"
+"touch" "button_touch"
+"use" "button_use"
+"blocked" "button_blocked"
+"target" "t677"
+"movedir" "1 0 -0"
+"noise" "buttons/airbut1.wav"
+"speed" "40"
+"wait" "-1"
+"lip" "4"
+"state" "1"
+"pos2" "12 0 0"
+}
+// edict 97
+{
+"modelindex" "10"
+"absmin" "1183 423 31"
+"absmax" "1201 457 65"
+"movetype" "7"
+"solid" "4"
+"classname" "func_button"
+"model" "*9"
+"mins" "1184 424 32"
+"maxs" "1200 456 64"
+"size" "16 32 32"
+"touch" "button_touch"
+"use" "button_use"
+"blocked" "button_blocked"
+"target" "t676"
+"movedir" "1 0 -0"
+"noise" "buttons/airbut1.wav"
+"speed" "40"
+"wait" "-1"
+"lip" "4"
+"state" "1"
+"pos2" "12 0 0"
+}
+// edict 98
+{
+"modelindex" "11"
+"absmin" "543 263 23"
+"absmax" "561 297 57"
+"movetype" "7"
+"solid" "4"
+"classname" "func_button"
+"model" "*10"
+"mins" "544 264 24"
+"maxs" "560 296 56"
+"size" "16 32 32"
+"touch" "button_touch"
+"use" "button_use"
+"blocked" "button_blocked"
+"target" "t678"
+"movedir" "-1 1.22464685e-16 -0"
+"noise" "buttons/airbut1.wav"
+"speed" "40"
+"wait" "-1"
+"lip" "4"
+"state" "1"
+"pos2" "-12 1.46957622e-15 0"
+}
+// edict 99
+{
+"modelindex" "12"
+"absmin" "543 407 23"
+"absmax" "561 441 57"
+"movetype" "7"
+"solid" "4"
+"classname" "func_button"
+"model" "*11"
+"mins" "544 408 24"
+"maxs" "560 440 56"
+"size" "16 32 32"
+"touch" "button_touch"
+"use" "button_use"
+"blocked" "button_blocked"
+"target" "t679"
+"movedir" "-1 1.22464685e-16 -0"
+"noise" "buttons/airbut1.wav"
+"speed" "40"
+"wait" "-1"
+"lip" "4"
+"state" "1"
+"pos2" "-12 1.46957622e-15 0"
+}
+// edict 100
+{
+"classname" "trigger_counter"
+"model" "*12"
+"use" "counter_use"
+"target" "t674"
+"targetname" "t675"
+"wait" "-1"
+"count" "4"
+}
+// edict 101
+{
+"solid" "2"
+"origin" "1103 678 112"
+"classname" "ltrail_start"
+"use" "ltrail_start_fire"
+"frags" "0.300000012"
+"weapon" "1"
+"currentammo" "25"
+"target" "t680"
+"targetname" "t677"
+"ltrailLastUsed" "1"
+}
+// edict 102
+{
+"solid" "2"
+"origin" "784 664 215"
+"classname" "ltrail_start"
+"use" "ltrail_start_fire"
+"frags" "0.300000012"
+"weapon" "1"
+"currentammo" "25"
+"target" "t680"
+"targetname" "t678"
+"ltrailLastUsed" "1"
+}
+// edict 103
+{
+"solid" "2"
+"origin" "655 671 113"
+"classname" "ltrail_start"
+"use" "ltrail_start_fire"
+"frags" "0.300000012"
+"weapon" "1"
+"currentammo" "25"
+"target" "t680"
+"targetname" "t679"
+"ltrailLastUsed" "1"
+}
+// edict 104
+{
+"solid" "2"
+"origin" "980 652 221"
+"classname" "ltrail_start"
+"use" "ltrail_start_fire"
+"frags" "0.300000012"
+"weapon" "1"
+"currentammo" "25"
+"target" "t680"
+"targetname" "t676"
+"ltrailLastUsed" "1"
+}
+// edict 105
+{
+"solid" "2"
+"origin" "865 495 287"
+"classname" "ltrail_end"
+"use" "ltrail_start_fire"
+"frags" "0.300000012"
+"weapon" "0.300000012"
+"currentammo" "25"
+"targetname" "t680"
+}
+// edict 106
+{
+"modelindex" "14"
+"absmin" "831 454 -398"
+"absmax" "897 577 -183"
+"ltime" "0.100000001"
+"movetype" "7"
+"solid" "4"
+"origin" "0 0 -205"
+"classname" "door"
+"model" "*13"
+"mins" "832 455 -192"
+"maxs" "896 576 21"
+"size" "64 121 213"
+"touch" "door_touch"
+"use" "door_use"
+"think" "LinkDoors"
+"blocked" "door_blocked"
+"enemy" "139"
+"spawnflags" "1"
+"targetname" "timepod"
+"owner" "106"
+"movedir" "0 0 -1"
+"noise1" "misc/null.wav"
+"noise2" "misc/null.wav"
+"noise3" "doors/medtry.wav"
+"speed" "100"
+"wait" "-1"
+"noise4" "doors/meduse.wav"
+"dmg" "2"
+"lip" "8"
+"state" "1"
+"pos1" "0 0 -205"
+}
+// edict 107
+{
+"modelindex" "87"
+"absmin" "823 1327 163"
+"absmax" "953 1457 309"
+"movetype" "5"
+"solid" "3"
+"origin" "888 1392 308"
+"angles" "0 109.500099 0"
+"avelocity" "0 60 0"
+"classname" "item_time_machine"
+"model" "progs/timemach.mdl"
+"mins" "-64 -64 -144"
+"maxs" "64 64 0"
+"size" "128 128 144"
+"health" "1600"
+"takedamage" "1"
+"view_ofs" "0 0 25"
+"flags" "32"
+"waterlevel" "-2"
+"watertype" "-1"
+"target" "t673"
+"targetname" "machine"
+"th_stand" "SUB_Null"
+"th_walk" "SUB_Null"
+"th_run" "SUB_Null"
+"th_missile" "SUB_Null"
+"th_pain" "time_pain"
+"th_die" "time_pain"
+}
+// edict 108
+{
+"modelindex" "89"
+"absmin" "871 1379 91"
+"absmax" "905 1413 125"
+"movetype" "5"
+"origin" "888 1396 108"
+"angles" "109.500099 109.500099 109.500099"
+"avelocity" "60 60 60"
+"classname" "item_time_core"
+"model" "progs/timecore.mdl"
+"mins" "-16 -16 -16"
+"maxs" "16 16 16"
+"size" "32 32 32"
+"waterlevel" "-1"
+"watertype" "-1"
+}
+// edict 109
+{
+"solid" "2"
+"origin" "1208 1352 -76"
+"classname" "ltrail_start"
+"use" "ltrail_start_fire"
+"think" "ltrail_fire"
+"nextthink" "2.85009837"
+"frags" "0.300000012"
+"weapon" "0.300000012"
+"currentammo" "25"
+"items" "100000000"
+"spawnflags" "2050"
+"target" "t672"
+"ltrailLastUsed" "1"
+}
+// edict 110
+{
+"solid" "2"
+"origin" "884 1680 -76"
+"classname" "ltrail_start"
+"use" "ltrail_start_fire"
+"think" "ltrail_fire"
+"nextthink" "2.85009837"
+"frags" "0.300000012"
+"weapon" "0.300000012"
+"currentammo" "25"
+"items" "100000000"
+"spawnflags" "2050"
+"target" "t672"
+"ltrailLastUsed" "1"
+}
+// edict 111
+{
+"solid" "2"
+"origin" "536 1352 -78"
+"classname" "ltrail_start"
+"use" "ltrail_start_fire"
+"think" "ltrail_fire"
+"nextthink" "2.85009837"
+"frags" "0.300000012"
+"weapon" "0.300000012"
+"currentammo" "25"
+"items" "100000000"
+"spawnflags" "2050"
+"target" "t672"
+"ltrailLastUsed" "1"
+}
+// edict 112
+{
+"solid" "2"
+"origin" "888 1398 104"
+"classname" "ltrail_end"
+"use" "ltrail_start_fire"
+"frags" "0.300000012"
+"weapon" "0.300000012"
+"currentammo" "25"
+"targetname" "t672"
+}
+// edict 113
+{
+"modelindex" "15"
+"absmin" "743 635 139"
+"absmax" "821 701 265"
+"movetype" "7"
+"solid" "4"
+"classname" "func_wall"
+"model" "*14"
+"mins" "744 636 140"
+"maxs" "820 700 264"
+"size" "76 64 124"
+"use" "func_wall_use"
+"spawnflags" "2048"
+"targetname" "wrath"
+}
+// edict 114
+{
+"modelindex" "16"
+"absmin" "939 635 139"
+"absmax" "1017 701 265"
+"movetype" "7"
+"solid" "4"
+"classname" "func_wall"
+"model" "*15"
+"mins" "940 636 140"
+"maxs" "1016 700 264"
+"size" "76 64 124"
+"use" "func_wall_use"
+"spawnflags" "2048"
+"targetname" "Aztec"
+}
+// edict 115
+{
+"origin" "1044 620 148"
+"classname" "trigger_relay"
+"use" "SUB_UseTargets"
+"targetname" "t676"
+"killtarget" "Aztec"
+}
+// edict 116
+{
+"origin" "1088 632 148"
+"classname" "trigger_relay"
+"use" "SUB_UseTargets"
+"targetname" "t677"
+"killtarget" "rome"
+}
+// edict 117
+{
+"origin" "644 624 148"
+"classname" "trigger_relay"
+"use" "SUB_UseTargets"
+"targetname" "t679"
+"killtarget" "egypt"
+}
+// edict 118
+{
+"origin" "772 592 148"
+"classname" "trigger_relay"
+"use" "SUB_UseTargets"
+"targetname" "t678"
+"killtarget" "wrath"
+}
+// edict 119
+{
+"origin" "1096 452 148"
+"classname" "trigger_relay"
+"use" "SUB_UseTargets"
+"target" "t675"
+"targetname" "t676"
+}
+// edict 120
+{
+"origin" "1112 296 148"
+"classname" "trigger_relay"
+"use" "SUB_UseTargets"
+"target" "t675"
+"targetname" "t677"
+}
+// edict 121
+{
+"origin" "648 284 148"
+"classname" "trigger_relay"
+"use" "SUB_UseTargets"
+"target" "t675"
+"targetname" "t678"
+}
+// edict 122
+{
+"origin" "644 412 148"
+"classname" "trigger_relay"
+"use" "SUB_UseTargets"
+"target" "t675"
+"targetname" "t679"
+}
+// edict 123
+{
+"origin" "864 -304 24"
+"angles" "0 90 0"
+"classname" "info_player_deathmatch"
+}
+// edict 124
+{
+"origin" "400 -512 24"
+"angles" "0 180 0"
+"classname" "info_player_deathmatch"
+}
+// edict 125
+{
+"origin" "1072 88 24"
+"angles" "0 90 0"
+"classname" "info_player_deathmatch"
+}
+// edict 126
+{
+"origin" "640 600 24"
+"angles" "0 315 0"
+"classname" "info_player_deathmatch"
+}
+// edict 127
+{
+"origin" "824 920 24"
+"classname" "info_player_deathmatch"
+}
+// edict 128
+{
+"origin" "48 -512 24"
+"angles" "0 90 0"
+"classname" "info_player_deathmatch"
+}
+// edict 129
+{
+"absmin" "167 -577 -1"
+"absmax" "185 -447 97"
+"solid" "1"
+"classname" "trigger_earthquake_kill"
+"model" ""
+"mins" "168 -576 0"
+"maxs" "184 -448 96"
+"size" "16 128 96"
+"touch" "kill_earthquake"
+}
+// edict 130
+{
+"origin" "-488 608 24"
+"angles" "0 270 0"
+"classname" "info_player_deathmatch"
+}
+// edict 131
+{
+"origin" "656 64 24"
+"classname" "info_player_deathmatch"
+}
+// edict 132
+{
+"origin" "1088 576 24"
+"angles" "0 270 0"
+"classname" "info_player_deathmatch"
+}
+// edict 133
+{
+"modelindex" "18"
+"absmin" "-1 -281 -1"
+"absmax" "97 -263 129"
+"ltime" "0.100000001"
+"movetype" "7"
+"solid" "4"
+"classname" "door"
+"model" "*17"
+"mins" "0 -280 0"
+"maxs" "96 -264 128"
+"size" "96 16 128"
+"touch" "door_touch"
+"use" "door_use"
+"think" "LinkDoors"
+"blocked" "door_blocked"
+"enemy" "133"
+"spawnflags" "2048"
+"targetname" "dragondoor"
+"owner" "133"
+"movedir" "0 0 1"
+"sounds" "1"
+"noise1" "doors/drclos4.wav"
+"noise2" "doors/doormv1.wav"
+"noise3" "doors/medtry.wav"
+"speed" "100"
+"wait" "-1"
+"noise4" "doors/meduse.wav"
+"dmg" "2"
+"lip" "24"
+"state" "1"
+"pos2" "0 0 104"
+}
+// edict 134
+{
+"modelindex" "90"
+"absmin" "777 945 -0.96875"
+"absmax" "839 1007 57.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "792 960 0.03125"
+"classname" "item_multi_rockets"
+"model" "maps/b_mrock1.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "ammo_touch"
+"think" "PlaceItem"
+"weapon" "6"
+"netname" "multi rockets"
+"flags" "768"
+"spawnflags" "1"
+"mdl" "maps/b_mrock1.bsp"
+"aflag" "10"
+}
+// edict 135
+{
+"modelindex" "65"
+"absmin" "977 809 -0.96875"
+"absmax" "1039 871 57.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "992 824 0.03125"
+"classname" "item_lava_spikes"
+"model" "maps/b_lnail1.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "ammo_touch"
+"think" "PlaceItem"
+"weapon" "5"
+"netname" "lava nails"
+"flags" "768"
+"spawnflags" "1"
+"mdl" "maps/b_lnail1.bsp"
+"aflag" "50"
+}
+// edict 136
+{
+"modelindex" "74"
+"absmin" "737 841 -0.96875"
+"absmax" "799 903 57.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "752 856 0.03125"
+"classname" "item_plasma"
+"model" "maps/b_plas1.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "ammo_touch"
+"think" "PlaceItem"
+"weapon" "7"
+"netname" "plasma"
+"flags" "768"
+"spawnflags" "1"
+"mdl" "maps/b_plas1.bsp"
+"aflag" "12"
+}
+// edict 137
+{
+"absmin" "751 799 -1"
+"absmax" "1017 841 137"
+"solid" "1"
+"classname" "trigger_once"
+"model" ""
+"mins" "752 800 0"
+"maxs" "1016 840 136"
+"size" "264 40 136"
+"touch" "multi_touch"
+"use" "multi_use"
+"spawnflags" "2048"
+"message" "Destroy the Temporal Energy Converter!"
+"wait" "-1"
+}
+// edict 138
+{
+"modelindex" "91"
+"absmin" "953 889 -0.96875"
+"absmax" "1015 951 57.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "968 904 0.03125"
+"classname" "item_rockets"
+"model" "maps/b_rock1.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "ammo_touch"
+"think" "PlaceItem"
+"weapon" "3"
+"netname" "rockets"
+"flags" "768"
+"spawnflags" "1"
+"mdl" "maps/b_rock1.bsp"
+"aflag" "10"
+}
+// edict 139
+{
+"modelindex" "21"
+"absmin" "763 259 7"
+"absmax" "965 461 305"
+"ltime" "0.100000001"
+"movetype" "7"
+"solid" "4"
+"classname" "door"
+"model" "*20"
+"mins" "764 260 8"
+"maxs" "964 460 304"
+"size" "200 200 296"
+"touch" "door_touch"
+"use" "door_use"
+"think" "LinkDoors"
+"blocked" "door_blocked"
+"enemy" "106"
+"spawnflags" "2048"
+"targetname" "timepod"
+"owner" "106"
+"movedir" "0 0 1"
+"sounds" "2"
+"noise1" "doors/hydro2.wav"
+"noise2" "doors/hydro1.wav"
+"noise3" "doors/medtry.wav"
+"speed" "100"
+"wait" "20"
+"noise4" "doors/meduse.wav"
+"dmg" "2"
+"lip" "200"
+"state" "1"
+"pos2" "0 0 96"
+}
+// edict 140
+{
+"modelindex" "92"
+"absmin" "-1591 57 8.03125"
+"absmax" "-1529 119 66.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "-1576 72 9.03125"
+"classname" "item_cells"
+"model" "maps/b_batt1.bsp"
+"maxs" "32 32 56"
+"size" "32 32 56"
+"touch" "ammo_touch"
+"think" "PlaceItem"
+"weapon" "4"
+"netname" "cells"
+"flags" "768"
+"spawnflags" "1"
+"mdl" "maps/b_batt1.bsp"
+"aflag" "12"
+}
+// edict 141
+{
+"modelindex" "93"
+"absmin" "-1599 -119 8.03125"
+"absmax" "-1537 -57 66.03125"
+"movetype" "6"
+"solid" "1"
+"origin" "-1568 -88 9.03125"
+"classname" "weapon_supernailgun"
+"model" "progs/g_nail2.mdl"
+"mins" "-16 -16 0"
+"maxs" "16 16 56"
+"size" "32 32 56"
+"touch" "weapon_touch"
+"think" "PlaceItem"
+"weapon" "8"
+"netname" "Super Nailgun"
+"flags" "768"
+"mdl" "progs/g_nail2.mdl"
+}
+// edict 142
+{
+"origin" "-1704 128 32"
+"classname" "info_player_coop"
+}
+// edict 143
+{
+"origin" "-1680 72 32"
+"classname" "info_player_coop"
+}
+// edict 144
+{
+"origin" "-1712 24 32"
+"classname" "info_player_coop"
+}
+// edict 145
+{
+"origin" "-1672 -32 32"
+"classname" "info_player_coop"
+}
+// edict 146
+{
+"origin" "-1712 -72 32"
+"classname" "info_player_coop"
+}
+// edict 147
+{
+"origin" "1104 272 192"
+"classname" "info_intermission"
+"mangle" "25 135 0"
+}
+/*
+// DarkPlaces extended savegame
+sv.lightstyles 0 m
+sv.lightstyles 1 mmnmmommommnonmmonqnmmo
+sv.lightstyles 2 abcdefghijklmnopqrstuvwxyzyxwvutsrqponmlkjihgfedcba
+sv.lightstyles 3 mmmmmaaaaammmmmaaaaaabcdefgabcdefg
+sv.lightstyles 4 mamamamamama
+sv.lightstyles 5 jklmnopqrstuvwxyzyxwvutsrqponmlkj
+sv.lightstyles 6 nmonqnmomnmomomno
+sv.lightstyles 7 mmmaaaabcdefgmmmmaaaammmaamm
+sv.lightstyles 8 mmmaaammmaaammmabcdefaaaammmmabcdefmmmaaaa
+sv.lightstyles 9 aaaaaaaazzzzzzzz
+sv.lightstyles 10 mmamammmmammamamaaamammma
+sv.lightstyles 11 abcdefghijklmnopqrrqponmlkjihgfedcba
+sv.lightstyles 63 a
+sv.model_precache 1 maps/r2m8.bsp
+sv.model_precache 2 *1
+sv.model_precache 3 *2
+sv.model_precache 4 *3
+sv.model_precache 5 *4
+sv.model_precache 6 *5
+sv.model_precache 7 *6
+sv.model_precache 8 *7
+sv.model_precache 9 *8
+sv.model_precache 10 *9
+sv.model_precache 11 *10
+sv.model_precache 12 *11
+sv.model_precache 13 *12
+sv.model_precache 14 *13
+sv.model_precache 15 *14
+sv.model_precache 16 *15
+sv.model_precache 17 *16
+sv.model_precache 18 *17
+sv.model_precache 19 *18
+sv.model_precache 20 *19
+sv.model_precache 21 *20
+sv.model_precache 22 *21
+sv.model_precache 23 *22
+sv.model_precache 24 *23
+sv.model_precache 25 progs/player.mdl
+sv.model_precache 26 progs/eyes.mdl
+sv.model_precache 27 progs/h_player.mdl
+sv.model_precache 28 progs/gib1.mdl
+sv.model_precache 29 progs/gib2.mdl
+sv.model_precache 30 progs/gib3.mdl
+sv.model_precache 31 progs/s_bubble.spr
+sv.model_precache 32 progs/s_explod.spr
+sv.model_precache 33 progs/v_axe.mdl
+sv.model_precache 34 progs/v_shot.mdl
+sv.model_precache 35 progs/v_nail.mdl
+sv.model_precache 36 progs/v_rock.mdl
+sv.model_precache 37 progs/v_shot2.mdl
+sv.model_precache 38 progs/v_nail2.mdl
+sv.model_precache 39 progs/v_rock2.mdl
+sv.model_precache 40 progs/v_lava.mdl
+sv.model_precache 41 progs/v_lava2.mdl
+sv.model_precache 42 progs/v_multi.mdl
+sv.model_precache 43 progs/v_multi2.mdl
+sv.model_precache 44 progs/bolt.mdl
+sv.model_precache 45 progs/bolt2.mdl
+sv.model_precache 46 progs/bolt3.mdl
+sv.model_precache 47 progs/lavaball.mdl
+sv.model_precache 48 progs/missile.mdl
+sv.model_precache 49 progs/grenade.mdl
+sv.model_precache 50 progs/spike.mdl
+sv.model_precache 51 progs/s_spike.mdl
+sv.model_precache 52 progs/mervup.mdl
+sv.model_precache 53 progs/rockup.mdl
+sv.model_precache 54 progs/rockup_d.mdl
+sv.model_precache 55 progs/lspike.mdl
+sv.model_precache 56 progs/shield.mdl
+sv.model_precache 57 progs/p_shield.mdl
+sv.model_precache 58 progs/backpack.mdl
+sv.model_precache 59 progs/zom_gib.mdl
+sv.model_precache 60 progs/v_light.mdl
+sv.model_precache 61 progs/plasma.mdl
+sv.model_precache 62 progs/v_plasma.mdl
+sv.model_precache 63 progs/hook.mdl
+sv.model_precache 64 progs/v_grpple.mdl
+sv.model_precache 65 maps/b_lnail1.bsp
+sv.model_precache 66 maps/b_nail1.bsp
+sv.model_precache 67 maps/b_mrock0.bsp
+sv.model_precache 68 progs/flame.mdl
+sv.model_precache 69 maps/b_bh25.bsp
+sv.model_precache 70 maps/b_batt0.bsp
+sv.model_precache 71 progs/beltup.mdl
+sv.model_precache 72 maps/b_nail0.bsp
+sv.model_precache 73 maps/b_shell1.bsp
+sv.model_precache 74 maps/b_plas1.bsp
+sv.model_precache 75 maps/b_plas0.bsp
+sv.model_precache 76 progs/g_nail.mdl
+sv.model_precache 77 progs/g_rock.mdl
+sv.model_precache 78 progs/g_rock2.mdl
+sv.model_precache 79 maps/b_bh100.bsp
+sv.model_precache 80 progs/g_light.mdl
+sv.model_precache 81 progs/armor.mdl
+sv.model_precache 82 progs/dragon.mdl
+sv.model_precache 83 progs/fireball.mdl
+sv.model_precache 84 progs/drggib01.mdl
+sv.model_precache 85 progs/drggib02.mdl
+sv.model_precache 86 progs/drggib03.mdl
+sv.model_precache 87 progs/timemach.mdl
+sv.model_precache 88 progs/timegib.mdl
+sv.model_precache 89 progs/timecore.mdl
+sv.model_precache 90 maps/b_mrock1.bsp
+sv.model_precache 91 maps/b_rock1.bsp
+sv.model_precache 92 maps/b_batt1.bsp
+sv.model_precache 93 progs/g_nail2.mdl
+sv.sound_precache 1 weapons/r_exp3.wav
+sv.sound_precache 2 weapons/rocket1i.wav
+sv.sound_precache 3 weapons/sgun1.wav
+sv.sound_precache 4 weapons/guncock.wav
+sv.sound_precache 5 weapons/ric1.wav
+sv.sound_precache 6 weapons/ric2.wav
+sv.sound_precache 7 weapons/ric3.wav
+sv.sound_precache 8 weapons/spike2.wav
+sv.sound_precache 9 weapons/tink1.wav
+sv.sound_precache 10 weapons/grenade.wav
+sv.sound_precache 11 weapons/bounce.wav
+sv.sound_precache 12 weapons/shotgn2.wav
+sv.sound_precache 13 weapons/chain1.wav
+sv.sound_precache 14 pendulum/hit.wav
+sv.sound_precache 15 lavagun/snail.wav
+sv.sound_precache 16 demon/dland2.wav
+sv.sound_precache 17 misc/h2ohit1.wav
+sv.sound_precache 18 items/itembk2.wav
+sv.sound_precache 19 player/plyrjmp8.wav
+sv.sound_precache 20 player/land.wav
+sv.sound_precache 21 player/land2.wav
+sv.sound_precache 22 player/drown1.wav
+sv.sound_precache 23 player/drown2.wav
+sv.sound_precache 24 player/gasp1.wav
+sv.sound_precache 25 player/gasp2.wav
+sv.sound_precache 26 player/h2odeath.wav
+sv.sound_precache 27 misc/talk.wav
+sv.sound_precache 28 player/teledth1.wav
+sv.sound_precache 29 misc/r_tele1.wav
+sv.sound_precache 30 misc/r_tele2.wav
+sv.sound_precache 31 misc/r_tele3.wav
+sv.sound_precache 32 misc/r_tele4.wav
+sv.sound_precache 33 misc/r_tele5.wav
+sv.sound_precache 34 weapons/lock4.wav
+sv.sound_precache 35 weapons/pkup.wav
+sv.sound_precache 36 items/armor1.wav
+sv.sound_precache 37 weapons/lhit.wav
+sv.sound_precache 38 weapons/lstart.wav
+sv.sound_precache 39 items/damage3.wav
+sv.sound_precache 40 misc/power.wav
+sv.sound_precache 41 player/gib.wav
+sv.sound_precache 42 player/udeath.wav
+sv.sound_precache 43 player/tornoff2.wav
+sv.sound_precache 44 player/pain1.wav
+sv.sound_precache 45 player/pain2.wav
+sv.sound_precache 46 player/pain3.wav
+sv.sound_precache 47 player/pain4.wav
+sv.sound_precache 48 player/pain5.wav
+sv.sound_precache 49 player/pain6.wav
+sv.sound_precache 50 player/death1.wav
+sv.sound_precache 51 player/death2.wav
+sv.sound_precache 52 player/death3.wav
+sv.sound_precache 53 player/death4.wav
+sv.sound_precache 54 player/death5.wav
+sv.sound_precache 55 weapons/ax1.wav
+sv.sound_precache 56 player/axhit1.wav
+sv.sound_precache 57 player/axhit2.wav
+sv.sound_precache 58 player/h2ojump.wav
+sv.sound_precache 59 player/slimbrn2.wav
+sv.sound_precache 60 player/inh2o.wav
+sv.sound_precache 61 player/inlava.wav
+sv.sound_precache 62 misc/outwater.wav
+sv.sound_precache 63 player/lburn1.wav
+sv.sound_precache 64 player/lburn2.wav
+sv.sound_precache 65 misc/water1.wav
+sv.sound_precache 66 misc/water2.wav
+sv.sound_precache 67 enforcer/enfstop.wav
+sv.sound_precache 68 plasma/explode.wav
+sv.sound_precache 69 plasma/flight.wav
+sv.sound_precache 70 plasma/fire.wav
+sv.sound_precache 71 shield/hit.wav
+sv.sound_precache 72 belt/use.wav
+sv.sound_precache 73 items/damage2.wav
+sv.sound_precache 74 ambience/fire1.wav
+sv.sound_precache 75 items/health1.wav
+sv.sound_precache 76 belt/pickup.wav
+sv.sound_precache 77 belt/fadeout.wav
+sv.sound_precache 78 shield/pickup.wav
+sv.sound_precache 79 shield/fadeout.wav
+sv.sound_precache 80 items/r_item2.wav
+sv.sound_precache 81 dragon/see.wav
+sv.sound_precache 82 dragon/active.wav
+sv.sound_precache 83 dragon/attack.wav
+sv.sound_precache 84 dragon/pain.wav
+sv.sound_precache 85 dragon/death.wav
+sv.sound_precache 86 equake/rumble.wav
+sv.sound_precache 87 doors/medtry.wav
+sv.sound_precache 88 doors/meduse.wav
+sv.sound_precache 89 misc/null.wav
+sv.sound_precache 90 buttons/airbut1.wav
+sv.sound_precache 91 doors/drclos4.wav
+sv.sound_precache 92 doors/doormv1.wav
+sv.sound_precache 93 doors/hydro1.wav
+sv.sound_precache 94 doors/hydro2.wav
+*/

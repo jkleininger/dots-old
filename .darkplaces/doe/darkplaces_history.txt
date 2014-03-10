@@ -1,0 +1,47 @@
+name poo
+god
+sv_cheats 1
+god
+fly
+fly
+fly
+fly
+fly
+sv_cheats 1
+fly
+fly
+fly
+fly
+sv_cheats 1
+noclip
+sv_cheats 1
+fly
+fly
+fly
+fly
+sv_cheats 1
+fly
+fly
+fly
+fly
+noclip
+noclip
+skill
+skill
+sv_cheats 1
+fly
+fly
+skill
+give 3
+sv_cheats 1
+give 6
+give 6
+give 6
+sv_cheats 1
+noclip
+sv_cheats `
+sv_cheats 1
+fly
+fly
+noclip
+noclip

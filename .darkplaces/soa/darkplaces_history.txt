@@ -1,0 +1,107 @@
+sv_cheats 1
+give 5
+map e2m4
+impulse 9
+sv_cheats 1
+impulse 9
+impulse 9
+sv_cheats 1
+impulse 9
+god
+impulse 255
+god
+map e4m4
+map e4m5
+impulse 9
+sv_cheats 1
+impulse 9
+god
+impulse 9
+impulse 9
+impulse 9
+sv_cheats 1
+impulse 9
+god
+god
+god
+impulse 255
+impulse 255
+impulse 255
+god
+god
+god
+impulse 255
+impulse 255
+impulse 255
+god
+impulse 9
+impulse 9
+impulse 255
+god
+impulse 255
+impulse 255
+impulse 255
+fly
+sv_cheats 1
+fly
+fly
+fly
+impulse 255
+map e2m1
+god
+sv_cheats 1
+god
+sv_cheats 1
+map e2m3
+map e2m4
+give 3
+give 4
+give 5
+give 6
+give 7
+god
+noclip
+sv_cheats 1
+noclip
+god
+noclip
+noclip
+noclip
+sv_cheats 1
+god
+god
+sv_cheats 1
+god
+fly
+fly
+fly
+fly
+noclip
+noclip
+map e3m9
+map e3m8
+map e3m7
+noclip
+sv_cheats 1
+noclip
+impulse 9
+impulse 255
+impulse 9
+impulse 255
+fly
+fly
+impulse 9
+impulse 255
+sv_cheats 1
+god
+god
+god
+sv_cheats 1
+noclip
+noclip
+sv_cheats 1
+noclip
+sv_cheats 1
+god
+god
+god
