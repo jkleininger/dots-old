@@ -5,8 +5,8 @@ unclutter -idle 2 &
 batti &
 volumeicon &
 nm-applet &
-# x-tile &
 nitrogen --restore &
+kalu &
 
 exec fluxbox
 # exec fluxbox -log "/home/user/.fluxbox/log
