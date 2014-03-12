@@ -1,7 +1,7 @@
 Mod4 R      :Exec dmenu_run -p ']'
 Mod4 B      :Exec firefox
 Mod4 E      :Exec pcmanfm
-Mod4 Return :Exec xterm
+Mod4 Return :Exec terminology
 Mod4 F      :Exec dmenfm
 Mod4 N      :Exec leafpad
 Mod4 W      :Exec tile -m
@@ -26,8 +26,9 @@ Mod1 Mod4 Down          :ResizeVertical    10
 
 Mod1 Mod4 S             :ToggleCmd {Maximize} {FullScreen}
 
-Mod4 L			:Exec lockit
-Mod4 T			:Exec tp-toggle
+Mod4 L         :Exec lockit
+Mod4 Shift L   :Exec lock-and-suspend
+Mod4 T         :Exec tp-toggle
 
 XF86AudioMute		:Exec vmute
 XF86AudioRaiseVolume	:Exec vup

@@ -1,6 +1,7 @@
 #!/bin/sh
 
 compton &
+/usr/lib/lxpolkit/lxpolkit &
 unclutter -idle 2 &
 batti &
 volumeicon &
