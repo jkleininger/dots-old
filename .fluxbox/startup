@@ -9,6 +9,6 @@ nm-applet &
 nitrogen --restore &
 kalu &
 
-exec fluxbox
-# exec fluxbox -log "/home/user/.fluxbox/log
+# exec fluxbox
+exec fluxbox -log "~/.fluxbox/log"
 

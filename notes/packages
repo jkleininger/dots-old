@@ -1,7 +1,4 @@
 acetoneiso2
-android-sdk
-android-sdk-platform-tools
-aptana-studio
 batti
 cantarell-fonts
 chromium
@@ -18,12 +15,10 @@ galculator
 gimp
 git
 gksu
-google-musicmanager
 gparted
 gtk-engine-murrine
 gtk-engine-unico
 gtk-engines
-gtk-theme-clearlooks-darklime
 gtk2
 gtk2_prefs
 gtk3
@@ -56,7 +51,6 @@ openssh
 openssl
 p7zip
 pcmanfm
-pdfedit
 qpdf
 qt3
 qt4
@@ -80,6 +74,5 @@ xfburn
 xlockmore
 xosd
 xterm
-yaourt
 youtube-dl
 zen-gtk-themes

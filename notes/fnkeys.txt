@@ -1,0 +1,4 @@
+in /etc/modprobe.d/hid_apple.com:
+
+options hid_apple fnmode=2
+
