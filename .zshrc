@@ -23,32 +23,6 @@ LS_COLORS='rs=0:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;3
 export LS_COLORS
 
 #------------------------------
-# Keybindings
-#------------------------------
-bindkey -v
-typeset -g -A key
-#bindkey '\e[3~' delete-char
-bindkey '\e[1~' beginning-of-line
-bindkey '\e[4~' end-of-line
-#bindkey '\e[2~' overwrite-mode
-bindkey '^?' backward-delete-char
-bindkey '^[[1~' beginning-of-line
-bindkey '^[[5~' up-line-or-history
-bindkey '^[[3~' delete-char
-bindkey '^[[4~' end-of-line
-bindkey '^[[6~' down-line-or-history
-bindkey '^[[A' up-line-or-search
-bindkey '^[[D' backward-char
-bindkey '^[[B' down-line-or-search
-bindkey '^[[C' forward-char 
-# for rxvt
-bindkey "\e[8~" end-of-line
-bindkey "\e[7~" beginning-of-line
-# for gnome-terminal
-bindkey "\eOH" beginning-of-line
-bindkey "\eOF" end-of-line
-
-#------------------------------
 # Comp stuff
 #------------------------------
 zmodload zsh/complist 
@@ -119,7 +93,7 @@ setprompt () {
 	# Check the UID
 	if [[ $UID -ge 1000 ]]; then # normal user
 		eval PR_USER='${PR_GREEN}%n${PR_NO_COLOR}'
-		eval PR_USER_OP='${PR_GREEN}%#${PR_NO_COLOR}'
+		eval PR_USER_OP='${PR_GREEN}\ »${PR_NO_COLOR}'
 	elif [[ $UID -eq 0 ]]; then # root
 		eval PR_USER='${PR_RED}%n${PR_NO_COLOR}'
 		eval PR_USER_OP='${PR_RED}%#${PR_NO_COLOR}'
@@ -127,7 +101,7 @@ setprompt () {
 
 	# Check if we are on SSH or not
 	if [[ -n "$SSH_CLIENT"  ||  -n "$SSH2_CLIENT" ]]; then 
-		eval PR_HOST='${PR_YELLOW}%M${PR_NO_COLOR}' #SSH
+		eval PR_HOST='${PR_YELLOW}%M${PR_NO_COLOR}' #SSH    »
 	else 
 		eval PR_HOST='${PR_GREEN}%M${PR_NO_COLOR}' # no SSH
 	fi
