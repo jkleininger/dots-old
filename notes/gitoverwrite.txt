@@ -1,0 +1,20 @@
+git pull – force overwrite your code with remote or local changes
+
+Conflicts can be troublesome when you do a git pull or git merge. What if you are pretty sure that you want to use the remote version or your version of the code during a pull/merge conflict? no “git pull -f” doesn’t do it.
+
+To do it really quickly, you can
+	
+git fetch
+git reset --hard origin/master
+
+
+
+
+To have closer control and do it file by file.
+	
+git pull
+# assuming conflicts occur with style.css at this moment.
+# this forces me to use the remote file. use --ours to use my version.
+git checkout --theirs style.css
+git add style.css
+git commit

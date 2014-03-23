@@ -1,24 +1,9 @@
 # -*- encoding: utf-8 -*-
 #
-# Author::  Christoph Kappel <unexist@subforge.org>
-# Version:: $Id: data/subtle.rb,v 3182 2012/02/04 16:39:33 unexist $
-# License:: GNU GPLv2
-#
-# = Subtle default configuration
-#
-# This file will be installed as default and can also be used as a starter for
-# an own custom configuration file. The system wide config usually resides in
-# +/etc/xdg/subtle+ and the user config in +HOME/.config/subtle+, both locations
-# are dependent on the locations specified by +XDG_CONFIG_DIRS+ and
-# +XDG_CONFIG_HOME+.
-#
-
-#
 # == Options
 #
 # Following options change behaviour and sizes of the window manager:
 #
-
 # Window move/resize steps in pixel per keypress
 set :increase_step, 5
 
@@ -34,23 +19,21 @@ set :urgent_dialogs, false
 
 # Honor resize size hints globally
 set :honor_size_hints, false
+# Enable click-to-focus focus model
+set :click_to_focus, true
 
 # Enable gravity tiling for all gravities
-set :gravity_tiling, false
+set :gravity_tiling, true
 
 # Enable click-to-focus focus model
-set :click_to_focus, false
+set :click_to_focus, true
 
 # Skip pointer movement on e.g. gravity change
-set :skip_pointer_warp, false
+set :skip_pointer_warp, true
 
 # Skip pointer movement to urgent windows
-set :skip_urgent_warp, false
+set :skip_urgent_warp, true
 
-# Set the WM_NAME of subtle (Java quirk)
-# set :wmname, "LG3D"
-
-#
 # == Screen
 #
 # Generally subtle comes with two panels per screen, one on the top and one at
@@ -88,12 +71,6 @@ set :skip_urgent_warp, false
 # [*:separator*] Insert separator
 #
 # Empty panels are hidden.
-#
-# === Links
-#
-# http://subforge.org/projects/subtle/wiki/Multihead
-# http://subforge.org/projects/subtle/wiki/Panel
-#
 
 screen 1 do
   top    [ :views, :title, :spacer, :keychain, :spacer, :tray, :sublets ]
@@ -134,8 +111,7 @@ style :all do
   border      "#303030", 0
   padding     0, 3
   #font        "-*-*-*-*-*-*-14-*-*-*-*-*-*-*"
-  #font        "xft:sans-8"
-  font        "xft:Silkscreen-6"
+  font        "xft:Ubuntu-8"
 end
 
 # Style for the all views
@@ -338,15 +314,6 @@ gravity :gimp_dock,      [  90,   0,  10, 100 ]
 #
 # http://subforge.org/projects/subtle/wiki/Grabs
 #
-
-# Jump to view1, view2, ...
-grab "W-S-1", :ViewJump1
-grab "W-S-2", :ViewJump2
-grab "W-S-3", :ViewJump3
-grab "W-S-4", :ViewJump4
-grab "W-S-5", :ViewJump5
-
-
 # Switch current view
 grab "W-1", :ViewSwitch1
 grab "W-2", :ViewSwitch2
@@ -354,41 +321,27 @@ grab "W-3", :ViewSwitch3
 grab "W-4", :ViewSwitch4
 grab "W-5", :ViewSwitch5
 
-# Select next and prev view */
-#grab "KP_Add",      :ViewNext
-#grab "KP_Subtract", :ViewPrev
+grab "W-r", "dmenu_run"
+grab "W-e", "pcmanfm"
+grab "W-n", "leafpad"
 
-# Move mouse to screen1, screen2, ...
-#grab "W-A-1", :ScreenJump1
-#grab "W-A-2", :ScreenJump2
-#grab "W-A-3", :ScreenJump3
-#grab "W-A-4", :ScreenJump4
-
-# Force reload of config and sublets
 grab "W-S-r", :SubtleReload
-#grab "W-A-r", :SubtleRestart
-grab "W-S-q", :SubtleQuit
+grab "W-C-S-r", :SubtleRestart
+
+# Quit subtle
+grab "W-C-q", :SubtleQuit
 
 grab "W-B1", :WindowMove
 grab "W-B3", :WindowResize
 
 # Toggle floating mode of window
-grab "W-f", :WindowFloat
+grab "W-space", :WindowFloat
 
 # Toggle fullscreen mode of window
-grab "W-S-m", :WindowFull
+grab "W-x", :WindowFull
 
 # Toggle sticky mode of window (will be visible on all views)
 grab "W-s", :WindowStick
-
-# Toggle zaphod mode of window (will span across all screens)
-#grab "W-equal", :WindowZaphod
-
-# Raise window
-#grab "W-r", :WindowRaise
-
-# Lower window
-#grab "W-l", :WindowLower
 
 # Select next windows
 grab "W-Left",  :WindowLeft
@@ -400,22 +353,18 @@ grab "W-Right", :WindowRight
 grab "W-S-k", :WindowKill
 
 # In case no numpad is available e.g. on notebooks
-grab "W-q", [ :top_left,     :top_left66,     :top_left33     ]
-grab "W-w", [ :top,          :top66,          :top33          ]
-grab "W-e", [ :top_right,    :top_right66,    :top_right33    ]
-grab "W-a", [ :left,         :left66,         :left33         ]
-grab "W-s", [ :center,       :center66,       :center33       ]
-grab "W-d", [ :right,        :right66,        :right33        ]
-grab "W-z", [ :bottom_left,  :bottom_left66,  :bottom_left33  ]
-grab "W-x", [ :bottom,       :bottom66,       :bottom33       ]
-grab "W-c", [ :bottom_right, :bottom_right66, :bottom_right33 ]
+grab "W-S-q", [ :top_left,     :top_left66,     :top_left33     ]
+grab "W-S-w", [ :top,          :top66,          :top33          ]
+grab "W-S-e", [ :top_right,    :top_right66,    :top_right33    ]
+grab "W-S-a", [ :left,         :left66,         :left33         ]
+grab "W-S-s", [ :center,       :center66,       :center33       ]
+grab "W-S-d", [ :right,        :right66,        :right33        ]
+grab "W-S-z", [ :bottom_left,  :bottom_left66,  :bottom_left33  ]
+grab "W-S-x", [ :bottom,       :bottom66,       :bottom33       ]
+grab "W-S-c", [ :bottom_right, :bottom_right66, :bottom_right33 ]
 
 # Exec programs
-grab "W-Return", "urxvt"
-grab "W-b",      "firefox"
-grab "W-r",      "dmenu_run"
-grab "W-l",      "lockit"
-grab "W-t",      "tp-toggle"
+grab "W-Return", "roxterm"
 
 # Run Ruby lambdas
 grab "S-F2" do |c|
@@ -589,8 +538,9 @@ end
 #
 
 # Simple tags
-tag "terms",   "xterm|[u]?rxvt"
+tag "terms",   "roxterm"
 tag "browser", "uzbl|opera|firefox|navigator"
+tag "file",    "pcmanfm"
 
 # Placement
 tag "editor" do
@@ -647,68 +597,11 @@ end
 #
 # == Views
 #
-# Views are the virtual desktops in subtle, they show all windows that share a
-# tag with them. Windows that have no tag will be visible on the default view
-# which is the view with the default tag or the first defined view when this
-# tag isn't set.
-#
-# Like tags views can be defined in two ways:
-#
-# === Simple
-#
-# The simple way is exactly the same as for tags:
-#
-# Example:
-#
-#   view "terms", "terms"
-#
-# === Extended
-#
-# The extended way for views is also similar to the tags, but with fewer
-# properties.
-#
-# Example:
-#
-#  view "terms" do
-#    match "terms"
-#    icon  "/usr/share/icons/icon.xbm"
-#  end
-#
-# === Properties
-#
-# [*match*]      This property adds a matching pattern to a view. Matching
-#                works either via plaintext or regex (see man regex(7)) and
-#                applies to names of tags.
-#
-#                Example: match "terms"
-#
-# [*dynamic*]    This property hides unoccupied views, views that display no
-#                windows.
-#
-#                Example: dynamic true
-#
-# [*icon*]       This property adds an icon in front of the view name. The
-#                icon can either be path to an icon or an instance of
-#                Subtlext::Icon.
-#
-#                Example: icon "/usr/share/icons/icon.xbm"
-#                         icon Subtlext::Icon.new("/usr/share/icons/icon.xbm")
-#
-# [*icon_only*]  This property hides the view name from the view buttons, just
-#                the icon will be visible.
-#
-#                Example: icon_only true
-#
-#
-# === Link
-#
-# http://subforge.org/projects/subtle/wiki/Tagging
-#
-
-view "terms", "terms|default"
 view "www",   "browser"
+view "terms", "terms|default"
 view "gimp",  "gimp_.*"
 view "dev",   "editor"
+view "file",  "file"
 
 #
 # == Sublets
@@ -744,12 +637,24 @@ view "dev",   "editor"
 #
 # === Example
 #
-#  sublet :clock do
-#    interval      30
-#    foreground    "#eeeeee"
-#    background    "#000000"
-#    format_string "%H:%M:%S"
-#  end
+#
+#
+
+sublet :volume do
+  interval 30
+end
+
+sublet :battery do
+  colors 10 => "#ff0000", 30 => "fff000"
+end
+
+sublet :clock do
+  interval      30
+  foreground    "#eeeeee"
+  background    "#000000"
+  format_string "%H:%M:%S"
+end
+
 #
 #  === Link
 #

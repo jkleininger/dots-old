@@ -1,2 +1,4 @@
 [roxterm options]
 profile=jkl
+encoding=UTF-8
+prefer_dark_theme=1

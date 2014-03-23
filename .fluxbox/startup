@@ -4,8 +4,8 @@ compton &
 /usr/lib/lxpolkit/lxpolkit &
 unclutter -idle 2 &
 batti &
-volumeicon &
-nm-applet &
+pnmixer &
+connman-ui-gtk &
 nitrogen --restore &
 kalu &
 

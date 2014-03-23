@@ -27,12 +27,13 @@ Mod1 Mod4 Down          :ResizeVertical    10
 Mod1 Mod4 S             :ToggleCmd {Maximize} {FullScreen}
 
 Mod4 L         :Exec lockit
-Mod4 Shift L   :Exec lock-and-suspend
+Mod4 Shift L   :Exec suspendit
 Mod4 T         :Exec tp-toggle
 
-XF86AudioMute		:Exec vmute
-XF86AudioRaiseVolume	:Exec vup
-XF86AudioLowerVolume	:Exec vdn
+# these are now handled by pnmixer
+# XF86AudioMute		:Exec vmute
+# XF86AudioRaiseVolume	:Exec vup
+# XF86AudioLowerVolume	:Exec vdn
 
 Mod4 Shift D 		:ToggleDecor
 Mod4 Shift R 		:Reconfigure
