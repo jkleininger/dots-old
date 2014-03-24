@@ -7,6 +7,8 @@ import XMonad.Util.Run(spawnPipe)
 import XMonad.Util.EZConfig(additionalKeys)
 import System.IO
 
+import XMonad.Hooks.EwmhDesktops
+
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
 
@@ -21,7 +23,7 @@ myFocusFollowsMouse = False
 
 -- Whether clicking on a window to focus also passes the click to the window
 myClickJustFocuses :: Bool
-myClickJustFocuses = False
+myClickJustFocuses = True
 
 -- Width of the window border in pixels.
 --
@@ -70,7 +72,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     [ ((modm,               xK_Return), spawn $ XMonad.terminal conf)
 
     -- launch dmenu
-    , ((modm,               xK_p     ), spawn "dmenu_run")
+    , ((modm,               xK_r     ), spawn "dmenu_run")
 
     -- close focused window
     , ((modm .|. shiftMask, xK_c     ), kill)
@@ -189,7 +191,7 @@ myManageHook = composeAll
 -- return (All True) if the default handler is to be run afterwards. To
 -- combine event hooks use mappend or mconcat from Data.Monoid.
 --
-myEventHook = mempty
+myEventHook = ewmhDesktopsEventHook
 
 ------------------------------------------------------------------------
 -- Status bars and logging
@@ -206,7 +208,7 @@ myEventHook = mempty
 -- per-workspace layout choices.
 --
 -- By default, do nothing.
-myStartupHook = return ()
+myStartupHook = ewmhDesktopsStartup
 
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
@@ -214,8 +216,8 @@ myStartupHook = return ()
 -- Run xmonad with the settings you specify. No need to modify this.
 --
 main = do
-  xmproc <- spawnPipe "/usr/bin/xmobar ~/.xmonad/.xmobarrc"
-  xmonad $ defaultConfig {
+  -- xmproc <- spawnPipe "/usr/bin/xmobar ~/.xmonad/.xmobarrc"
+  xmonad defaultConfig {
 
         manageHook = manageDocks <+> myManageHook <+> manageHook defaultConfig,
         layoutHook = avoidStruts $ layoutHook defaultConfig,
@@ -240,10 +242,13 @@ main = do
         handleEventHook    = myEventHook,
         startupHook        = myStartupHook,
 
-        logHook = dynamicLogWithPP xmobarPP {
-          ppOutput = hPutStrLn xmproc,
-          ppTitle = xmobarColor "blue" "" . shorten 50,
-          ppLayout = const ""
-        }
+       -- to show workspace and current window in xmobar
+       -- logHook = dynamicLogWithPP xmobarPP {
+       --   ppOutput = hPutStrLn xmproc,
+       --   ppTitle = xmobarColor "blue" "" . shorten 50,
+       --   ppLayout = const ""
+       -- }
+
+       logHook = ewmhDesktopsLogHook
 
     }

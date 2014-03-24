@@ -1,0 +1,9 @@
+compton &
+/usr/lib/lxpolkit/lxpolkit &
+unclutter -idle 2 &
+pnmixer &
+batti &
+connman-ui-gtk &
+nitrogen --restore &
+kalu &
+
