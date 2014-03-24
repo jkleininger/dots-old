@@ -1,5 +1,7 @@
 # -*- encoding: utf-8 -*-
 #
+require("subtle/subtlext")
+#
 # == Options
 #
 # Following options change behaviour and sizes of the window manager:
@@ -33,6 +35,14 @@ set :skip_pointer_warp, true
 
 # Skip pointer movement to urgent windows
 set :skip_urgent_warp, true
+
+
+on :start do
+  Subtlext::Subtle.spawn "connman-ui-gtk &"
+end
+
+
+
 
 # == Screen
 #
