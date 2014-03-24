@@ -1,4 +1,5 @@
 # this is my gitignore
 .vimperator/info/default/history-command
 .vimperator/info/default/macros
+.xmonad/xmonad-x86_64-linux
 

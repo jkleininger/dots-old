@@ -74,7 +74,7 @@ Mod4 Shift X     :Fullscreen
 Mod1 space :WindowMenu
 
 # exit fluxbox
-Control Mod1 Delete :Exit
+Control Mod1 Delete :Exec obshutdown
 
 # change to a specific workspace
 Mod4 1 :Workspace 1

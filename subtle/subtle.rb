@@ -37,13 +37,6 @@ set :skip_pointer_warp, true
 set :skip_urgent_warp, true
 
 
-on :start do
-  Subtlext::Subtle.spawn "connman-ui-gtk &"
-end
-
-
-
-
 # == Screen
 #
 # Generally subtle comes with two panels per screen, one on the top and one at
@@ -83,7 +76,7 @@ end
 # Empty panels are hidden.
 
 screen 1 do
-  top    [ :views, :title, :spacer, :keychain, :spacer, :tray, :sublets ]
+  top    [ :views, :title, :spacer, :keychain, :spacer, :tray, :battery, :volume, :clock  ]
   bottom [ ]
 end
 
@@ -121,7 +114,7 @@ style :all do
   border      "#303030", 0
   padding     0, 3
   #font        "-*-*-*-*-*-*-14-*-*-*-*-*-*-*"
-  font        "xft:Ubuntu-8"
+  font        "xft:Ubuntu Bold:size=8"
 end
 
 # Style for the all views
@@ -334,12 +327,21 @@ grab "W-5", :ViewSwitch5
 grab "W-r", "dmenu_run"
 grab "W-e", "pcmanfm"
 grab "W-n", "leafpad"
+grab "W-b", "firefox"
+grab "W-Return", "roxterm"
 
-grab "W-S-r", :SubtleReload
-grab "W-C-S-r", :SubtleRestart
+grab "XF86AudioRaiseVolume", :VolumeRaise
+grab "XF86AudioLowerVolume", :VolumeLower
+grab "XF86AudioMute",        "xterm"
 
-# Quit subtle
-grab "W-C-q", :SubtleQuit
+grab "W-l", "lockit"
+grab "W-t", "tp-toggle"
+grab "W-S-l", "suspendit"
+
+grab "W-S-r",      :SubtleReload
+grab "W-C-S-r",    :SubtleRestart
+grab "C-a-Delete", "obshutdown"
+grab "W-C-q",      :SubtleQuit
 
 grab "W-B1", :WindowMove
 grab "W-B3", :WindowResize
@@ -373,8 +375,6 @@ grab "W-S-z", [ :bottom_left,  :bottom_left66,  :bottom_left33  ]
 grab "W-S-x", [ :bottom,       :bottom66,       :bottom33       ]
 grab "W-S-c", [ :bottom_right, :bottom_right66, :bottom_right33 ]
 
-# Exec programs
-grab "W-Return", "roxterm"
 
 # Run Ruby lambdas
 grab "S-F2" do |c|
@@ -649,6 +649,11 @@ view "file",  "file"
 #
 #
 #
+#
+
+sublet :layout do
+  interval 60
+end
 
 sublet :volume do
   interval 30
@@ -662,7 +667,7 @@ sublet :clock do
   interval      30
   foreground    "#eeeeee"
   background    "#000000"
-  format_string "%H:%M:%S"
+  format_string "%H:%M | %d %b"
 end
 
 #
@@ -704,6 +709,17 @@ end
 #     puts c.name
 #   end
 #
+on :start do
+  puts "started."
+  Subtlext::Subtle.spawn "urxvt"
+  Subtlext::Subtle.spawn "clipit"
+  Subtlext::Subtle.spawn "nitrogen --restore"
+  Subtlext::Subtle.spawn "compton"
+  Subtlext::Subtle.spawn "/usr/lib/lxpolkit/lxpolkit"
+  Subtlext::Subtle.spawn "unclutter -idle 2"
+  Subtlext::Subtle.spawn "kalu"
+end
+
 # === Link
 #
 # http://subforge.org/projects/subtle/wiki/Hooks
