@@ -3,20 +3,20 @@
 
 Global {
     edge=top
-    allign=left
-    margin=0
-    widthtype=percent
-    width=100
+    allign=right
+    margin=140
+    widthtype=request
+    width=35
     height=18
-    transparent=0
-    tintcolor=#000000
+    transparent=1
+    tintcolor=#000024
     alpha=0
     autohide=0
     heightwhenhidden=2
     setdocktype=1
     setpartialstrut=1
     usefontcolor=1
-    fontsize=10
+    fontsize=8
     fontcolor=#ffffff
     usefontsize=1
     background=0
@@ -26,44 +26,6 @@ Global {
 }
 
 Plugin {
-    type = pager
-}
-
-Plugin {
-    type = space
-    Config {
-        Size=4
-    }
-}
-
-Plugin {
-    type = taskbar
-    expand=1
-    Config {
-        tooltips=1
-        IconsOnly=0
-        ShowAllDesks=0
-        UseMouseWheel=1
-        UseUrgencyHint=1
-        FlatButton=0
-        MaxTaskWidth=150
-        spacing=1
-        GroupedTasks=0
-    }
-}
-
-Plugin {
     type = tray
-}
-
-Plugin {
-    type = dclock
-    Config {
-        ClockFmt=%R
-        TooltipFmt=%A %x
-        BoldFont=0
-        IconOnly=0
-        CenterText=0
-    }
 }
 

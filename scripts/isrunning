@@ -1,0 +1,8 @@
+#!/bin/sh
+
+ps cax | grep lxpanel > /dev/null
+if [ $? -eq 0 ]; then
+  echo "Looks like it's already running."
+else
+  echo "Not yet running.  Okay to start."
+fi
