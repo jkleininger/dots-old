@@ -1,4 +1,4 @@
-osd "Locking Screen"
+osd "Locking Screen" &
 xscreensaver-command --lock &
 #i3lock -c 050a15
 #xlock -mode blank -timeout 1 -mousemotion -usefirst +description
