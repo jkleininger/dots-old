@@ -3,10 +3,10 @@
 
 Global {
     edge=top
-    allign=right
+    allign=center
     margin=140
     widthtype=request
-    width=35
+    width=73
     height=18
     transparent=1
     tintcolor=#000024
