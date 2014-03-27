@@ -1,0 +1,11 @@
+/etc/yaourtrc:
+
+PACMAN="powerpill"
+
+In /etc/powerpill/powerpill.json:
+
+"pacman": {
+  "config": "/etc/pacman.conf",
+  "path": "/usr/bin/pacmatic"
+},
+
