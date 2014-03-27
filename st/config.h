@@ -53,24 +53,24 @@ static unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	"#2e3436",
+	"#a40000",
+	"#4e9a06",
+	"#c4a000",
+	"#204a87",
+	"#5c3566",
+	"#108576",
+	"#eed6f3",
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
+	"#aaaaaa",
+	"#ff3344",
+	"#08ff11",
+	"#ffff10",
 	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+	"#f011e0",
+	"#10fff4",
+	"#f6f6ff",
 
 	[255] = 0,
 
@@ -114,7 +114,7 @@ static Shortcut shortcuts[] = {
 	{ MODKEY|ShiftMask,     XK_Prior,       xzoom,          {.i = +1} },
 	{ MODKEY|ShiftMask,     XK_Next,        xzoom,          {.i = -1} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
-	{ MODKEY|ShiftMask,     XK_Insert,      clippaste,      {.i =  0} },
+	{ MODKEY|ShiftMask,     XK_v,           clippaste,      {.i =  0} },
 	{ MODKEY,               XK_Num_Lock,    numlock,        {.i =  0} },
 };
 

@@ -3,6 +3,5 @@ if [ $# -eq 0 ]; then
   DWMDATE="$(date +"%a %d %b %R")";
   echo "$DWMVOL $DWMDATE";
 else
-  echo "[[ $1 ]]";
+  echo "< $1 >";
 fi
-

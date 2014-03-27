@@ -1,14 +1,14 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const char font[]            = "Ubuntu-8"; 
-static const char normbordercolor[] = "#444444";
+static const char font[]            = "-*-dina-medium-r-*-*-8-*-*-*-*-*-*-*";
+static const char normbordercolor[] = "#001015";
 static const char normbgcolor[]     = "#222222";
 static const char normfgcolor[]     = "#bbbbbb";
-static const char selbordercolor[]  = "#005577";
+static const char selbordercolor[]  = "#0044ee";
 static const char selbgcolor[]      = "#005577";
 static const char selfgcolor[]      = "#eeeeee";
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const Bool showbar           = True;     /* False means no bar */
 static const Bool topbar            = True;     /* False means bottom bar */
@@ -17,13 +17,13 @@ static const Bool topbar            = True;     /* False means bottom bar */
 static const char *tags[] = { "www", "term", "dev", "x", "file", "6", "7", "8", "9" };
 
 static const Rule rules[] = {
-	/* xprop(1):
-	 *	WM_CLASS(STRING) = instance, class
-	 *	WM_NAME(STRING) = title
-	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            True,        -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       False,       -1 },
+	{ "Gimp",        NULL,       NULL,       0,            True,        -1 },
+        { "Firefox",     NULL,       NULL,       1,            False,       -1 },
+        { "Roxterm",     NULL,       NULL,       2,            False,       -1 },
+        { "st-256color", NULL,       NULL,       1<<1,         False,       -1 },
+        { "Pcmanfm",     NULL,       NULL,       1<<4,         False,       -1 },
+        { "Obshutdown",  NULL,       NULL,       0,            True,        -1 },
 };
 
 /* layout(s) */
@@ -52,11 +52,15 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[]      = { "dmenu_run", "-m", dmenumon, "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
-static const char *termcmd[]       = { "roxterm",  NULL  };
-static const char *ffcmd[]         = { "firefox",  NULL  };
-static const char *vupcmd[]        = { "vup",      NULL  };
-static const char *vdncmd[]        = { "vdn",      NULL  };
-static const char *vmutecmd[]      = { "vmute",    NULL  };
+static const char *termcmd[]       = { "st",         NULL  };
+static const char *ffcmd[]         = { "firefox",    NULL  };
+static const char *vupcmd[]        = { "vup",        NULL  };
+static const char *vdncmd[]        = { "vdn",        NULL  };
+static const char *vmutecmd[]      = { "vmute",      NULL  };
+static const char *tptogcmd[]      = { "tp-toggle",  NULL  };
+static const char *lockcmd[]       = { "lockit",     NULL  };
+static const char *filecmd[]       = { "pcmanfm",    NULL  };
+static const char *pwrcmd[]        = { "obshutdown", NULL  };
 
 static Key keys[] = {
 	/* modifier                     key          function        argument */
@@ -68,29 +72,36 @@ static Key keys[] = {
         { 0,                            0x1008ff11,  spawn,          {.v = vdncmd   } },
         { 0,                            0x1008ff12,  spawn,          {.v = vmutecmd } },
 
-	{ MODKEY|ShiftMask,             XK_b,      togglebar,      {0} },
-        { Mod1Mask,                     XK_Tab,    focusstack,     {.i = +1 } },
-	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
-	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
-	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
-	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
-	{ MODKEY|ShiftMask,             XK_Return, zoom,           {0} },
-	{ Mod1Mask,                     XK_F4,     killclient,     {0} },
-	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
-	{ MODKEY,                       XK_space,  setlayout,      {0} },
-	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
-	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
-	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
-	TAGKEYS(                        XK_1,                      0)
-	TAGKEYS(                        XK_2,                      1)
-	TAGKEYS(                        XK_3,                      2)
-	TAGKEYS(                        XK_4,                      3)
-	TAGKEYS(                        XK_5,                      4)
-	TAGKEYS(                        XK_6,                      5)
-	TAGKEYS(                        XK_7,                      6)
-	TAGKEYS(                        XK_8,                      7)
-	TAGKEYS(                        XK_9,                      8)
-	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+        { MODKEY,                       XK_t,        spawn,          {.v = tptogcmd } },
+        { MODKEY,                       XK_l,        spawn,          {.v = lockcmd  } },
+        { MODKEY,                       XK_e,        spawn,          {.v = filecmd  } },
+
+        { MODKEY|ShiftMask,             XK_q,        spawn,          {.v = pwrcmd   } },
+
+	{ MODKEY|ShiftMask,             XK_b,        togglebar,      {0} },
+        { Mod1Mask,                     XK_Tab,      focusstack,     {.i = +1 } },
+	{ MODKEY,                       XK_Up,       incnmaster,     {.i = +1 } },
+	{ MODKEY,                       XK_Down,     incnmaster,     {.i = -1 } },
+	{ MODKEY,                       XK_Left,     setmfact,       {.f = -0.05} },
+	{ MODKEY,                       XK_Right,    setmfact,       {.f = +0.05} },
+	{ MODKEY|ShiftMask,             XK_Return,   zoom,           {0} },
+	{ Mod1Mask,                     XK_F4,       killclient,     {0} },
+	{ Mod1Mask,                     XK_1,        setlayout,      {.v = &layouts[0]} },
+	{ Mod1Mask,                     XK_2,        setlayout,      {.v = &layouts[1]} },
+	{ Mod1Mask,                     XK_3,        setlayout,      {.v = &layouts[2]} },
+	{ MODKEY|ShiftMask,             XK_space,    togglefloating, {0} },
+	{ MODKEY,                       XK_0,        view,           {.ui = ~0 } },
+	{ MODKEY|ShiftMask,             XK_0,        tag,            {.ui = ~0 } },
+	TAGKEYS(                        XK_1,                        0)
+	TAGKEYS(                        XK_2,                        1)
+	TAGKEYS(                        XK_3,                        2)
+	TAGKEYS(                        XK_4,                        3)
+	TAGKEYS(                        XK_5,                        4)
+	TAGKEYS(                        XK_6,                        5)
+	TAGKEYS(                        XK_7,                        6)
+	TAGKEYS(                        XK_8,                        7)
+	TAGKEYS(                        XK_9,                        8)
+	{ MODKEY|ShiftMask,             XK_r,        quit,           {0} },
 };
 
 /* button definitions */

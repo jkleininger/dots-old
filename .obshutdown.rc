@@ -7,19 +7,21 @@
 [general]
 version =        0.1-rc1
 verbose =        false
-default_action = shutdown
+default_action = cancel
 composite =      true
 theme =          oxygen
-buttons =        cancel logout shutdown restart suspend hibernate
+buttons =        cancel shutdown restart suspend lock
+
+# hibernate logout
 
 [actions]
-logout =         subtler -q
-shutdown =       systemctl poweroff 
-restart =        systemctl reboot -i
+logout = 
+shutdown =       shutdowncmd
+restart =        rebootcmd
 lock =           lockit
 switch = 
-suspend =        suspendit
-hibernate =      systemctl hybrid-sleep
+suspend =        lock-and-suspend
+hibernate = 
 custom = 
 
 [shortcuts]
