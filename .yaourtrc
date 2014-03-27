@@ -27,7 +27,7 @@
 #AURCOMMENT=5
 #AURDEVELONLY=0
 #AURSEARCH=1
-#AURUPGRADE=0
+#AURUPGRADE=
 #AURVOTE=1
 
 # Build
@@ -40,17 +40,17 @@
 #NOCONFIRM=0
 #UP_NOCONFIRM=0     # No prompt while build upgrades (including -Sbu)
 BUILD_NOCONFIRM=1  # Only prompt for editing files
-#PU_NOCONFIRM=0     # Add --noconfirm to $PACMAN -U
+PU_NOCONFIRM=1     # Add --noconfirm to $PACMAN -U
 EDITFILES=0
 #NOENTER=1
 
 # Output
-#USECOLOR=1
+USECOLOR=1
 #USEPAGER=0
 #DETAILUPGRADE=1
 #SHOWORPHANS=1
 #TERMINALTITLE=1
 
 # Command
-#PACMAN="pacman"
+PACMAN="powerpill"
 #DIFFEDITCMD="vimdiff"
