@@ -1,0 +1,3 @@
+#!/bin/sh
+ZDCMD="zdoom -iwad ${WADS}/doom2.wad -file ${WADS}/brutal19.pk3 ${WADS}/DoomMetalVol4.wad"
+eval ${ZDCMD}

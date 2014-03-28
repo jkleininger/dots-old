@@ -52,5 +52,5 @@ USECOLOR=1
 #TERMINALTITLE=1
 
 # Command
-PACMAN="powerpill"
+PACMAN="pacmatic"
 #DIFFEDITCMD="vimdiff"

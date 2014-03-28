@@ -8,10 +8,11 @@ SAVEHIST=5000
 #------------------------------
 # Variables
 #------------------------------
-export BROWSER="firefox"
+export BROWSER="links"
 export EDITOR="vim"
 export PAGER="less"
-export PATH="${PATH}:${HOME}/.gem/ruby/2.0.0/bin:${HOME}/scripts:/opt/android-sdk/tools"
+
+source "${HOME}/.profile"
 
 # might want to make this conditional in case of a non-xterm
 export TERM=xterm-256color
@@ -50,28 +51,6 @@ zstyle ':completion:*:killall:*'   force-list always
 compdef _pacman pacman-color=pacman
 
 unsetopt correct
-
-
-
-#------------------------------
-# Window title
-#------------------------------
-case $TERM in
-    termite|*xterm*|rxvt|rxvt-unicode|rxvt-256color|rxvt-unicode-256color|(dt|k|E)term)
-		precmd () { print -Pn "\e]0;[%n@%M][%~]%#\a" } 
-		preexec () { print -Pn "\e]0;[%n@%M][%~]%# ($1)\a" }
-	;;
-    screen|screen-256color)
-    	precmd () { 
-			print -Pn "\e]83;title \"$1\"\a" 
-			print -Pn "\e]0;$TERM - (%L) [%n@%M]%# [%~]\a" 
-		}
-		preexec () { 
-			print -Pn "\e]83;title \"$1\"\a" 
-			print -Pn "\e]0;$TERM - (%L) [%n@%M]%# [%~] ($1)\a" 
-		}
-	;; 
-esac
 
 . ~/dots/aliases
 

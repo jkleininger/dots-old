@@ -10,12 +10,12 @@ verbose =        false
 default_action = cancel
 composite =      true
 theme =          oxygen
-buttons =        cancel shutdown restart suspend lock
+buttons =        cancel shutdown restart suspend logout lock
 
 # hibernate logout
 
 [actions]
-logout = 
+logout =         killall xinit
 shutdown =       shutdowncmd
 restart =        rebootcmd
 lock =           lockit

@@ -1,0 +1,3 @@
+#!/bin/sh
+ZDCMD="zdoom -iwad ${WADS}/heretic.wad"
+eval ${ZDCMD}
