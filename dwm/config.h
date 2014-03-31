@@ -21,9 +21,12 @@ static const Rule rules[] = {
 	{ "Gimp",        NULL,       NULL,       0,            True,        -1 },
         { "Firefox",     NULL,       NULL,       1,            False,       -1 },
         { "Roxterm",     NULL,       NULL,       2,            False,       -1 },
+        { "Sakura",      NULL,       NULL,       2,            False,       -1 },
         { "st-256color", NULL,       NULL,       1<<1,         False,       -1 },
         { "Pcmanfm",     NULL,       NULL,       1<<4,         False,       -1 },
         { "Obshutdown",  NULL,       NULL,       0,            True,        -1 },
+        { "CMST",        NULL,       NULL,       0,            True,        -1 },
+        { "NetBeans",    NULL,       NULL,       1<<2,         True,        -1 },
 };
 
 /* layout(s) */
@@ -33,8 +36,8 @@ static const Bool resizehints = True; /* True means respect size hints in tiled 
 
 static const Layout layouts[] = {
   /* symbol     arrange function */
-  { "[]=",      tile },    /* first entry is default */
-  { "><>",      NULL },    /* no layout function means floating behavior */
+  { "[|]",      tile },    /* first entry is default */
+  { "[F]",      NULL },    /* no layout function means floating behavior */
   { "[M]",      monocle },
 };
 
@@ -52,31 +55,34 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[]      = { "dmenu_run", "-m", dmenumon, "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
-static const char *termcmd[]       = { "st",         NULL  };
-static const char *ffcmd[]         = { "firefox",    NULL  };
-static const char *vupcmd[]        = { "vup",        NULL  };
-static const char *vdncmd[]        = { "vdn",        NULL  };
-static const char *vmutecmd[]      = { "vmute",      NULL  };
-static const char *tptogcmd[]      = { "tp-toggle",  NULL  };
-static const char *lockcmd[]       = { "lockit",     NULL  };
-static const char *filecmd[]       = { "pcmanfm",    NULL  };
-static const char *pwrcmd[]        = { "obshutdown", NULL  };
+static const char *termcmd[]       = { "st",          NULL  };
+static const char *ffcmd[]         = { "firefox",     NULL  };
+static const char *vupcmd[]        = { "vup",         NULL  };
+static const char *vdncmd[]        = { "vdn",         NULL  };
+static const char *vmutecmd[]      = { "vmute",       NULL  };
+static const char *tptogcmd[]      = { "tp-toggle",   NULL  };
+static const char *lockcmd[]       = { "lockit",      NULL  };
+static const char *filecmd[]       = { "pcmanfm",     NULL  };
+static const char *pwrcmd[]        = { "obshutdown",  NULL  };
+static const char *cmstcmd[]       = { "cmst", "-d",  NULL  };
+static const char *sakuracmd[]     = { "sakura",      NULL  };
 
 static Key keys[] = {
 	/* modifier                     key          function        argument */
-	{ MODKEY,                       XK_r,        spawn,          {.v = dmenucmd } },
-	{ MODKEY,                       XK_Return,   spawn,          {.v = termcmd  } },
-	{ MODKEY,                       XK_b,        spawn,          {.v = ffcmd    } },
+	{ MODKEY,                       XK_r,        spawn,          {.v = dmenucmd  } },
+	{ MODKEY,                       XK_Return,   spawn,          {.v = sakuracmd } },
+	{ MODKEY,                       XK_b,        spawn,          {.v = ffcmd     } },
+	{ MODKEY,                       XK_w,        spawn,          {.v = cmstcmd   } },
 
-        { 0,                            0x1008ff13,  spawn,          {.v = vupcmd   } },
-        { 0,                            0x1008ff11,  spawn,          {.v = vdncmd   } },
-        { 0,                            0x1008ff12,  spawn,          {.v = vmutecmd } },
+        { 0,                            0x1008ff13,  spawn,          {.v = vupcmd    } },
+        { 0,                            0x1008ff11,  spawn,          {.v = vdncmd    } },
+        { 0,                            0x1008ff12,  spawn,          {.v = vmutecmd  } },
 
-        { MODKEY,                       XK_t,        spawn,          {.v = tptogcmd } },
-        { MODKEY,                       XK_l,        spawn,          {.v = lockcmd  } },
-        { MODKEY,                       XK_e,        spawn,          {.v = filecmd  } },
+        { MODKEY,                       XK_t,        spawn,          {.v = tptogcmd  } },
+        { MODKEY,                       XK_l,        spawn,          {.v = lockcmd   } },
+        { MODKEY,                       XK_e,        spawn,          {.v = filecmd   } },
 
-        { MODKEY|ShiftMask,             XK_q,        spawn,          {.v = pwrcmd   } },
+        { MODKEY|ShiftMask,             XK_q,        spawn,          {.v = pwrcmd    } },
 
 	{ MODKEY|ShiftMask,             XK_b,        togglebar,      {0} },
         { Mod1Mask,                     XK_Tab,      focusstack,     {.i = +1 } },

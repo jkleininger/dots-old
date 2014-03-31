@@ -1,1 +1,1 @@
-sudo xargs yaourt -Qk < packages > missing.txt
+sudo xargs yaourt -Qk < packages.txt > missing.txt

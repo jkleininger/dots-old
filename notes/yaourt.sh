@@ -1,2 +1,1 @@
-xargs yaourt -S --needed --noconfirm < packages
-
+xargs pacman -S --needed --noconfirm < packages.txt
