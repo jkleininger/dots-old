@@ -3,7 +3,8 @@ if [ $# -ne 0 ]; then
   exit 0;
 fi
 
-DWMSSID="$(iwconfig 2> /dev/null | grep ESSID | cut -d'"' -f2)"
+#DWMSSID="$(iwconfig 2> /dev/null | grep ESSID | cut -d'"' -f2)"
+DWMSSID="$(iwgetid 2> /dev/null | cut -d'"' -f2)"
 if [ "$DWMSSID" != "" ]; then
   DWMSSID="S:[$DWMSSID]"
 else
