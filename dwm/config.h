@@ -2,12 +2,23 @@
 
 /* appearance */
 static const char font[]            = "-*-dina-medium-r-*-*-8-*-*-*-*-*-*-*";
+
+/* default colors?
 static const char normbordercolor[] = "#001015";
 static const char normbgcolor[]     = "#222222";
 static const char normfgcolor[]     = "#bbbbbb";
 static const char selbordercolor[]  = "#0044ee";
 static const char selbgcolor[]      = "#005577";
 static const char selfgcolor[]      = "#eeeeee";
+*/
+
+static const char normbordercolor[] = "#2D2D2D";
+static const char normbgcolor[]     = "#2D2D2D";
+static const char normfgcolor[]     = "#CCCCCC";
+static const char selbordercolor[]  = "#CCCCCC";
+static const char selbgcolor[]      = "#4C4C4C";
+static const char selfgcolor[]      = "#CCCCCC";
+
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const Bool showbar           = True;     /* False means no bar */
