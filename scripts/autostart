@@ -17,5 +17,6 @@
   xscreensaver -no-splash &
   killall notification-daemon & > /dev/null
   statnot &
+  anamnesis --start
 
 #fi

@@ -38,6 +38,7 @@ static const Rule rules[] = {
         { "Obshutdown",  NULL,       NULL,       0,            True,        -1 },
         { "CMST",        NULL,       NULL,       0,            True,        -1 },
         { "NetBeans",    NULL,       NULL,       1<<2,         True,        -1 },
+        { "anamnesis",   NULL,       NULL,       0,            True,        -1 },
 };
 
 /* layout(s) */
@@ -66,17 +67,18 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[]      = { "dmenu_run", "-m", dmenumon, "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
-static const char *termcmd[]       = { "st",          NULL  };
-static const char *ffcmd[]         = { "firefox",     NULL  };
-static const char *vupcmd[]        = { "vup",         NULL  };
-static const char *vdncmd[]        = { "vdn",         NULL  };
-static const char *vmutecmd[]      = { "vmute",       NULL  };
-static const char *tptogcmd[]      = { "tp-toggle",   NULL  };
-static const char *lockcmd[]       = { "lockit",      NULL  };
-static const char *filecmd[]       = { "pcmanfm",     NULL  };
-static const char *pwrcmd[]        = { "obshutdown",  NULL  };
-static const char *cmstcmd[]       = { "cmst", "-d",  NULL  };
-static const char *sakuracmd[]     = { "sakura",      NULL  };
+static const char *termcmd[]       = { "st",              NULL };
+static const char *ffcmd[]         = { "firefox",         NULL };
+static const char *vupcmd[]        = { "vup",             NULL };
+static const char *vdncmd[]        = { "vdn",             NULL };
+static const char *vmutecmd[]      = { "vmute",           NULL };
+static const char *tptogcmd[]      = { "tp-toggle",       NULL };
+static const char *lockcmd[]       = { "lockit",          NULL };
+static const char *filecmd[]       = { "pcmanfm",         NULL };
+static const char *pwrcmd[]        = { "obshutdown",      NULL };
+static const char *cmstcmd[]       = { "cmst", "-d",      NULL };
+static const char *sakuracmd[]     = { "sakura",          NULL };
+static const char *anamcmd[]       = { "anamnesis", "-b", NULL };
 
 static Key keys[] = {
 	/* modifier                     key          function        argument */
@@ -84,6 +86,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_Return,   spawn,          {.v = sakuracmd } },
 	{ MODKEY,                       XK_b,        spawn,          {.v = ffcmd     } },
 	{ MODKEY,                       XK_w,        spawn,          {.v = cmstcmd   } },
+        { MODKEY,                       XK_c,        spawn,          {.v = anamcmd   } },
 
         { 0,                            0x1008ff13,  spawn,          {.v = vupcmd    } },
         { 0,                            0x1008ff11,  spawn,          {.v = vdncmd    } },
