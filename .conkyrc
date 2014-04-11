@@ -1,0 +1,10 @@
+out_to_console yes
+out_to_x no
+background no
+update_interval 5
+total_run_times 0
+use_spacer none
+
+TEXT
+
+${wireless_essid wlp3s0} ${wireless_link_qual_perc wlp3s0}% ${downspeed wlp3s0} ${upspeed wlp3s0} ${execi 10000 echo -e \\x04}Vol${execi 10000 echo -e \\x01} $mixer% ${execi 10000 echo -e \\x04}Bat${execi 10000 echo -e \\x01} ${battery_percent BAT1}% | ${time %a %b %d %I:%M%P}
