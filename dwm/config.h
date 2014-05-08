@@ -120,10 +120,6 @@ static Key keys[] = {
 	TAGKEYS(                        XK_3,                        2)
 	TAGKEYS(                        XK_4,                        3)
 	TAGKEYS(                        XK_5,                        4)
-	TAGKEYS(                        XK_6,                        5)
-	TAGKEYS(                        XK_7,                        6)
-	TAGKEYS(                        XK_8,                        7)
-	TAGKEYS(                        XK_9,                        8)
 	{ MODKEY|ShiftMask,             XK_r,        quit,           {0} },
 };
 
