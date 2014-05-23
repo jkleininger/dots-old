@@ -1,1 +1,1 @@
-unison -batch /home/user/Documents ssh://qrab.net//home/user/Documents
+unison -batch $HOME/Documents ssh://jkl@qrab.net/Documents
