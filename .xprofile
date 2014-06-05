@@ -1,3 +1,7 @@
 export PATH=$PATH:/home/user/scripts
 export XDG_CONFIG_HOME="$HOME/.config"
 export WADS="$HOME/.wad"
+
+~/scripts/autostart &
+wmname LG3D
+

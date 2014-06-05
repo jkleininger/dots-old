@@ -10,9 +10,8 @@ else
   DWMSSID=""
 fi
 
-DWMBAT="B:[$(cat /sys/class/power_supply/BAT0/capacity)%]"
-
-DWMCHRG="$(cat /sys/class/power_supply/BAT0/subsystem/ADP1/online)"
+# DWMBAT="B:[$(cat /sys/class/power_supply/BAT0/capacity)%]"
+# DWMCHRG="$(cat /sys/class/power_supply/BAT0/subsystem/ADP1/online)"
 
 if [[ $DWMCHRG == *1* ]]; then
   DWMBAT="$DWMBAT!"

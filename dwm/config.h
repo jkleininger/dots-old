@@ -19,13 +19,13 @@ static const char selbordercolor[]  = "#CCCCCC";
 static const char selbgcolor[]      = "#4C4C4C";
 static const char selfgcolor[]      = "#CCCCCC";
 
-static const unsigned int borderpx  = 2;        /* border pixel of windows */
+static const unsigned int borderpx  = 0;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const Bool showbar           = True;     /* False means no bar */
 static const Bool topbar            = True;     /* False means bottom bar */
 
 /* tagging */
-static const char *tags[] = { "www", "term", "dev", "x", "file" };
+static const char *tags[] = { "www", "term", "dev", "x", "file", "pass" };
 /*
 static const char *tags[] = { "www", "term", "dev", "x", "file", "6", "7", "8", "9" };
 */
@@ -42,6 +42,7 @@ static const Rule rules[] = {
         { "CMST",        NULL,       NULL,       0,            True,        -1 },
         { "NetBeans",    NULL,       NULL,       1<<2,         True,        -1 },
         { "anamnesis",   NULL,       NULL,       0,            True,        -1 },
+        { "KeePass2",    NULL,       NULL,       1<<5,         True,        -1 },
 };
 
 /* layout(s) */
@@ -120,6 +121,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_3,                        2)
 	TAGKEYS(                        XK_4,                        3)
 	TAGKEYS(                        XK_5,                        4)
+	TAGKEYS(                        XK_6,                        5)
 	{ MODKEY|ShiftMask,             XK_r,        quit,           {0} },
 };
 
