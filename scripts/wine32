@@ -1,4 +1,4 @@
 #!/bin/sh
 
-WINEPREFIX='/home/jkl/.wine32' WINEARCH='win32' wine '$1'
+WINEPREFIX='/home/jkl/.wine32' WINEARCH='win32' wine $1
 
