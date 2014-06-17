@@ -43,6 +43,7 @@ static const Rule rules[] = {
         { "NetBeans",    NULL,       NULL,       1<<2,         True,        -1 },
         { "anamnesis",   NULL,       NULL,       0,            True,        -1 },
         { "KeePass2",    NULL,       NULL,       1<<5,         True,        -1 },
+        { "Claws-mail",  NULL,       NULL,       0,            True,        -1 },
 };
 
 /* layout(s) */
