@@ -17,7 +17,7 @@ if [[ $DWMCHRG == *1* ]]; then
   DWMBAT="$DWMBAT!"
 fi
 
-DWMVOL="V:$( amixer -c0 sget Master | awk -vORS=' ' '/Mono:/ {print($4)}' )";
+# DWMVOL="V:$( amixer -c0 sget Master | awk -vORS=' ' '/Mono:/ {print($4)}' )";
 
 DWMDATE="$(date +"%a %d %b %R")";
 

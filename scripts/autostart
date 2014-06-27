@@ -9,6 +9,7 @@
 #  batti &
 #  connman-ui-gtk &
 #  kalu &
+#  anamnesis --start
 
   compton &
   /usr/lib/lxpolkit/lxpolkit &
@@ -17,6 +18,6 @@
   xscreensaver -no-splash &
   killall notification-daemon & > /dev/null
   statnot &
-  anamnesis --start
+  volumeicon &
 
 #fi

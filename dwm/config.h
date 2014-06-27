@@ -26,9 +26,6 @@ static const Bool topbar            = True;     /* False means bottom bar */
 
 /* tagging */
 static const char *tags[] = { "www", "term", "dev", "x", "file", "pass" };
-/*
-static const char *tags[] = { "www", "term", "dev", "x", "file", "6", "7", "8", "9" };
-*/
 
 static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
@@ -44,6 +41,7 @@ static const Rule rules[] = {
         { "anamnesis",   NULL,       NULL,       0,            True,        -1 },
         { "KeePass2",    NULL,       NULL,       1<<5,         True,        -1 },
         { "Claws-mail",  NULL,       NULL,       0,            True,        -1 },
+//        { "lxpanel",     NULL,       NULL,       ~0,           True,        -1 },
 };
 
 /* layout(s) */
@@ -93,9 +91,11 @@ static Key keys[] = {
 	{ MODKEY,                       XK_w,        spawn,          {.v = cmstcmd   } },
         { MODKEY,                       XK_c,        spawn,          {.v = anamcmd   } },
 
+        /*
         { 0,                            0x1008ff13,  spawn,          {.v = vupcmd    } },
         { 0,                            0x1008ff11,  spawn,          {.v = vdncmd    } },
         { 0,                            0x1008ff12,  spawn,          {.v = vmutecmd  } },
+        */
 
         { MODKEY,                       XK_t,        spawn,          {.v = tptogcmd  } },
         { MODKEY,                       XK_l,        spawn,          {.v = lockcmd   } },

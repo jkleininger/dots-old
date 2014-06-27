@@ -15,5 +15,7 @@ fi
 ~/scripts/autostart &
 wmname LG3D
 
+export _JAVA_AWT_WM_NONREPARENTING=1
+
 exec ~/scripts/rundwm
 

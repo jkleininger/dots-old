@@ -1,0 +1,39 @@
+# vim:filetype=config:tw=80:et
+
+# background "#000000"
+decorations none
+
+geometry 1x1+0+0
+
+grow_gravity E
+
+icon_gravity SE
+icon_size 24
+
+no_shrink false
+
+skip_taskbar true
+sticky true
+
+tint_color white
+tint_level 0
+
+transparent true
+
+vertical false
+
+window_layer bottom
+
+# dock, normal, toolbar, utility
+window_type dock
+
+# dockapp_mode <mode>        # set dockapp mode, which can be either simple (for
+# e.g. OpenBox, wmaker for WindowMaker, or none
+    dockapp_mode none
+
+# xsync [<bool>]             # whether to operate on X server synchronously (SLOOOOW)
+    xsync false
+
+
+
+
