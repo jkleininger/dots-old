@@ -1,0 +1,12 @@
+#!/bin/sh
+TIMING=10
+statustext()
+{
+  wmfs -c status "default `date "+%a %d %b %R"`"
+}
+while true;
+do
+  statustext
+  sleep $TIMING
+done
+

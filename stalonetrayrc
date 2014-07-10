@@ -4,11 +4,12 @@
 decorations none
 
 geometry 1x1+0+0
+max_geometry 0x1+0+0
 
 grow_gravity E
 
 icon_gravity SE
-icon_size 24
+icon_size 16
 
 no_shrink false
 
@@ -18,18 +19,19 @@ sticky true
 tint_color white
 tint_level 0
 
-transparent true
+transparent false
 
 vertical false
 
-window_layer bottom
+window_layer top
+window_strut bottom
 
 # dock, normal, toolbar, utility
 window_type dock
 
 # dockapp_mode <mode>        # set dockapp mode, which can be either simple (for
 # e.g. OpenBox, wmaker for WindowMaker, or none
-    dockapp_mode none
+    dockapp_mode wmaker
 
 # xsync [<bool>]             # whether to operate on X server synchronously (SLOOOOW)
     xsync false
