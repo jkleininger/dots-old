@@ -1,0 +1,1 @@
+9menu -file ~/.9menurc -font "-*-dina-medium-r-*-*-8-*-*-*-*-*-*-*" -warp -bg "#111119" -fg "#eeeeee" -popup -geometry "100+100"

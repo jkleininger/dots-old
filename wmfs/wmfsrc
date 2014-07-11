@@ -42,11 +42,11 @@
      # Frame / Client
      client_normal_fg = "#AABBAA"
      client_normal_bg = "#223322"
-     client_normal_statusline = "\s[3;9;#121212;x] \s[2;8;#ff0000;x](1;client_close)"
+     #client_normal_statusline = "\s[3;9;#121212;x] \s[2;8;#ff0000;x](1;client_close)"
 
      client_sel_fg = "#223322"
      client_sel_bg = "#AABBAA"
-     client_sel_statusline = "\s[3;9;#121212;x] \s[2;8;#ff0000;x](1;client_close)"
+     #client_sel_statusline = "\s[3;9;#121212;x] \s[2;8;#ff0000;x](1;client_close)"
 
      # client_free_statusline = ""
 
@@ -76,31 +76,17 @@
   [bar]
      position = 0
      screen = 0
-     elements = "tlsy"   # element order in bar
+     elements = "tsy"   # element order in bar
      theme = "default"
   [/bar]
-
-# [bar]
-#    position = 0
-#    screen = 1
-#    elements = "ts"
-#    theme = "default"
-# [/bar]
 
 [/bars]
 
 [tags]
 
-  # Tag wrapping navigation
   circular = false
 
-  # Use no screen option or screen = -1 to set tag on each screen
-  [tag]
-      screen = -1
-      name = "www"
-      #statusline=""
-  [/tag]
-
+  [tag] name = "www"  [/tag]
   [tag] name = "term" [/tag]
   [tag] name = "dev"  [/tag]
   [tag] name = "x"    [/tag]
@@ -112,7 +98,6 @@
   [mouse] button = "1" func = "tag_click" [/mouse]
   [mouse] button = "4" func = "tag_next"  [/mouse]
   [mouse] button = "5" func = "tag_prev"  [/mouse]
-
 
 [/tags]
 
@@ -185,6 +170,7 @@
   [key] mod = {"Super"} key = "b"      func = "spawn" cmd = "firefox"   [/key]
   [key] mod = {"Super"} key = "e"      func = "spawn" cmd = "pcmanfm"   [/key]
   [key] mod = {"Super"} key = "l"      func = "spawn" cmd = "lockit"    [/key]
+  [key] mod = {"Super"} key = "c"      func = "spawn" cmd = "idesk"     [/key]
 
   [key] mod = {"Super", "Shift"} key = "q"  func = "quit" [/key]
   [key] mod = {"Super", "Shift"} key = "r"  func = "reload" [/key]
@@ -206,25 +192,25 @@
   [key] mod = {"Super", "Shift"} key = "6" func = "tag_client" cmd = "5" [/key]
   [key] mod = {"Super", "Shift"} key = "7" func = "tag_client" cmd = "6" [/key]
 
+  [key] mod = {"Control", "Alt"} key = "1" func = "tag_client_and_set" cmd = "0" [/key]
+  [key] mod = {"Control", "Alt"} key = "2" func = "tag_client_and_set" cmd = "1" [/key]
+  [key] mod = {"Control", "Alt"} key = "3" func = "tag_client_and_set" cmd = "2" [/key]
+  [key] mod = {"Control", "Alt"} key = "4" func = "tag_client_and_set" cmd = "3" [/key]
+  [key] mod = {"Control", "Alt"} key = "5" func = "tag_client_and_set" cmd = "4" [/key]
+  [key] mod = {"Control", "Alt"} key = "6" func = "tag_client_and_set" cmd = "5" [/key]
+  [key] mod = {"Control", "Alt"} key = "7" func = "tag_client_and_set" cmd = "6" [/key]
+
   [key] mod = { "Alt" }            key = "Tab" func = "client_focus_next" [/key]
 
   # Resize selected tiled client with direction
-  [key] mod = {"Super"} key = "h" func = "client_resize_left"   cmd = "20" [/key]
-  [key] mod = {"Super"} key = "l" func = "client_resize_left"   cmd = "-20" [/key]
-  [key] mod = {"Super"} key = "k" func = "client_resize_top"    cmd = "20" [/key]
-  [key] mod = {"Super"} key = "j" func = "client_resize_top"    cmd = "-20" [/key]
-  [key] mod = {"Super", "Control"} key = "h" func = "client_resize_right"  cmd = "-20" [/key]
-  [key] mod = {"Super", "Control"} key = "l" func = "client_resize_right"  cmd = "20" [/key]
-  [key] mod = {"Super", "Control"} key = "k" func = "client_resize_bottom" cmd = "-20" [/key]
-  [key] mod = {"Super", "Control"} key = "j" func = "client_resize_bottom" cmd = "20" [/key]
-
-  # Tabbing command
-  [key] mod = {"Alt", "Shift"} key = "h" func = "client_tab_left"   [/key]
-  [key] mod = {"Alt", "Shift"} key = "l" func = "client_tab_right"  [/key]
-  [key] mod = {"Alt", "Shift"} key = "k" func = "client_tab_top"    [/key]
-  [key] mod = {"Alt", "Shift"} key = "j" func = "client_tab_bottom" [/key]
-  [key] mod = {"Alt", "Shift"} key = "u" func = "client_untab" [/key]
-  [key] mod = {"Super"}        key = "t" func = "client_tab_next_opened" [/key]
+  [key] mod = {"Super"}            key = "Left"  func = "client_resize_left"   cmd = "20"  [/key]
+  [key] mod = {"Super"}            key = "Right" func = "client_resize_left"   cmd = "-20" [/key]
+  [key] mod = {"Super"}            key = "Up"    func = "client_resize_top"    cmd = "20"  [/key]
+  [key] mod = {"Super"}            key = "Down"  func = "client_resize_top"    cmd = "-20" [/key]
+  [key] mod = {"Super", "Control"} key = "Left"  func = "client_resize_right"  cmd = "-20" [/key]
+  [key] mod = {"Super", "Control"} key = "Right" func = "client_resize_right"  cmd = "20"  [/key]
+  [key] mod = {"Super", "Control"} key = "Up"    func = "client_resize_bottom" cmd = "-20" [/key]
+  [key] mod = {"Super", "Control"} key = "Down"  func = "client_resize_bottom" cmd = "20"  [/key]
 
   # Layout manipulation
   [key] mod = {"Alt"} key = "1" func = "layout_vmirror"          [/key]
@@ -235,10 +221,6 @@
   [key] mod = {"Alt"} key = "6" func = "layout_integrate_bottom" [/key]
   [key] mod = {"Alt"} key = "7" func = "layout_integrate_top"    [/key]
   [key] mod = {"Alt"} key = "8" func = "layout_integrate_right"  [/key]
-
-  # Layout set historic travelling function (TESTING)
-  [key] mod = {"Super"} key = "o" func = "layout_prev_set" [/key]
-  [key] mod = {"Super", "Shift"} key = "o" func = "layout_next_set" [/key]
 
   # Toggle client free/tile
   [key] mod = {"Super"} key = "f" func = "client_toggle_free" [/key]

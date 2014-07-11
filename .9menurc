@@ -1,0 +1,23 @@
+Image Viewer :gthumb  
+Web-browser   :iceweasel   
+(( To-do )) :gedit /home/boo/vimtext/todo.txt
+(( gjots )) :gjots2 
+diana  :diana
+************************
+<< WEB-SITES >> 
+TV-gids  :iceweasel http://www.tvgids.nl/alleprogrammas/veronica,_discovery,_nat._geographic/
+MOVIE imdb  :iceweasel http://www.imdb.com/
+BBC   :iceweasel http://www.bbc.co.uk/bbctwo/watchlive/
+youtube   :iceweasel www.youtube.com
+************************
+<< Graphics >>
+Agave  :agave
+========================
+<<Systems Tools>> 
+9menu  :gedit ~/.9menurc  
+Synaptic  :gksudo synaptic 
+======================== 
+( Power ):obshutdown
+======================== 
+( Close Menu ) :exit
+========================
