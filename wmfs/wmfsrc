@@ -4,6 +4,7 @@
 
 # Possible file inclusion:
 # @include "file"
+@include "rules"
 
 # Multi theme section
 [themes]
@@ -126,26 +127,6 @@
   [mouse] button = "5" func = "client_focus_prev_tab" [/mouse]
 
 [/client]
-
-[rules]
-
-  [rule]
-      # use instance = "*" for a all-clients rule
-      instance = "chromium"
-
-      # role   = ""
-      # name   = ""
-      # theme  = "default"
-
-      tag    = 0  # 2nd tag
-      screen = 0
-
-      free       = false
-      tab        = false
-      ignore_tag = false
-  [/rule]
-
-[/rules]
 
 [launchers]
 

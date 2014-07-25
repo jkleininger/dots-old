@@ -1,0 +1,50 @@
+[rules]
+
+  [rule]
+    instance      = "Navigator"
+    class         = "Firefox"
+    screen        = 0
+    tag           = 0
+    free          = false
+    max           = false
+    follow_client = false
+    ignore_tags   = false
+  [/rule]
+
+
+  [rule]
+    instance      = "keepass2"
+    class         = "KeePass2"
+    screen        = 0
+    tag           = 5
+    free          = true
+    max           = false
+    follow_client = false
+    ignore_tags   = false
+  [/rule]
+
+  [rule]
+    instance      = "sakura"
+    class         = "Sakura"
+    screen        = 0
+    tag           = 1
+    free          = false
+    max           = false
+    follow_client = false
+    ignore_tags   = false
+  [/rule]
+
+  [rule]
+    class         = "NetBeans*"
+    tag           = 2
+    free          = false
+  [/rule]
+
+  [rule]
+    instance      = "Minecraft 1.7.10"
+    free          = true
+    tag           = 3
+  [/rule]
+
+[/rules]
+
