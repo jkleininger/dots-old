@@ -82,6 +82,8 @@ Mod4 2 :Workspace 2
 Mod4 3 :Workspace 3
 Mod4 4 :Workspace 4
 Mod4 5 :Workspace 5
+Mod4 6 :Workspace 6
+Mod4 7 :Workspace 7
 
 # send the current window to a specific workspace
 Mod4 Shift 1 :SendToWorkspace 1
@@ -89,4 +91,6 @@ Mod4 Shift 2 :SendToWorkspace 2
 Mod4 Shift 3 :SendToWorkspace 3
 Mod4 Shift 4 :SendToWorkspace 4
 Mod4 Shift 5 :SendToWorkspace 5
+Mod4 Shift 6 :SendToWorkspace 6
+Mod4 Shift 7 :SendToWorkspace 7
 
