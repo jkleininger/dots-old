@@ -1,7 +1,7 @@
 Mod4 R      :Exec dmenu_run -p ']'
 Mod4 B      :Exec firefox
 Mod4 E      :Exec pcmanfm
-Mod4 Return :Exec roxterm
+Mod4 Return :Exec sakura
 Mod4 F      :Exec dmenfm
 Mod4 N      :Exec leafpad
 Mod4 W      :Exec tile -m
