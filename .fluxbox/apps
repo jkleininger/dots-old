@@ -1,6 +1,6 @@
 [app] (name=Navigator) (class=Firefox) (role=browser)
   [Workspace]	{0}
-  [Dimensions]	{60% 100%}
+  [Dimensions]	{60% 102%}
   [Maximized]	{yes}
   [Layer]	{8}
   [Close]	{yes}
