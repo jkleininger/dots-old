@@ -1,0 +1,5 @@
+# OB_Autostart config
+LAUNCH_LIST = [ 
+	 ("connman ui","connman-ui-gtk","0","*"),
+	 ("lxpanel","lxpanel","0","*"),
+	]
