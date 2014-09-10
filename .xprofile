@@ -2,8 +2,9 @@ export PATH=$PATH:/home/user/scripts
 export XDG_CONFIG_HOME="$HOME/.config"
 export WADS="$HOME/.wad"
 
-export _JAVA_AWT_WM_NONREPARENTING=1
+# export _JAVA_AWT_WM_NONREPARENTING=1
 
-~/scripts/autostart &
-wmname LG3D
+# ~/scripts/autostart &
+
+# wmname LG3D
 
