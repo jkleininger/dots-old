@@ -1,5 +1,10 @@
 # OB_Autostart config
 LAUNCH_LIST = [ 
-	 ("connman ui","connman-ui-gtk","0","*"),
 	 ("lxpanel","lxpanel","0","*"),
+	 ("connman ui","connman-ui-gtk","0","*"),
+	 ("nitrogen","nitrogen --restore","0","*"),
+	 ("unclutter","unclutter","0","*"),
+	 ("xscreensaver daemon","xscreensaver -no-splash","0","*"),
+	 ("volume icon","volumeicon","0","*"),
+	 ("kalu","kalu","0","*"),
 	]
