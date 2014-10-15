@@ -49,6 +49,10 @@ static Bool allowgeolocation = TRUE;
 	} \
 }
 
+#define QSEARCH { \
+     .v = (char *[]){"/bin/sh", "-c", "surf_qsearch $0 $1", winid, NULL } \
+}
+
 #define MODKEY GDK_CONTROL_MASK
 
 /* hotkeys */
@@ -64,12 +68,6 @@ static Key keys[] = {
 
     { MODKEY,               GDK_p,      clipboard,  { .b = TRUE } },
     { MODKEY,               GDK_y,      clipboard,  { .b = FALSE } },
-
-    { MODKEY|GDK_SHIFT_MASK,GDK_j,      zoom,       { .i = -1 } },
-    { MODKEY|GDK_SHIFT_MASK,GDK_k,      zoom,       { .i = +1 } },
-    { MODKEY|GDK_SHIFT_MASK,GDK_q,      zoom,       { .i = 0  } },
-    { MODKEY,               GDK_minus,  zoom,       { .i = -1 } },
-    { MODKEY,               GDK_plus,   zoom,       { .i = +1 } },
 
     { MODKEY,               GDK_l,      navigate,   { .i = +1 } },
     { MODKEY,               GDK_h,      navigate,   { .i = -1 } },
@@ -101,5 +99,8 @@ static Key keys[] = {
     { MODKEY|GDK_SHIFT_MASK,GDK_m,      togglestyle, { 0 } },
     { MODKEY|GDK_SHIFT_MASK,GDK_b,      togglescrollbars, { 0 } },
     { MODKEY|GDK_SHIFT_MASK,GDK_g,      togglegeolocation, { 0 } },
+
+    { MODKEY, GDK_s, spawn, QSEARCH },
+
 };
 

@@ -308,6 +308,11 @@
         <desktop>7</desktop>
       </action>
     </keybind>
+    <keybind key="W-a">
+      <action name="Execute">
+        <command>mono /usr/share/keepass/KeePass.exe --auto-type</command>
+      </action>
+    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
