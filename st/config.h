@@ -6,13 +6,18 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 /* static char font[] = "Liberation Mono:pixelsize=12:antialias=false:autohint=false"; */
-static char font[] = "Terminus:pixelsize=12:antialias=false:autohint=false";
+
+static char font[] = "terminus";
 static int borderpx = 2;
 static char shell[] = "/bin/sh";
+static char *utmp = NULL;
 
-/* Kerning / character bounding-box mutlipliers */
-float cwscale = 1.0;
-float chscale = 1.0;
+/* identification sequence returned in DA and DECID */
+static char vtiden[] = "\033[?6c";
+
+/* Kerning / character bounding-box multipliers */
+static float cwscale = 1.0;
+static float chscale = 1.0;
 
 /*
  * word delimiter string
@@ -53,24 +58,24 @@ static unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"#2e3436",
-	"#a40000",
-	"#4e9a06",
-	"#c4a000",
-	"#204a87",
-	"#5c3566",
-	"#108576",
-	"#eed6f3",
+	"black",
+	"red3",
+	"green3",
+	"yellow3",
+	"blue2",
+	"magenta3",
+	"cyan3",
+	"gray90",
 
 	/* 8 bright colors */
-	"#aaaaaa",
-	"#ff3344",
-	"#08ff11",
-	"#ffff10",
+	"gray50",
+	"red",
+	"green",
+	"yellow",
 	"#5c5cff",
-	"#f011e0",
-	"#10fff4",
-	"#f6f6ff",
+	"magenta",
+	"cyan",
+	"white",
 
 	[255] = 0,
 
@@ -113,8 +118,9 @@ static Shortcut shortcuts[] = {
 	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
 	{ MODKEY|ShiftMask,     XK_Prior,       xzoom,          {.i = +1} },
 	{ MODKEY|ShiftMask,     XK_Next,        xzoom,          {.i = -1} },
+	{ MODKEY|ShiftMask,     XK_Home,        xzoomreset,     {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
-	{ MODKEY|ShiftMask,     XK_v,           clippaste,      {.i =  0} },
+	{ MODKEY|ShiftMask,     XK_Insert,      clippaste,      {.i =  0} },
 	{ MODKEY,               XK_Num_Lock,    numlock,        {.i =  0} },
 };
 
@@ -138,7 +144,7 @@ static Shortcut shortcuts[] = {
  * * > 0: crlf mode is enabled
  * * < 0: crlf mode is disabled
  *
- * Be careful with the order of the definitons because st searchs in
+ * Be careful with the order of the definitions because st searches in
  * this table sequentially, so any XK_ANY_MOD must be in the last
  * position for a key.
  */
@@ -154,6 +160,11 @@ static KeySym mappedkeys[] = { -1 };
  * numlock (Mod2Mask) and keyboard layout (XK_SWITCH_MOD) are ignored.
  */
 static uint ignoremod = Mod2Mask|XK_SWITCH_MOD;
+
+/* Override mouse-select while mask is active (when MODE_MOUSE is set).
+ * Note that if you want to use ShiftMask with selmasks, set this to an other
+ * modifier, set to 0 to not use it. */
+static uint forceselmod = ShiftMask;
 
 static Key key[] = {
 	/* keysym           mask            string      appkey appcursor crlf */
@@ -194,7 +205,7 @@ static Key key[] = {
 	{ XK_KP_Delete,     ShiftMask,      "\033[2K",      -1,    0,    0},
 	{ XK_KP_Delete,     ShiftMask,      "\033[3;2~",    +1,    0,    0},
 	{ XK_KP_Delete,     XK_ANY_MOD,     "\033[P",       -1,    0,    0},
-	{ XK_KP_Delete,     XK_ANY_MOD,     "\033[3~",      +1,    0,    0},
+	{ XK_KP_Delete,     XK_ANY_MOD,     "\177",         +1,    0,    0},
 	{ XK_KP_Multiply,   XK_ANY_MOD,     "\033Oj",       +2,    0,    0},
 	{ XK_KP_Add,        XK_ANY_MOD,     "\033Ok",       +2,    0,    0},
 	{ XK_KP_Enter,      XK_ANY_MOD,     "\033OM",       +2,    0,    0},
@@ -213,7 +224,6 @@ static Key key[] = {
 	{ XK_KP_7,          XK_ANY_MOD,     "\033Ow",       +2,    0,    0},
 	{ XK_KP_8,          XK_ANY_MOD,     "\033Ox",       +2,    0,    0},
 	{ XK_KP_9,          XK_ANY_MOD,     "\033Oy",       +2,    0,    0},
-	{ XK_BackSpace,     XK_NO_MOD,      "\177",          0,    0,    0},
 	{ XK_Up,            ShiftMask,      "\033[1;2A",     0,    0,    0},
 	{ XK_Up,            ControlMask,    "\033[1;5A",     0,    0,    0},
 	{ XK_Up,            Mod1Mask,       "\033[1;3A",     0,    0,    0},
@@ -250,7 +260,7 @@ static Key key[] = {
 	{ XK_Delete,        ShiftMask,      "\033[2K",      -1,    0,    0},
 	{ XK_Delete,        ShiftMask,      "\033[3;2~",    +1,    0,    0},
 	{ XK_Delete,        XK_ANY_MOD,     "\033[P",       -1,    0,    0},
-	{ XK_Delete,        XK_ANY_MOD,     "\033[3~",      +1,    0,    0},
+	{ XK_Delete,        XK_ANY_MOD,     "\177",         +1,    0,    0},
 	{ XK_Home,          ShiftMask,      "\033[2J",       0,   -1,    0},
 	{ XK_Home,          ShiftMask,      "\033[1;2H",     0,   +1,    0},
 	{ XK_Home,          XK_ANY_MOD,     "\033[H",        0,   -1,    0},
@@ -361,7 +371,6 @@ static Key key[] = {
  * ButtonRelease and MotionNotify.
  * If no match is found, regular selection is used.
  */
-
 static uint selmasks[] = {
 	[SEL_RECTANGULAR] = Mod1Mask,
 };

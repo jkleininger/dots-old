@@ -1,1 +1,3 @@
+#!/bin/sh
+
 virtualbox --startvm "Windows 7" --fullscreen
