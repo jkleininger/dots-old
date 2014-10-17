@@ -24,8 +24,14 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const Bool showbar           = True;     /* False means no bar */
 static const Bool topbar            = True;     /* False means bottom bar */
 
+static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
+static const unsigned int systrayspacing = 2;   /* systray spacing */
+static const Bool systraypinningfailfirst = True;   /* True: if pinning fails, display systray on the first monitor, False: display systray on the last monitor*/
+static const Bool showsystray       = True;     /* False means no systray */
+
+
 /* tagging */
-static const char *tags[] = { "www", "term", "dev", "x", "file", "pass" };
+static const char *tags[] = { "www", "term", "dev", "x", "file", "pass", "y" };
 
 static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
@@ -69,7 +75,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[]      = { "dmenu_run", "-m", dmenumon, "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
-static const char *termcmd[]       = { "st",              NULL };
+static const char *termcmd[]       = { "st", "-e", "byobu", NULL };
 static const char *ffcmd[]         = { "firefox",         NULL };
 static const char *tptogcmd[]      = { "tp-toggle",       NULL };
 static const char *lockcmd[]       = { "lockit",          NULL };
@@ -82,7 +88,7 @@ static const char *anamcmd[]       = { "anamnesis", "-b", NULL };
 static Key keys[] = {
 	/* modifier                     key          function        argument */
 	{ MODKEY,                       XK_r,        spawn,          {.v = dmenucmd  } },
-	{ MODKEY,                       XK_Return,   spawn,          {.v = sakuracmd } },
+	{ MODKEY,                       XK_Return,   spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,        spawn,          {.v = ffcmd     } },
 	{ MODKEY,                       XK_w,        spawn,          {.v = cmstcmd   } },
         { MODKEY,                       XK_c,        spawn,          {.v = anamcmd   } },
