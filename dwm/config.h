@@ -84,6 +84,7 @@ static const char *pwrcmd[]        = { "obshutdown",      NULL };
 static const char *cmstcmd[]       = { "cmst", "-d",      NULL };
 static const char *sakuracmd[]     = { "sakura",          NULL };
 static const char *anamcmd[]       = { "anamnesis", "-b", NULL };
+static const char *kpautofillcmd[] = { "mono", "/usr/share/keepass/KeePass.exe", "--auto-type", NULL };
 
 static Key keys[] = {
 	/* modifier                     key          function        argument */
@@ -119,7 +120,9 @@ static Key keys[] = {
 	TAGKEYS(                        XK_4,                        3)
 	TAGKEYS(                        XK_5,                        4)
 	TAGKEYS(                        XK_6,                        5)
+	TAGKEYS(                        XK_7,                        6)
 	{ MODKEY|ShiftMask,             XK_r,        quit,           {0} },
+        { MODKEY,                       XK_a,        spawn,          {.v = kpautofillcmd } },
 };
 
 /* button definitions */

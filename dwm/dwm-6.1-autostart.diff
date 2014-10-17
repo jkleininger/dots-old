@@ -1,0 +1,31 @@
+--- dwm.c	2014-10-17 09:25:38.391547351 -0400
++++ dwm_autostart.c	2014-10-17 09:30:32.203288969 -0400
+@@ -193,6 +193,7 @@
+ static void resizemouse(const Arg *arg);
+ static void restack(Monitor *m);
+ static void run(void);
++static void runAutostart(void);
+ static void scan(void);
+ static Bool sendevent(Client *c, Atom proto);
+ static void sendmon(Client *c, Monitor *m);
+@@ -1358,6 +1359,12 @@
+ }
+ 
+ void
++runAutostart(void) {
++	system("cd ~/.dwm; ./autostart_blocking.sh");
++	system("cd ~/.dwm; ./autostart.sh &");
++}
++
++void
+ scan(void) {
+ 	unsigned int i, num;
+ 	Window d1, d2, *wins = NULL;
+@@ -2065,6 +2072,7 @@
+ 	checkotherwm();
+ 	setup();
+ 	scan();
++	runAutostart();
+ 	run();
+ 	cleanup();
+ 	XCloseDisplay(dpy);

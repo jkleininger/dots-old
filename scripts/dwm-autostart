@@ -1,0 +1,13 @@
+#!/bin/sh
+
+compton &
+/usr/lib/lxpolkit/lxpolkit &
+connman-ui-gtk &
+nitrogen --restore &
+unclutter &
+xscreensaver -no-splash &
+volumeicon &
+kalu &
+killall notification-daemon & > /dev/null
+dunst &
+
