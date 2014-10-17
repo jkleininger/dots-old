@@ -7,7 +7,9 @@ nitrogen --restore &
 unclutter &
 xscreensaver -no-splash &
 volumeicon &
-kalu &
+# kalu &
 killall notification-daemon & > /dev/null
 dunst &
+dwmbar &
+mono /usr/share/keepass/KeePass.exe
 
