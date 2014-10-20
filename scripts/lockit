@@ -1,3 +1,5 @@
+#!/bin/sh
+
 osd "Locking Screen" &
 #xtrlock -b
 xscreensaver-command --lock &
