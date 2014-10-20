@@ -1,10 +1,18 @@
 /* modifier 0 means no modifier */
+/*
 static char *useragent      = "Mozilla/5.0 (X11; U; Unix; en-US) "
 	"AppleWebKit/537.15 (KHTML, like Gecko) Chrome/24.0.1295.0 "
 	"Safari/537.15 Surf/"VERSION;
+        */
+/*
+static char *useragent      = "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:25.0) Gecko/20100101 Firefox/25.0";
+*/
+
+static char *useragent      = "Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1667.0 Safari/537.36";
+
+
 static char *stylefile      = "~/.surf/style.css";
 static char *scriptfile     = "~/.surf/script.js";
-static char *historyfile    = "~/.surf/history";
 
 static Bool kioskmode       = FALSE; /* Ignore shortcuts */
 static Bool showindicators  = TRUE;  /* Show indicators in window title */
@@ -34,11 +42,24 @@ static Bool allowgeolocation = TRUE;
 
 #define SETPROP(p, q) { \
 	.v = (char *[]){ "/bin/sh", "-c", \
+		"prop=\"`xprop -id $2 $0 | cut -d '\"' -f 2 | xargs -0 printf %b | dmenu < ~/.surf/favorites`\" &&" \
+		"xprop -id $2 -f $1 8s -set $1 \"$prop\"", \
+		p, q, winid, NULL \
+	} \
+}
+/*
+#define SETPROP(p, q) { \
+	.v = (char *[]){ "/bin/sh", "-c", \
 		"prop=\"`xprop -id $2 $0 | cut -d '\"' -f 2 | xargs -0 printf %b | dmenu`\" &&" \
 		"xprop -id $2 -f $1 8s -set $1 \"$prop\"", \
 		p, q, winid, NULL \
 	} \
 }
+*/
+
+/*
+#define SETPROP(p,q) { .v = (char *[]){ "/bin/sh", "-c", "surfh.sh $0 $1 $2", p, q, winid, NULL } }
+*/
 
 /* DOWNLOAD(URI, referer) */
 #define DOWNLOAD(d, r) { \
@@ -48,10 +69,6 @@ static Bool allowgeolocation = TRUE;
 		" sleep 5;\"", \
 		d, useragent, r, cookiefile, NULL \
 	} \
-}
-
-#define QSEARCH { \
-     .v = (char *[]){"/bin/sh", "-c", "surf_qsearch $0 $1", winid, NULL } \
 }
 
 #define MODKEY GDK_CONTROL_MASK
@@ -70,8 +87,16 @@ static Key keys[] = {
     { MODKEY,               GDK_p,      clipboard,  { .b = TRUE } },
     { MODKEY,               GDK_y,      clipboard,  { .b = FALSE } },
 
+    { MODKEY|GDK_SHIFT_MASK,GDK_j,      zoom,       { .i = -1 } },
+    { MODKEY|GDK_SHIFT_MASK,GDK_k,      zoom,       { .i = +1 } },
+    { MODKEY|GDK_SHIFT_MASK,GDK_q,      zoom,       { .i = 0  } },
+    { MODKEY,               GDK_minus,  zoom,       { .i = -1 } },
+    { MODKEY,               GDK_plus,   zoom,       { .i = +1 } },
+
     { MODKEY,               GDK_l,      navigate,   { .i = +1 } },
     { MODKEY,               GDK_h,      navigate,   { .i = -1 } },
+    { GDK_MOD1_MASK,        GDK_w,   navigate,   { .i = -1 } },
+    { GDK_MOD1_MASK,        GDK_Right,  navigate,   { .i = +1 } },
 
     { MODKEY,               GDK_j,      scroll_v,   { .i = +1 } },
     { MODKEY,               GDK_k,      scroll_v,   { .i = -1 } },
@@ -100,8 +125,5 @@ static Key keys[] = {
     { MODKEY|GDK_SHIFT_MASK,GDK_m,      togglestyle, { 0 } },
     { MODKEY|GDK_SHIFT_MASK,GDK_b,      togglescrollbars, { 0 } },
     { MODKEY|GDK_SHIFT_MASK,GDK_g,      togglegeolocation, { 0 } },
-
-    { MODKEY, GDK_s, spawn, QSEARCH },
-
 };
 
