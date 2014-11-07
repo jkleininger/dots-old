@@ -1,0 +1,2 @@
+# ntfs mount
+UUID=965897045896E1F3	/mnt/windows	ntfs	uid=1000,gid=1000,dmask=022,fmask=133	0	0
