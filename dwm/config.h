@@ -47,6 +47,7 @@ static const Rule rules[] = {
         { "KeePass2",    NULL,       NULL,       1<<5,         True,        -1 },
         { "Claws-mail",  NULL,       NULL,       0,            True,        -1 },
         { "Pidgin",      NULL,       NULL,       0,            True,        -1 },
+        { "dwb",         NULL,       NULL,       1,            True,        -1 },
 };
 
 /* layout(s) */
@@ -76,21 +77,22 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[]      = { "dmenu_run", "-m", dmenumon, "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]       = { "st", "-e", "byobu", NULL };
-static const char *ffcmd[]         = { "firefox",         NULL };
-static const char *tptogcmd[]      = { "tp-toggle",       NULL };
-static const char *lockcmd[]       = { "lockit",          NULL };
-static const char *filecmd[]       = { "pcmanfm",         NULL };
-static const char *pwrcmd[]        = { "obshutdown",      NULL };
-static const char *cmstcmd[]       = { "cmst", "-d",      NULL };
-static const char *sakuracmd[]     = { "sakura",          NULL };
-static const char *anamcmd[]       = { "anamnesis", "-b", NULL };
+static const char *ffcmd[]         = { "firefox",           NULL };
+static const char *dwbcmd[]        = { "dwb",               NULL };
+static const char *tptogcmd[]      = { "tp-toggle",         NULL };
+static const char *lockcmd[]       = { "lockit",            NULL };
+static const char *filecmd[]       = { "pcmanfm",           NULL };
+static const char *pwrcmd[]        = { "obshutdown",        NULL };
+static const char *cmstcmd[]       = { "cmst", "-d",        NULL };
+static const char *sakuracmd[]     = { "sakura",            NULL };
+static const char *anamcmd[]       = { "anamnesis", "-b",   NULL };
 static const char *kpautofillcmd[] = { "mono", "/usr/share/keepass/KeePass.exe", "--auto-type", NULL };
 
 static Key keys[] = {
 	/* modifier                     key          function        argument */
 	{ MODKEY,                       XK_r,        spawn,          {.v = dmenucmd  } },
-	{ MODKEY,                       XK_Return,   spawn,          {.v = termcmd } },
-	{ MODKEY,                       XK_b,        spawn,          {.v = ffcmd     } },
+	{ MODKEY,                       XK_Return,   spawn,          {.v = termcmd   } },
+	{ MODKEY,                       XK_b,        spawn,          {.v = dwbcmd    } },
 	{ MODKEY,                       XK_w,        spawn,          {.v = cmstcmd   } },
         { MODKEY,                       XK_c,        spawn,          {.v = anamcmd   } },
 
