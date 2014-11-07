@@ -1,3 +1,5 @@
 set adblocker-filterlist /home/jkl/.config/dwb/adblock_lists
+print
+help
 set adblocker true
 dwb:plugins
